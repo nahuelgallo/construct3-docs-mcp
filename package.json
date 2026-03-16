@@ -1,7 +1,7 @@
 {
   "name": "construct3-docs-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for Construct 3 documentation — offline full-text search, multi-language, ACE reference",
+  "version": "2.0.0",
+  "description": "Unified MCP server for Construct 3 — offline docs, project read/write, analysis, scripting (44 tools)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
