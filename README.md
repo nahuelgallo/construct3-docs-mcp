@@ -1,4 +1,4 @@
-# construct3-docs-mcp
+# ultimate-construct3-mcp
 
 Unified MCP server for Construct 3 — offline documentation, project read/write, analysis, and scripting support. **44 tools** in a single server.
 
@@ -11,7 +11,7 @@ Unified MCP server for Construct 3 — offline documentation, project read/write
   "mcpServers": {
     "construct3": {
       "command": "node",
-      "args": ["path/to/construct3-docs-mcp/dist/index.js", "path/to/your/c3-project"]
+      "args": ["path/to/ultimate-construct3-mcp/dist/index.js", "path/to/your/c3-project"]
     }
   }
 }
@@ -24,7 +24,7 @@ Unified MCP server for Construct 3 — offline documentation, project read/write
   "mcpServers": {
     "construct3-docs": {
       "command": "npx",
-      "args": ["-y", "construct3-docs-mcp"]
+      "args": ["-y", "ultimate-construct3-mcp"]
     }
   }
 }
@@ -142,7 +142,7 @@ c3-docs-scrape --topic sprite --lang es
 
 ```bash
 git clone <repo>
-cd construct3-docs-mcp
+cd ultimate-construct3-mcp
 npm install
 npm run build
 npm test

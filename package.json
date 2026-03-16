@@ -1,11 +1,11 @@
 {
-  "name": "construct3-docs-mcp",
+  "name": "ultimate-construct3-mcp",
   "version": "2.0.0",
   "description": "Unified MCP server for Construct 3 — offline docs, project read/write, analysis, scripting (44 tools)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "construct3-docs-mcp": "./dist/index.js",
+    "ultimate-construct3-mcp": "./dist/index.js",
     "c3-docs-scrape": "./dist/scraper/cli.js"
   },
   "scripts": {

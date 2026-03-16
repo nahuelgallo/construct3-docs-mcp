@@ -39,7 +39,7 @@ import { registerProjectResources } from "./resources/project.js";
 import { registerWorkflowPrompts } from "./prompts/workflows.js";
 
 const server = new McpServer(
-  { name: "construct3-docs", version: "2.0.0" },
+  { name: "ultimate-construct3-mcp", version: "2.0.0" },
   { capabilities: { resources: {}, tools: {}, prompts: {} } },
 );
 
