@@ -1,0 +1,200 @@
+{
+  "actions": [
+    {
+      "name": "Play",
+      "description": "Start playing an audio file with a given tag. The latter action gives you the opportunity to use an expression for the audio file name. The sound can optionally be set to looping when it starts playing. A volume can also be set, given in decibels (dB). A volume of 0 dB is original volume, and below 0 dB attenuates the sound. Note amplification is not supported. For example, entering a value of -10 plays the audio back 10 dB quieter (about half as loud). A stereo pan can also be provided, ranging from -100 (fully left) to 100 (fully right), with the default 0 being middle. Prefer setting the intended volume and pan in the Play action; even if followed immediately by a Set volume or Set stereo pan action, some platforms will momentarily play the audio at the volume and pan given in the Play action."
+    },
+    {
+      "name": "Play (by name)",
+      "description": "Start loading an audio file so it has no delay before playing. See the section Preloading sounds above for more information. Audio does not have to be preloaded before playing - it is optional and only serves to possibly reduce the delay before audio plays for the first time. Once all audio preloaded with this action finishes loading, the On preloads complete trigger fires. Note if the project Preload sounds property is enabled, there is no point preloading any sounds, since they will always be loaded before the project starts - in this case it only makes sense to preload music."
+    },
+    {
+      "name": "Preload",
+      "description": "Seek a currently playing sound to a different location in the audio file. The time to seek to is given in seconds."
+    },
+    {
+      "name": "Preload (by name)",
+      "description": "Set a sound either looping (repeating when it finishes) or not looping (stopping when it finishes)."
+    },
+    {
+      "name": "Seek to",
+      "description": "Set the overall volume that is applied to all audio playback."
+    },
+    {
+      "name": "Set looping",
+      "description": "Set a sound either muted (silent) or unmuted (audible)."
+    },
+    {
+      "name": "Set master volume",
+      "description": "Pause or resume some audio by its tag."
+    },
+    {
+      "name": "Set muted",
+      "description": "Change the rate a sound plays back at. If the Timescale audio property is used, it combines with the playback rate set by this action."
+    },
+    {
+      "name": "Set paused",
+      "description": "Enable, disable or toggle Silent mode. In silent mode all currently playing sounds are muted and no new sounds will play. This is useful for quickly creating an audio toggle on a title screen."
+    },
+    {
+      "name": "Set playback rate",
+      "description": "Change the volume of a sound. The volume is given in decibels (dB). A volume of 0 dB is original volume, and below 0 dB attenuates the sound. Note amplification is not supported. For example, entering a value of -10 plays the audio back 10 dB quieter (about half as loud). Note it is best to set the initial volume in the Play action instead of setting it with this action immediately after playing, since that can sometimes cause a moment of playback at the wrong volume."
+    },
+    {
+      "name": "Set silent",
+      "description": "Change the volume of a sound over time. This is typically used for fade-in and fade-out effects. The sound will fade from its current volume to the given level in decibels (dB), over the given time period in seconds. When the fade finishes, the sound can either automatically be stopped, or keep playing. For a fade-in, typically the sound will be initially played at a low volume (e.g. -100 dB) and faded in to a high volume (e.g. 0 dB), and keep playing when the fade finishes. For a fade-out, typically the sound will be playing at a high volume (e.g. 0 dB) and faded to a low volume (e.g. -100 dB), and then stopped when the fade finishes, so there isn't an inaudible sound still playing. Note if Set volume is used during a fade, the fade is cancelled and the sound will be left at the volume specified by Set volume."
+    },
+    {
+      "name": "Set volume",
+      "description": "Stop a sound playing immediately."
+    },
+    {
+      "name": "Fade volume",
+      "description": "Stop all currently playing sounds."
+    },
+    {
+      "name": "Stop",
+      "description": ""
+    },
+    {
+      "name": "Stop all",
+      "description": ""
+    },
+    {
+      "name": "Unload all audio",
+      "description": "Release all loaded audio files from memory. Any subsequently played audio will need to be loaded again."
+    },
+    {
+      "name": "Unload audio",
+      "description": "Release a specific loaded audio file from memory. If the audio file is not loaded, this has no effect. Any subsequent playback of the audio file will need to load it again. This allows manual control of which audio files are in memory."
+    },
+    {
+      "name": "Unload audio (by name)",
+      "description": ""
+    },
+    {
+      "name": "Play at object",
+      "description": "As per the ordinary Play actions, but the sound is positioned at an object. If the object moves (including changing Z elevation) or rotates during playback, the sound follows with it. A cone can be specified to create directional sounds, which follows the object's angle."
+    },
+    {
+      "name": "Play at object (by name)",
+      "description": "As per the Play at object action, but the sound does not move. It is just played at a fixed position and angle in the layout. A Z co-ordinate can also be specified to play a sound at a given Z elevation, or for full 3D audio support when used with Set listener orientation."
+    },
+    {
+      "name": "Play at position",
+      "description": "Set the object that positioned sounds are calculated relative to. Typically this is set to the object representing the player on Start of Layout."
+    },
+    {
+      "name": "Play at position (by name)",
+      "description": "By default the listener is oriented for a 2D game. However when using 3D Camera to move the view in 3D, it is also useful to change the listener orientation to match that of the camera for positioned sounds to play back correctly in 3D space. The listener orientation is specified using two vectors: a forwards vector (the direction the listener is facing in), and an up vector (which determines the orientation along the forwards vector). These can usually be set to the LookVectorX/Y/Z and UpX/Y/Z expressions of the 3D Camera object."
+    },
+    {
+      "name": "Set listener object",
+      "description": "Set the Listener Z property of the audio object, which affects the calculation of positioned sounds."
+    },
+    {
+      "name": "Set listener orientation",
+      "description": "Change the stereo pan of a sound. The pan is a number ranging from -100 (fully left) to 100 (fully right), with 0 being middle. Note it is best to set the initial pan in the Play action instead of setting it with this action immediately after playing, since that can sometimes cause a moment of playback with the wrong pan. Setting the stereo pan of a positioned sound will turn off positioning in order to apply the stereo pan."
+    },
+    {
+      "name": "Set listener Z",
+      "description": ""
+    },
+    {
+      "name": "Set stereo pan",
+      "description": ""
+    },
+    {
+      "name": "Schedule next play",
+      "description": "This action causes the next Play action (all variants) to be delayed until the specified time. The delayed playback is sample-accurate. Typically events are only run every 16ms making it difficult to schedule sounds more accurately than that, but this action allows for perfectly scheduled playback, even in between ticks. If the specified time is in the past, it will play immediately. The time given must be relative to the audio hardware clock, which is returned by the CurrentTime expression, so typically sounds will be scheduled a short time ahead using an expression of the form Audio.CurrentTime + N. See the Audio scheduling example in the Start Page for a demonstration. Note that audio scheduling works best if you set the Use worker project property to No. This is because worker mode does not have direct access to the audio clock, which adds a small amount of latency and variance to playback which may be noticeable when scheduling."
+    },
+    {
+      "name": "Add remote URL",
+      "description": "Play audio from a URL by adding it first with this action. Specify the URL to be played, the type (aka the MIME type) of the audio to be played, and pick a name to use for this URL. On its own this action does nothing - no request will be made to the given URL. However you can then pass your chosen name to the other actions that work \"by name\", such as Play (by name) or Preload (by name), it will then play from the URL you associated with that name. If these actions ask for the folder, it is not really used, but chooses whether the audio is fully downloaded and decoded before playback (for Sounds), or streamed (for Music). As with any other audio file, you can use the Preload (by name) action to preload the audio at the given URL, to ensure subsequent playback starts promptly. WebM Opus is the only audio format that works across all browsers and platforms. To ensure your audio works everywhere, make sure the URL serves WebM Opus audio. Otherwise whether or not audio playback works will depend on the audio codec support of the current browser/platform."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is any playing",
+      "description": "True if any audio is currently playing."
+    },
+    {
+      "name": "Is silent",
+      "description": "True if the object has been set in to silent mode using the Set silent action."
+    },
+    {
+      "name": "Is tag playing",
+      "description": "True if any audio with a given tag is currently playing."
+    },
+    {
+      "name": "On ended",
+      "description": "Triggered when a sound with a given tag finishes playing. This is not triggered for looping sounds."
+    },
+    {
+      "name": "On fade ended",
+      "description": "Triggered when a fade started by the Fade volume action finishes, for a given tag."
+    },
+    {
+      "name": "Preloads complete",
+      "description": "True when all audio preloaded with one of the preload actions has finished loading."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "AnalyserFreqBinAt(Tag, Index, Bin)",
+      "description": "Get the magnitude of energy in an analyser's frequency bin. AA analyser effect must already be added to a tag. Index must be the index of the effect (for example, 0 if the analyser is the first added effect for that tag, 1 if the second added effect, and so on). Bin is the frequency bin number to retrieve from, up to AnalyserFreqBinCount."
+    },
+    {
+      "name": "AnalyserFreqBinCount(Tag, Index)",
+      "description": "Get the number of frequency bins returned by an analyser. An analyser effect must already be added to a tag. Index must be the index of the effect (for example, 0 if the analyser is the first added effect for that tag, 1 if the second added effect, and so on)."
+    },
+    {
+      "name": "AnalyserPeakLevel(Tag, Index)",
+      "description": "Get the peak level of audio in the last FFT window from an analyser. Index must be the index of the effect (for example, 0 if the analyser is the first added effect for that tag, 1 if the second added effect, and so on). The value is returned in dBFS (0 dB for peak level, and negative values for lower). If you intend to use this value it is recommended to use an FFT size of 1024, because at a system sample rate of 44.1 KHz the value will update about 43 times a second. Projects usually run at 60 FPS, and smaller FFT sizes may cause FFT windows to be missed since they change faster than the framerate."
+    },
+    {
+      "name": "AnalyserRMSLevel(Tag, Index)",
+      "description": "Get the RMS level of audio in the last FFT window from an analyser (the square root of the average of the squared sample values). Index must be the index of the effect (for example, 0 if the analyser is the first added effect for that tag, 1 if the second added effect, and so on). The value is returned in dBFS (0 dB for peak level, and negative values for lower). If you intend to use this value it is recommended to use an FFT size of 1024, because at a system sample rate of 44.1 KHz the value will update about 43 times a second. Projects usually run at 60 FPS, and smaller FFT sizes may cause FFT windows to be missed since they change faster than the framerate."
+    },
+    {
+      "name": "EffectCount(Tag)",
+      "description": "Get the number of effects in the effect chain for a tag."
+    },
+    {
+      "name": "CurrentTime",
+      "description": "Get the audio clock time in seconds. Where supported, this is returned from the audio hardware, providing the correct time against which to schedule audio playback. It is important to use this value to calculate playback times in the Schedule next play action."
+    },
+    {
+      "name": "Duration(Tag)",
+      "description": "Get the duration in seconds of an audio sample with a tag. This expression will only return the correct value once the audio has finished loading and decoding. If you need to access the value immediately after starting playback, consider first preloading the sound."
+    },
+    {
+      "name": "NormalizedVolume(Volume, dbThreshold)",
+      "description": "This is a helper expression to convert a volume expressed in the range 0-100 (such as with a slider bar in a user interface) to a dB value suitable for actions such as Set volume. The dbThreshold parameter is the dB that will be set for a volume value of 10 (e.g. -40). The returned dB volume will start at 0 for volume value 100 and linearly drop to dBThreshold at volume value 10. Below that, the last 0-10 range is a linear dropoff in linear range, i.e. the dB level will drop off much more quickly until it reaches -Infinity at volume value 0 for silence."
+    },
+    {
+      "name": "MasterVolume",
+      "description": "Return the current master volume set using the Set master volume action."
+    },
+    {
+      "name": "OutputLatency",
+      "description": "The time in seconds reported by the system as the estimated output latency, i.e. the time between the system sending an audio buffer to play, and the time at which the first sample in the buffer is actually processed by the audio output device. This can vary between devices and can also change over time. If the value is unavailable or unknown, it will return 0.The output latency will remain unknown until playback actually starts if autoplay restrictions are in place."
+    },
+    {
+      "name": "PlaybackRate(Tag)",
+      "description": "Get the current playback rate of a sound with a tag. The default playback rate is 1, and is set with the Set playback rate action."
+    },
+    {
+      "name": "PlaybackTime(Tag)",
+      "description": "Get the current playback time in seconds of a sound with a tag. This starts at 0 and counts up to the duration, except for looping sounds which keep counting up past the duration."
+    },
+    {
+      "name": "SampleRate",
+      "description": "Return the audio output sample rate in Hz, typically 44100 or 48000."
+    },
+    {
+      "name": "Volume(Tag)",
+      "description": "Get the volume set for a sound with a tag."
+    }
+  ]
+}

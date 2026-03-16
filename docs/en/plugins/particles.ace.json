@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "name": "Set spraying",
+      "description": "Enable or disable the spray, when in Continuous spray mode. When disabled, no new particles are created."
+    },
+    {
+      "name": "Fast-forward",
+      "description": "Skip ahead the particle effect by a time in seconds. For example fast-forwarding by 3 seconds will cause the Particles object to instantly spawn, move and destroy particles as if 3 seconds had gone by. This is useful for making sure particle effects appear ready immediately, rather than taking a few seconds to move their particles out from the spawn point."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is spraying",
+      "description": "True if the particle spray is currently enabled."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ParticleCount",
+      "description": "The number of particles the Particles object currently has. This is important to ensure you are not creating too many particles and slowing the project down; see the Optimisation section above. Note that due to the way Construct expressions work, if you have multiple Particle object instances, this will only return the particle count for one of the instances - use a For Each loop to count multiple instance's total particle count."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "actions": [
+    {
+      "name": "Append text",
+      "description": "Add some text to the end of the existing text."
+    },
+    {
+      "name": "Set character spacing",
+      "description": "Set the corresponding object properties. For more information, see Sprite font properties."
+    },
+    {
+      "name": "Set line height",
+      "description": "Set the width of certain characters. Normally it is preferable to use the Spacing data property, since it displays with correct spacing in the Layout View. In this action you can specify multiple characters at the same time to set their widths simultaneously, including the space character."
+    },
+    {
+      "name": "Set scale",
+      "description": "Replace the current text with a new string."
+    },
+    {
+      "name": "Set horizontal alignment",
+      "description": "Set the text over time by starting with an empty string and gradually adding characters until the full text is written out, over a duration specified in seconds. Once the full text is written out, On typewriter text finished triggers. Note using Set text or Append text while text is being written out will cancel the effect.\n\nYou can use a speed in characters per second instead of an overall time by using an expression like len(Self.PlainText) / 10 for the time. In this case it will write out 10 characters per second regardless of the length of the string."
+    },
+    {
+      "name": "Set vertical alignment",
+      "description": "If text is being written out with the Typewriter text action, force it to finish immediately."
+    },
+    {
+      "name": "Set wrapping",
+      "description": ""
+    },
+    {
+      "name": "Set character width",
+      "description": ""
+    },
+    {
+      "name": "Set text",
+      "description": ""
+    },
+    {
+      "name": "Typewriter text",
+      "description": ""
+    },
+    {
+      "name": "Finish typewriter",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare text",
+      "description": "Compare the current text the object is showing."
+    },
+    {
+      "name": "Has tag at position",
+      "description": "Test if there is text with a specific tag at the given position (case insensitive). For example if the text has the BBcode Hello [tag=mytag]world[/tag], then testing if the tag \"mytag\" is at a given position will check if that position is over just the part of the text that says \"world\"."
+    },
+    {
+      "name": "Is running typewriter text",
+      "description": "True while text is being written out using the Typewriter text action."
+    },
+    {
+      "name": "On typewriter text finished",
+      "description": "Triggered when text being written out using the Typewriter text action finishes writing out all the text."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "CharacterHeight",
+      "description": "Return the sprite font cell height."
+    },
+    {
+      "name": "CharacterScale",
+      "description": "Return the corresponding object properties. For more information, see Sprite font properties."
+    },
+    {
+      "name": "CharacterSpacing",
+      "description": "Return the width of a character. A character must be passed (as a string) so the Spacing data\n\n or Set character width action can be taken in to account. Since the expression can only return one value, if there are multiple characters in the string, only the first is used."
+    },
+    {
+      "name": "LineHeight",
+      "description": "Return the object's current text."
+    },
+    {
+      "name": "CharacterWidth(char)",
+      "description": "Return a string containing the object's current text, with any BBCode tags stripped out. For example if the text is [b]Hello[/b], the Text expression will return that (with BBCode tags included), but the PlainText expression will return just Hello."
+    },
+    {
+      "name": "Text",
+      "description": "Look up the tag for a part of the text at a given position and return the tag if any, else return an empty string if no tag is specified. For example if the text has the BBcode Hello [tag=mytag]world[/tag], then the tag at a position over the word \"world\" is \"mytag\", and the tag at a position over the word \"Hello\" is \"\" (an empty string)."
+    },
+    {
+      "name": "PlainText",
+      "description": "Identify the size and position of all ranges of the text with a given tag. Note the count and the index actually refers to fragments, as a single tagged range may be broken up in to multiple pieces - see the section Tagged range fragmentation in the Text object manual entry for more details (as fragmentation works the same for both SpriteFont and Text objects)."
+    },
+    {
+      "name": "TagAtPosition(x, y)",
+      "description": "Return the size of the actual text content within the Sprite Font object's rectangle."
+    },
+    {
+      "name": "TagCount(tag)",
+      "description": ""
+    },
+    {
+      "name": "TagX(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagY(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagWidth(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagHeight(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TextWidth",
+      "description": ""
+    },
+    {
+      "name": "TextHeight",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Set whether the behavior is enabled or disabled. If disabled, the behavior will not alter the size or position of the object."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    }
+  ],
+  "expressions": []
+}

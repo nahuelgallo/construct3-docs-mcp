@@ -1,0 +1,172 @@
+{
+  "actions": [
+    {
+      "name": "Add obstacle",
+      "description": "If the Obstacles property is Custom, add an object type to mark as an obstacle in the pathfinding grid. If this is done during the game (after Start of layout), you must also use Regenerate obstacle map for it to take effect.\n\nNote this applies to all instances of both object types involved. This action does not affect individual instances."
+    },
+    {
+      "name": "Add path cost",
+      "description": "Add an object to increase the path cost in the pathfinding grid. This can be used to simulate rough terrain - the behavior will try to find paths around them if possible, unless the route is a major shortcut. See the Pathfinding path cost in the Start Page for a demo. If this is done during the game (after Start of layout), you must also use Regenerate obstacle map for it to take effect."
+    },
+    {
+      "name": "Clear cost",
+      "description": "Remove all path cost objects added with Add path cost. You must also use Regenerate obstacle map for this to take effect."
+    },
+    {
+      "name": "Clear obstacles",
+      "description": "Remove all obstacle objects added with Add obstacle. You must also use Regenerate obstacle map for this to take effect."
+    },
+    {
+      "name": "Find path",
+      "description": "Start calculating a path to a destination in the layout. This is processed in the background and the results are not immediately ready after this action; you must wait until the On path found or On failed to find path triggers run before the result is known or the path can be moved along. If this action is used while Is calculating path is true, the old path is still calculated and the result triggered, but it then immediately begins calculating the new path and will also trigger for that result."
+    },
+    {
+      "name": "Regenerate obstacle map",
+      "description": "Determine whether each cell in the obstacles grid is an obstacle again. This is a very CPU intensive action and should not be used regularly. If only part of the obstacle map has changed, prefer to use one of the Regenerate region actions. Any changes made by using Add obstacle, Clear obstacles, Add path cost and Clear cost will take effect the next tick after this action. Note this means if you attempt to find a path immediately after this action, the obstacle map won't have been updated yet; add a Wait action with a short delay to make sure the updated map is used in that case."
+    },
+    {
+      "name": "Regenerate region",
+      "description": "As with Regenerate obstacle map, but only the specified area is updated. This is usually considerably faster than regenerating the entire map. However as with regenerating the entire obstacle map, changes only take effect next tick. Regenerate region takes a rectangle in layout co-ordinates to regenerate. Regenerate region around object similarly regenerates the rectangle in the layout given by an object's bounding box. Note if multiple instances have met the event's conditions, this will regenerate multiple rectangles (one for every picked object)."
+    },
+    {
+      "name": "Regenerate region around object",
+      "description": "Set whether the behavior is enabled or disabled. If disabled, it will not calculate any paths or move the object."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Set the base path cost for moving a single cell. This affects the relative cost of additional costs added by other features such as the Add path cost action and path groups. The default is 10. The move cost is rounded to an integer, and it is multiplied by the square root of 2 for the diagonal move cost if diagonals are enabled."
+    },
+    {
+      "name": "Set move cost",
+      "description": "Start and end a path group, which can be used to spread out paths found while inside the group. When a path is found inside the group, it adds a cost to cells along the discovered path in order to discourage subsequent paths in the same group from following the same path. Once the path group is ended, all added costs from the group are removed and normal pathfinding is restored. The parameters that affect path groups are: \n\n\tBase cost: The cost to add for each cell along a found path. Higher costs will spread out paths more. Paths are found across multiple independent workers which don't include the costs added by paths found in other workers; in order to compensate for this, the base cost is multiplied by the number of workers.\n\n\tCell spread: How many cells around the found path to add the cost to. A higher cell spread will cause paths to be spread out more. Prefer to use an odd number for a symmetrical spread around the path. For example a cell spread of 1 only adds costs to the cells directly along the path, and a cell spread of 3 will add costs to every 3x3 box of cells along the path.\n\n\tMax workers: The maximum number of Web Workers allowed to be used for finding paths inside this path group. As each worker is independent and doesn't see the costs added from paths found in other workers, using multiple workers can still result in some paths being found along the same route. Limiting to 1 worker avoids this happening, but also can significantly reduce performance, as it will not use all available CPU cores for pathfinding. Using a higher number improves performance, but can still result in some repeat paths. This number can only reduce the number of workers used (i.e. if it is higher than the number of CPU cores it will have no effect). See the Pathfinding groups example for a visualization of the effect of spreading out paths with this feature."
+    },
+    {
+      "name": "Start path group",
+      "description": "Automatically start moving the object along the found path. This can only be used after On path found - the path is not immediately known after the Find path action.\n\nYou can also use the Move To behavior's Move along Pathfinding path action as an alternative, since the Move To behavior uses a different movement algorithm."
+    },
+    {
+      "name": "End path group",
+      "description": "Set the current speed of the object if it is currently moving along its path, in pixels per second. This cannot be negative or greater than the maximum speed of the behavior."
+    },
+    {
+      "name": "Move along path",
+      "description": "If the object is moving along its path, causes it to stop."
+    },
+    {
+      "name": "Set speed",
+      "description": "Set the corresponding behavior properties. See the property definitions above for more information."
+    },
+    {
+      "name": "Stop",
+      "description": ""
+    },
+    {
+      "name": "Set acceleration",
+      "description": ""
+    },
+    {
+      "name": "Set deceleration",
+      "description": ""
+    },
+    {
+      "name": "Set diagonals enabled",
+      "description": ""
+    },
+    {
+      "name": "Set max speed",
+      "description": ""
+    },
+    {
+      "name": "Set rotate speed",
+      "description": ""
+    },
+    {
+      "name": "Set direct movement",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare speed",
+      "description": "If moving along a path, compare the current speed of the object in pixels per second."
+    },
+    {
+      "name": "Diagonals are enabled",
+      "description": "True if the Diagonals property allows moving diagonally along cells. This can also be changed with the Set diagonals enabled action."
+    },
+    {
+      "name": "Is calculating path",
+      "description": "True if the object is currently calculating a path in the background. This is true between the Find path action and the On path found or On failed to find path triggers."
+    },
+    {
+      "name": "Is cell obstacle",
+      "description": "Test if a cell in the obstacle grid is marked as an obstacle. This is useful for debugging or displaying the obstacle grid. Note the position is taken in cell co-ordinates rather than layout co-ordinates."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    },
+    {
+      "name": "Is moving along path",
+      "description": "True after using the Move along path action until On arrived triggers."
+    },
+    {
+      "name": "On arrived",
+      "description": "Triggered after Move along path when the object finally arrives at its destination."
+    },
+    {
+      "name": "On failed to find path",
+      "description": "Triggered after the Find path action if no path can be found to the destination, such as if it is surrounded by a ring of obstacles."
+    },
+    {
+      "name": "On path found",
+      "description": "Triggered after the Find path action once a path has successfully been found to the destination. The nodes are now available via the NodeCount, NodeXAt and NodeYAt expressions, and the Move along path action can also be used."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "CurrentNode",
+      "description": "When moving along a path, the zero-based index of the node the object is currently moving towards. This may skip ahead just before the object actually reaches the next node, in order to help it round corners."
+    },
+    {
+      "name": "MovingAngle",
+      "description": "The current angle of motion when moving along a path, in degrees."
+    },
+    {
+      "name": "NodeCount",
+      "description": "The number of nodes in the path that was found. This is only updated after On path found."
+    },
+    {
+      "name": "NodeXAt",
+      "description": "Return the position of a node in the path that was found, in layout co-ordinates, using the zero-based index of the node. This is only available after On path found."
+    },
+    {
+      "name": "NodeYAt",
+      "description": "The current speed in pixels per second when moving along a path."
+    },
+    {
+      "name": "Speed",
+      "description": "Return the current values of the behavior properties. For more information, see the property definitions above."
+    },
+    {
+      "name": "Acceleration",
+      "description": ""
+    },
+    {
+      "name": "CellSize",
+      "description": ""
+    },
+    {
+      "name": "Deceleration",
+      "description": ""
+    },
+    {
+      "name": "MaxSpeed",
+      "description": ""
+    },
+    {
+      "name": "RotateSpeed",
+      "description": ""
+    }
+  ]
+}

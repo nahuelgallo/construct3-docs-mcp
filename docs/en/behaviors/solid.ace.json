@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable Solid for this object. Be careful not to trap objects by enabling the solid when an object is overlapping it; see Avoid crushing/trapping objects with Solids."
+    },
+    {
+      "name": "Set tags",
+      "description": "Change the Tags property, affecting solid collision filtering."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is enabled",
+      "description": "True if the behavior is currently enabled. This can be changed by the Enabled property or the Set enabled action."
+    }
+  ],
+  "expressions": []
+}

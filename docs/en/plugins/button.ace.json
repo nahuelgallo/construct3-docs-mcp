@@ -1,0 +1,31 @@
+{
+  "actions": [
+    {
+      "name": "Set checked",
+      "description": "If Type is Checkbox, set the current check state of the control."
+    },
+    {
+      "name": "Set text",
+      "description": "Set the text on the button face."
+    },
+    {
+      "name": "Set tooltip",
+      "description": "Set the text that appears for the button tooltip. Leave blank for no tooltip."
+    },
+    {
+      "name": "Toggle checked",
+      "description": "If Type is Checkbox, toggles the check state of the control."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is checked",
+      "description": "If Type is Checkbox, is true if the control is currently checked."
+    },
+    {
+      "name": "On clicked",
+      "description": "Triggered when the user pushes the button or checks/unchecks the control, either by keyboard, mouse or touch input."
+    }
+  ],
+  "expressions": []
+}

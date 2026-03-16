@@ -1,0 +1,88 @@
+{
+  "actions": [
+    {
+      "name": "Add item",
+      "description": "Append a new item to the end of the list of available choices."
+    },
+    {
+      "name": "Add item at",
+      "description": "Insert a new item to the list of available choices at a certain zero-based index."
+    },
+    {
+      "name": "Clear",
+      "description": "Remove all the available choices from the list."
+    },
+    {
+      "name": "Remove",
+      "description": "Delete an item at a specific index."
+    },
+    {
+      "name": "Set item text",
+      "description": "Change the text of an item at a specific index."
+    },
+    {
+      "name": "Set selection",
+      "description": "Set the item at a specific index as selected."
+    },
+    {
+      "name": "Set tooltip",
+      "description": "Set the Tooltip property of the object, displayed by most browsers when hovering the mouse over the control."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare item text at",
+      "description": "Compare the text of a given item in the list."
+    },
+    {
+      "name": "Compare selected item text",
+      "description": "Compare the text of the currently selected item in the list."
+    },
+    {
+      "name": "Compare selection",
+      "description": "Compare the zero-based index of the currently selected item."
+    },
+    {
+      "name": "On clicked",
+      "description": "Triggered when the control is clicked."
+    },
+    {
+      "name": "On double-clicked",
+      "description": "Triggered when the control is double-clicked."
+    },
+    {
+      "name": "On selection changed",
+      "description": "Triggered whenever the chosen selection in the control is changed. This can be by any means of input (such as a mouse click, keyboard press, or touch input on mobile)."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ItemCount",
+      "description": "The current number of items in the list."
+    },
+    {
+      "name": "ItemTextAt",
+      "description": "Return the text of an item at a zero-based index in the list."
+    },
+    {
+      "name": "SelectedCount",
+      "description": "The number of currently selected items. This will always be either 0 or 1 unless a list box with Multi-select enabled is used."
+    },
+    {
+      "name": "SelectedIndex",
+      "description": "The zero-based index of the currently selected item. For multi-select lists, use SelectedIndexAt instead."
+    },
+    {
+      "name": "SelectedIndexAt",
+      "description": "The index of a selected item out of all the selected items. In other words, SelectedIndexAt with numbers 0 to SelectedCount - 1 gives the indices of all the selected items."
+    },
+    {
+      "name": "SelectedText",
+      "description": "The text of the currently selected item. For multi-select lists, use SelectedTextAt instead."
+    },
+    {
+      "name": "SelectedTextAt",
+      "description": "The text of a selected item out of all the selected items. In other words, SelectedTextAt with numbers 0 to SelectedCount - 1 gives the text of each selected item."
+    }
+  ]
+}

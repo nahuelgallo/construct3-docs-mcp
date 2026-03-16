@@ -1,0 +1,104 @@
+{
+  "actions": [
+    {
+      "name": "Reverse",
+      "description": "Invert the direction of motion. Useful as a simple way to bounce the object off an obstacle."
+    },
+    {
+      "name": "Set acceleration",
+      "description": "These set the corresponding properties, described under 8 Direction properties."
+    },
+    {
+      "name": "Set deceleration",
+      "description": "Enable or disable the movement. If disabled, the movement no longer has any effect on the object."
+    },
+    {
+      "name": "Set allow sliding",
+      "description": "Set whether input is being ignored. If input is ignored, pressing any of the control keys has no effect. However, unlike disabling the behavior, the object can continue to move."
+    },
+    {
+      "name": "Set max speed",
+      "description": "Set the current speed the object is moving at, in pixels per second."
+    },
+    {
+      "name": "Set default controls",
+      "description": "Set the X and Y components of the movement, in pixels per second."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Simulate one of the movement controls being held down. Useful when Default controls is disabled. See the behavior reference summary for more information."
+    },
+    {
+      "name": "Set ignoring input",
+      "description": "A shortcut for setting the speed to zero."
+    },
+    {
+      "name": "Set speed",
+      "description": ""
+    },
+    {
+      "name": "Set vector X",
+      "description": ""
+    },
+    {
+      "name": "Set vector Y",
+      "description": ""
+    },
+    {
+      "name": "Simulate control",
+      "description": ""
+    },
+    {
+      "name": "Stop",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Allows sliding",
+      "description": "Test if the behavior currently allows sliding along solids."
+    },
+    {
+      "name": "Compare speed",
+      "description": "Compare the object's current speed in pixels per second."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    },
+    {
+      "name": "Is moving",
+      "description": "True if the object has a non-zero speed (is not stopped). Invert to test if the object is stopped."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Acceleration",
+      "description": "Return the corresponding properties, described under 8 Direction properties."
+    },
+    {
+      "name": "Deceleration",
+      "description": "Get the current angle of motion (which can be different to the object's angle), in degrees."
+    },
+    {
+      "name": "MaxSpeed",
+      "description": "Get the current object's movement speed, in pixels per second."
+    },
+    {
+      "name": "MovingAngle",
+      "description": "Get the object's current speed on each axis, in pixels per second. For example, if the object is moving to the left at 100 pixels per second, VectorX is -100 and VectorY is 0."
+    },
+    {
+      "name": "Speed",
+      "description": ""
+    },
+    {
+      "name": "VectorX",
+      "description": ""
+    },
+    {
+      "name": "VectorY",
+      "description": ""
+    }
+  ]
+}

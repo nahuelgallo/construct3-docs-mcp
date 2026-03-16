@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Code example",
+    "code": "example.com/index.html#hashpart",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "display-mode",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "example.com/index.html#hashpart",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "example.com/index.html#hashpart",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "QueryParam(\"foo\")",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "QueryParam(\"baz\")",
+    "language": "javascript"
+  }
+]

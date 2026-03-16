@@ -1,0 +1,49 @@
+{
+  "name": "construct3-docs-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Construct 3 documentation — offline full-text search, multi-language, ACE reference",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "construct3-docs-mcp": "./dist/index.js",
+    "c3-docs-scrape": "./dist/scraper/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "scrape": "node dist/scraper/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "construct3",
+    "construct-3",
+    "mcp",
+    "documentation",
+    "game-development",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "node-html-parser": "^6.1.13",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "actions": [
+    {
+      "name": "Set back face culling",
+      "description": "Change the Back face culling property. See above for more details."
+    },
+    {
+      "name": "Set face image",
+      "description": "Change one of the shape faces to use one of the other face images. For example this allows swapping the front face image for the back face image. To restore the original image, use the same face for both parameters, e.g. set back face to use image of back face.This also undoes Set face object, restoring the 3D shape's own face image instead of another object's image."
+    },
+    {
+      "name": "Set face object",
+      "description": "Replace the image used for a face of the shape with the image used by a Sprite, Tiled Background or 9-Patch object. An instance of the given object must exist on the current layout. See the property Use object image for faces for more information.This action can be undone with Set face image."
+    },
+    {
+      "name": "Set face visible",
+      "description": "Enable or disable the visibility of one of the faces of the shape. See the Face visibility properties for more information."
+    },
+    {
+      "name": "Set shape",
+      "description": "Change the shape currently used by the object. See the Shape property for more information."
+    },
+    {
+      "name": "Set Z tiling factor",
+      "description": "Change the multiple used for tiling images along the Z axis of the object. See the Z tiling factor property for more information."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare shape",
+      "description": "Compare the current shape that is in use. This can be changed by the Set shape action."
+    },
+    {
+      "name": "Is face visible",
+      "description": "Check if one of the six faces of the shape is currently set to visible. Note this only checks whether the visibility is currently enabled, either in the object's properties or with the Set face visible action - it does not test whether the face is really showing on-screen."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "FaceImagePointCount(Face)",
+      "description": "Retrieve the 3D position of an image point on any of the 3D shape's faces. The face is a zero-based index of the face as shown in the image editor, i.e.:\n\n0: Back1: Front2: Left3: Right4: Top5: Bottom The image point is specified by the name or number of the image point. When using a number, note that as per other image point expressions,  the first image point is number 1, as 0 refers to the origin."
+    },
+    {
+      "name": "FaceImagePointX(Face, ImagePoint)",
+      "description": "Return the current Z tiling factor property. See the documentation on the corresponding property above for more information."
+    },
+    {
+      "name": "FaceImagePointY(Face, ImagePoint)",
+      "description": ""
+    },
+    {
+      "name": "FaceImagePointZ(Face, ImagePoint)",
+      "description": ""
+    },
+    {
+      "name": "ZTilingFactor",
+      "description": ""
+    }
+  ]
+}

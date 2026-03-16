@@ -1,0 +1,239 @@
+{
+  "actions": [],
+  "conditions": [
+    {
+      "name": "Compare Timestamps",
+      "description": "Compare two timestamps. Equal timestamps refer to the same time, and a timestamp that is less than another precedes it in time."
+    },
+    {
+      "name": "Compare Date Strings",
+      "description": "Compare two date strings with each other. The date strings are converted to their equivalent numeric timestamp before the comparison."
+    },
+    {
+      "name": "Compare Timestamp parts",
+      "description": "Compare two timestamp parts with each other. The possible parts are Year (4 digit), Month (0 - 11), Date (1 - 31), Day (0 - 6), Hours (0 - 23), Minutes (0 - 59), Seconds (0 - 59), and Milliseconds (0 - 999)."
+    },
+    {
+      "name": "Compare date string parts",
+      "description": "Compare two date string parts with each other, they are converted to their equivalent numeric timestamp before the comparison. The possible parts are Year (4 digit), Month (0 - 11), Date (1 - 31), Day (0 - 6), Hours (0 - 23), Minutes (0 - 59), Seconds (0 - 59), Milliseconds (0 - 999)."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ToString(timeStamp)",
+      "description": "Convert a timestamp to a string representation including both date and time."
+    },
+    {
+      "name": "ToDateString(timeStamp)",
+      "description": "Convert a timestamp to a string showing the corresponding date."
+    },
+    {
+      "name": "ToTimeString(timeStamp)",
+      "description": "Convert a timestamp to a string showing the corresponding time."
+    },
+    {
+      "name": "ToLocaleString(timeStamp)",
+      "description": "Convert a timestamp to a localized string representation including both date and time."
+    },
+    {
+      "name": "ToLocaleDateString(timeStamp)",
+      "description": "Convert a timestamp to a localized string showing the corresponding date."
+    },
+    {
+      "name": "ToLocaleTimeString(timeStamp)",
+      "description": "Convert a timestamp to a localized string showing the corresponding time."
+    },
+    {
+      "name": "ToUTCString(timeStamp)",
+      "description": "Convert a timestamp to a string representation including both date and time in universal time."
+    },
+    {
+      "name": "Parse(dateString)",
+      "description": "Parse a date string into the corresponding numeric timestamp. For the supported string formats, refer to the MDN documentation for Date.parse(), which is the underlying method used by this expression."
+    },
+    {
+      "name": "ToTimerHours(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of hours as they would be shown in a timer."
+    },
+    {
+      "name": "ToTimerMinutes(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of minutes as they would be shown in a timer (0-59)."
+    },
+    {
+      "name": "ToTimerSeconds(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of seconds as they would be shown in a timer (0-59)."
+    },
+    {
+      "name": "ToTimerMilliseconds(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of milliseconds as they would be shown in a timer (0-999)."
+    },
+    {
+      "name": "ToTotalHours(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of hours, which may be a fractional value."
+    },
+    {
+      "name": "ToTotalMinutes(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of minutes, which may be a fractional value."
+    },
+    {
+      "name": "ToTotalSeconds(milliseconds)",
+      "description": "Convert milliseconds to the equivalent amount of seconds, which may be a fractional value."
+    },
+    {
+      "name": "Now",
+      "description": "Get the current timestamp (the number of milliseconds since January 1st 1970)."
+    },
+    {
+      "name": "ExportTimestamp",
+      "description": "Get the timestamp at the time the project was exported from Construct. In preview mode, this is the time the preview was launched."
+    },
+    {
+      "name": "Get(year, month, day, hours, minutes, seconds, milliseconds)",
+      "description": "Return a timestamp by providing the individual parts of the date and time."
+    },
+    {
+      "name": "TimezoneOffset",
+      "description": "Get the timezone offset of the local system."
+    },
+    {
+      "name": "GetYear(timeStamp)",
+      "description": "Extract the 4 digit year from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCYear(timeStamp)",
+      "description": "Extract the 4 digit year from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetMonth(timeStamp)",
+      "description": "Extract the month (0 - 11) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCMonth(timeStamp)",
+      "description": "Extract the month (0 - 11) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetDate(timeStamp)",
+      "description": "Extract the date (1 - 31) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCDate(timeStamp)",
+      "description": "Extract the date (1 - 31) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetDay(timeStamp)",
+      "description": "Extract the day (0 - 6) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCDay(timeStamp)",
+      "description": "Extract the day (0 - 6) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetHours(timeStamp)",
+      "description": "Extract the hours (0 - 23) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCHours(timeStamp)",
+      "description": "Extract the hours (0 - 23) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetMinutes(timeStamp)",
+      "description": "Extract the minutes (0 - 59) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCMinutes(timeStamp)",
+      "description": "Extract the minutes (0 - 59) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetSeconds(timeStamp)",
+      "description": "Extract the seconds (0 - 59) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetUTCSeconds(timeStamp)",
+      "description": "Extract the seconds (0 - 59) from the provided timestamp in universal time."
+    },
+    {
+      "name": "GetUTCMilliseconds(timeStamp)",
+      "description": "Extract the milliseconds (0 - 999) from the provided timestamp in local time."
+    },
+    {
+      "name": "GetMilliseconds(timeStamp)",
+      "description": "Extract the milliseconds (0 - 999) from the provided timestamp in universal time."
+    },
+    {
+      "name": "Difference(first, second)",
+      "description": "Calculate the difference between two timestamps."
+    },
+    {
+      "name": "ChangeYear(timeStamp, year)",
+      "description": "Change the year (4 digit) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCYear(timeStamp, year)",
+      "description": "Change the year (4 digit) of the provided timestamp in universal, time and return as a new timestamp."
+    },
+    {
+      "name": "ChangeMonth(timeStamp, month)",
+      "description": "Change the month (0 - 11) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCMonth(timeStamp, month)",
+      "description": "Change the month (0 - 11) of the provided timestamp in universal, time and return as a new timestamp."
+    },
+    {
+      "name": "ChangeDate(timeStamp, date)",
+      "description": "Change the date (1 - 31) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCDate(timeStamp, date)",
+      "description": "Change the date (1 - 31) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeDay(timeStamp, day)",
+      "description": "Change the day (0 - 6) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCDay(timeStamp, day)",
+      "description": "Change the day (0 - 6) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeHours(timeStamp, hours)",
+      "description": "Change the hours (0 - 23) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCHours(timeStamp, hours)",
+      "description": "Change the hours (0 - 23) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeMinutes(timeStamp, minutes)",
+      "description": "Change the minutes (0 - 59) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCMinutes(timeStamp, minutes)",
+      "description": "Change the minutes (0 - 59) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeSeconds(timeStamp, seconds)",
+      "description": "Change the seconds (0 - 59) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCSeconds(timeStamp, seconds)",
+      "description": "Change the seconds (0 - 59) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeMilliseconds(timeStamp, milliseconds)",
+      "description": "Change the milliseconds (0 - 999) of the provided timestamp in local time, and return as a new timestamp."
+    },
+    {
+      "name": "ChangeUTCMilliseconds(timeStamp, milliseconds)",
+      "description": "Change the milliseconds (0 - 999) of the provided timestamp in universal time, and return as a new timestamp."
+    },
+    {
+      "name": "FormatDateWithStyles(locale, timeStamp, dateStyle, timeStyle, hourFormat)",
+      "description": "Format the provided time stamp using the locale and optional styles. \"dateStyle\" can be any of \"full\", \"long\", \"medium\" or \"short\" and affects the date section of the final result, if an unsupported value is used, the date section will be omitted from the final output of the expression. \"timeStyle\" can be any of \"full\", \"long\", \"medium\" or \"short\" and affects the time section of the final result, if an unsupported value is used, the time section will be omitted from the final output of the expression. \"hourFormat\" can be either \"12\" or \"24\" and affects the formatting of the time section of the final result, if an unsupported value is used, the end result will be locale dependant."
+    },
+    {
+      "name": "FormatDateWithComponents(locale, timeStamp, weekday, year, month, day, hour, minute, second, hourFormat)",
+      "description": "Format the provided time stamp using the locale and optional components. \"weekday\" can be any of \"long\", \"short\" or \"narrow\". \"year\" can be any of \"numeric\" or \"2-digit\". \"month\" can be any of \"numeric\", \"2-digit\", \"long\", \"short\" or \"narrow\". \"day\" can be any of \"numeric\" or \"2-digit\". \"hour\" can be any of \"numeric\" or \"2-digit\". \"minute\" can be any of \"numeric\" or \"2-digit\". \"second\" can be any of \"numeric\" or \"2-digit\". \"hourFormat\" can be either \"12\" or \"24\" and affects the formatting of the time section of the final result, if an unsupported value is used the end result will be locale dependant.\n\n\nAny of the components can be omitted from the final result by providing an unsupported value."
+    }
+  ]
+}

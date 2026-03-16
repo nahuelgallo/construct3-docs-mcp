@@ -1,0 +1,88 @@
+{
+  "actions": [
+    {
+      "name": "Acquire target",
+      "description": "Target a specific object if it is in range. If the object is out of range, the action is ignored. If in range, the turret will switch to targeting the given object, even if it already has a different target. Note if Target mode is Nearest, the turret may still immediately switch to a nearer target."
+    },
+    {
+      "name": "Add object to target",
+      "description": "Use on startup to tell the turret which objects it should target. Use a Family Paid plans only  to conveniently target a whole group of objects."
+    },
+    {
+      "name": "Clear targets",
+      "description": "Remove all targets added using the Add object to target action. The turret will no longer target any objects at all."
+    },
+    {
+      "name": "Unacquire target",
+      "description": "Tell the turret to forget its existing target, even if it is in range. This frees it up to target a different object, but it may choose to immediately target the same object again unless the Acquire target action is used immediately afterwards."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the behavior. If disabled, the behavior will not detect targets, rotate the object, or run any triggers."
+    },
+    {
+      "name": "Set predictive aim",
+      "description": "Set the corresponding properties. For more information, see Turret properties."
+    },
+    {
+      "name": "Set projectile speed",
+      "description": ""
+    },
+    {
+      "name": "Set range",
+      "description": ""
+    },
+    {
+      "name": "Set rate of fire",
+      "description": ""
+    },
+    {
+      "name": "Set rotate",
+      "description": ""
+    },
+    {
+      "name": "Set rotate speed",
+      "description": ""
+    },
+    {
+      "name": "Set target mode",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Has target",
+      "description": "True if the turret currently has a target acquired."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    },
+    {
+      "name": "On shoot",
+      "description": "Triggered at the frequency given by the Rate of fire property, when the turret both has a target and has rotated to point towards it. If the turret is to fire upon the target, you should spawn a projectile from the turret in this trigger."
+    },
+    {
+      "name": "On target acquired",
+      "description": "Triggered when the turret has no target, but acquires one as it enters range."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Range",
+      "description": "Retrieve the corresponding properties. For more information, see Turret properties."
+    },
+    {
+      "name": "RateOfFire",
+      "description": "Get the UID of the currently targeted object, if any. For more information about UIDs, see instances."
+    },
+    {
+      "name": "RotateSpeed",
+      "description": ""
+    },
+    {
+      "name": "TargetUID",
+      "description": ""
+    }
+  ]
+}

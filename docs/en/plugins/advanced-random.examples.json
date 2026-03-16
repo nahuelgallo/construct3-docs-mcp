@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Code example",
+    "code": "[weight: number, value: number|string]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[[1, \"Apple\"], [2, \"Banana\"], [3, \"Carrot\"]]",
+    "language": "javascript"
+  }
+]

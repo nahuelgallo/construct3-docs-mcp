@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">if (self.c2_callFunction)\n    self.c2_callFunction(\"name\", [\"param1\", \"param2\"]);\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "c2_callFunction",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "c2_callFunction",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Function.Call(\"CreateEnemy\", 123, 456)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Function.Param(0)",
+    "language": "javascript"
+  }
+]

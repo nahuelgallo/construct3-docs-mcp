@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Code example",
+    "code": "Dictionary.Get(\"name\")",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Dictionary.Get(\"score\")",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Dictionary.GetDefault(\"name\", \"guest\")",
+    "language": "javascript"
+  }
+]

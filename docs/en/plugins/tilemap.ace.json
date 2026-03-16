@@ -1,0 +1,152 @@
+{
+  "actions": [
+    {
+      "name": "Download",
+      "description": "Invoke a download of the current tilemap data (from the TilesJSON expression) as a JSON file. This can be useful for in-game level editors."
+    },
+    {
+      "name": "Load",
+      "description": "Load the current tiles from a string of JSON data from a previous use of the TilesJSON expression."
+    },
+    {
+      "name": "Erase tile",
+      "description": "Erase the tile at a position."
+    },
+    {
+      "name": "Erase tile range",
+      "description": "Erase a rectangular area of tiles in the tilemap."
+    },
+    {
+      "name": "Erase tile with brush",
+      "description": "Erase tiles using a brush created in the Tilemap Brush Editor. When using an auto tiling brush, the specified position will be modified, along with the surrounding eight positions. If a patch brush is used the whole patch will be erased."
+    },
+    {
+      "name": "Erase tile with brush (by name)",
+      "description": "Like Erase tile with brush, but allows you to specify the name of the brush using a string."
+    },
+    {
+      "name": "Erase tiles with patch brush",
+      "description": "Erase tiles using a patch brush. This is similar to Erase tile with brush, with the additional options to specify to mirror, flip and rotate the brush."
+    },
+    {
+      "name": "Erase tiles with patch brush (by name)",
+      "description": "Like Erase tiles with patch brush, but allows you to specify the name of the brush using a string."
+    },
+    {
+      "name": "Set tile",
+      "description": "Set the tile at a position in the tilemap by its tile ID. The tile that is set can also optionally be flipped or rotated."
+    },
+    {
+      "name": "Set tile range",
+      "description": "As with Set tile, but sets a rectangular area of tiles in the tilemap."
+    },
+    {
+      "name": "Set tile state",
+      "description": "Set the tile flipped or rotated state at a position in the tilemap. The tile ID is not changed."
+    },
+    {
+      "name": "Set tile state range",
+      "description": "Set the flipped or rotated state for a rectangular area of tiles in the tilemap. None of the tile IDs in the rectangular area are changed."
+    },
+    {
+      "name": "Set tile with brush",
+      "description": "Set tiles using a brush created in the Tilemap Brush Editor. When using an auto tiling brush, the specified position will be modified, along with the surrounding eight positions. Using a patch brush modifies all the tiles covered by the patch, the selected position corresponds to the top left of the patch."
+    },
+    {
+      "name": "Set tile with brush (by name)",
+      "description": "Like Set tile with brush, but allows you to specify the name of the brush using a string."
+    },
+    {
+      "name": "Set tile with patch brush",
+      "description": "Set tiles using a patch brush. This is similar to Set tile with brush, with the additional options to specify to mirror, flip and rotate the brush. The Invalid indexes parameter allows you to choose what should happen when a patch brush doesn't have a valid tile set at a given position, Erase deletes the corresponding tile, while Ignore leaves the tile unchanged."
+    },
+    {
+      "name": "Set tile with patch brush (by name)",
+      "description": "Like Set tile with patch brush, but allows you to specify the name of the brush using a string."
+    },
+    {
+      "name": "Load image from URL",
+      "description": "Load a new tilemap image from a given URL. It is not used until the image has finished downloading, and On image URL loaded triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the AJAX object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare tile at",
+      "description": "Compare the tile ID at a position in the tilemap."
+    },
+    {
+      "name": "Compare tile state at",
+      "description": "Test whether a tile at a position in the tilemap is flipped or rotated from its normal state."
+    },
+    {
+      "name": "On image URL loaded",
+      "description": "Triggered when Load image from URL finishes downloading the image and is ready to display it, or if the load fails."
+    },
+    {
+      "name": "On image URL failed to load",
+      "description": "Check if a tilemap brush exists"
+    },
+    {
+      "name": "Brush exists",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "TilesJSON",
+      "description": "Retrieve the tile data in JSON format, which can be loaded in again later using the Load action. Note this differs from the built-in AsJSON expression, which returns the entire object state (including position, size, behaviors etc), whereas TilesJSON returns only the tile data."
+    },
+    {
+      "name": "MapDisplayWidth",
+      "description": "The size of the displayed tilemap in tiles. For example if a Tilemap is 320px wide with tiles 32px wide, the display width is 10 as at this size it can fit 10 tiles in to the width."
+    },
+    {
+      "name": "MapDisplayHeight",
+      "description": "Convert an X or Y layout co-ordinate in to the corresponding tile number in the tilemap. For example, this can be used to get the tile position under the mouse."
+    },
+    {
+      "name": "PositionToTileX(x)",
+      "description": "Snap an X or Y layout co-ordinate to the nearest tile. This also returns a layout co-ordinate, but aligned to the nearest tile in the tilemap."
+    },
+    {
+      "name": "PositionToTileY(y)",
+      "description": "Return the tile ID at a position in the tilemap. Note the position is given in tiles, not layout co-ordinates. If the tile at the given position is empty (has been erased), the expression returns -1."
+    },
+    {
+      "name": "SnapX(x)",
+      "description": "The width and height of each tile, as specified in the Tilemap properties."
+    },
+    {
+      "name": "SnapY(y)",
+      "description": "Convert a tile position to layout co-ordinates. For example, this can be used to position a Sprite object on top of a given tile."
+    },
+    {
+      "name": "TileAt(x, y)",
+      "description": "The width and height (in tiles) of a patch brush. Auto tiling brushes always return 0."
+    },
+    {
+      "name": "TileWidth",
+      "description": ""
+    },
+    {
+      "name": "TileHeight",
+      "description": ""
+    },
+    {
+      "name": "TileToPositionX(x)",
+      "description": ""
+    },
+    {
+      "name": "TileToPositionY(y)",
+      "description": ""
+    },
+    {
+      "name": "BrushWidth",
+      "description": ""
+    },
+    {
+      "name": "BrushHeight",
+      "description": ""
+    }
+  ]
+}

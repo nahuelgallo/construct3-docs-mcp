@@ -1,0 +1,152 @@
+{
+  "actions": [
+    {
+      "name": "Delete key",
+      "description": "Delete the key at a path so it is no longer present in the JSON data. Note this action cannot remove elements from an array. Use the array modifying actions instead."
+    },
+    {
+      "name": "Parse",
+      "description": "Parse a string of JSON data and load it in to the object so it can be accessed. If the data is valid and is parsed successfully, On parse success is triggered; otherwise if the data is invalid and parsing fails, On parse error is triggered."
+    },
+    {
+      "name": "Pop value",
+      "description": "Remove an element at the start or end of an array located at a path. If the path does not specify an array, this does nothing."
+    },
+    {
+      "name": "Push value",
+      "description": "Add an element with the given value at the start or end of an array located at a path. If the path does not specify an array, this does nothing."
+    },
+    {
+      "name": "Insert value",
+      "description": "Inserts an element with the given value into an array located at a path, increasing the size of the array by 1. The element is inserted at a specified index, if any elements existed at or after that index they pushed forward by 1."
+    },
+    {
+      "name": "Remove values",
+      "description": "Removes a specified number of elements from an array located at a path, reducing the size of the array. Elements are removed starting at a specified index, if there are less elements after the array than requested to be removed then only the available number will be removed."
+    },
+    {
+      "name": "Set array",
+      "description": "Create an array with a given number of elements at a path. If an array already exists at the given path, it is resized to the given number of elements. In both cases, any new elements are initialised to 0."
+    },
+    {
+      "name": "Set boolean",
+      "description": "Set a true or false value at a path."
+    },
+    {
+      "name": "Set JSON",
+      "description": "Parse a string of JSON data, and set the value at a path to the resulting JSON. This is useful to merge data from different sources in to the same JSON object."
+    },
+    {
+      "name": "Set null",
+      "description": "Set the special null value at a path."
+    },
+    {
+      "name": "Set object",
+      "description": "Set an empty object at a path. If there is already an object at the given path, it is replaced with an empty object."
+    },
+    {
+      "name": "Set path",
+      "description": "Set the current path. This allows relative keys to continue from this path."
+    },
+    {
+      "name": "Set value",
+      "description": "Set a number or string value at a path."
+    },
+    {
+      "name": "Toggle boolean",
+      "description": "Toggle a boolean value at a path. If the value at the path is not a Boolean, do nothing."
+    },
+    {
+      "name": "Add to",
+      "description": "Add a value to the numerical value at a path. If the value at the path is not numerical, do nothing."
+    },
+    {
+      "name": "Subtract from",
+      "description": "Subtract a value from the numerical value at a path. If the value at the path is not numerical, do nothing."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare type",
+      "description": "Test the type of a value at a given path. This can also detect the special null value that cannot be returned in a Construct expression, as well as identifying arrays and objects."
+    },
+    {
+      "name": "Compare value",
+      "description": "Compare the value at a given path. This can only be used with number or string values."
+    },
+    {
+      "name": "For each",
+      "description": "Repeats once for each key at a path in the JSON data. This can be used with either object or array types; in the case of arrays, the keys are the array indices (e.g. 0, 1, 2...) represented as a string. Inside the loop, the current path is set to the current key being iterated, so relative paths can be used to retrieve data from the current key. The CurrentKey, CurrentValue and CurrentType expressions return information about the current key-value pair being iterated."
+    },
+    {
+      "name": "Has key",
+      "description": "Determine if a key exists at a given path."
+    },
+    {
+      "name": "Is boolean set",
+      "description": "Determine if a given path contains a boolean \"true\" value."
+    },
+    {
+      "name": "On parse error",
+      "description": "Triggered after a Parse action if there was invalid syntax in the JSON string resulting in an error trying to parse it."
+    },
+    {
+      "name": "On parse success",
+      "description": "Triggered after a Parse action if the JSON syntax was valid and parsing completed successfully."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ArraySize",
+      "description": "Return the length of an array at a path. If there is not an array at the given path, returns -1."
+    },
+    {
+      "name": "Back",
+      "description": "Return the element at the start (front) or end (back) of an array at a given path. If there is not an array at the given path, returns -1."
+    },
+    {
+      "name": "Front",
+      "description": "In a For each loop, a string of the current key name. If an array is being looped, the current key is a string of the current index, e.g. \"0\", \"1\"..."
+    },
+    {
+      "name": "CurrentKey",
+      "description": "In a For each loop, a string representing the type of the current value, which can be one of \"null\", \"array\", \"object\", \"boolean\", \"number\" or \"string\"."
+    },
+    {
+      "name": "CurrentType",
+      "description": "In a For each loop, the current value. This only returns numbers or strings, or booleans as a number (0 for false and 1 for true). All other types will return 0."
+    },
+    {
+      "name": "CurrentValue",
+      "description": "Get the value at a given path. The path can be relative to the current path or the current key in a For each loop. This only returns numbers or strings, or booleans as a number (0 for false and 1 for true). All other types will return 0."
+    },
+    {
+      "name": "Get",
+      "description": "Get a string representing the type of a value at a given path, which can be one of \"null\", \"array\", \"object\", \"boolean\", \"number\" or \"string\". The path can be relative to the current path or the current key in a For each loop."
+    },
+    {
+      "name": "Type",
+      "description": "Return the current path."
+    },
+    {
+      "name": "Path",
+      "description": "Return the current JSON data either as a formatted string with line breaks and indentation (\"beautified\"), or as a minimal string excluding any line breaks or indentation (\"compact\"). Beautified strings are easier to read, but compact strings are more efficient for storing, sending over the Internet, and loading. Both beautified and compact strings always represent identical data, and there are a range of third-party tools available that can convert between beautified and compact representation."
+    },
+    {
+      "name": "ToBeautifiedString",
+      "description": "Return the JSON data at a specified location either as a formatted string with line breaks and indentation (\"beautified\"), or as a minimal string excluding any line breaks or indentation (\"compact\"). These expressions are conceptually similar to \"ToBeautifiedString\" and \"ToCompactString\" respectively, but for a specific part of the current data instead of everything. In that way they are the opposite half of the \"Set JSON\" action, which allow you to set a value from a JSON string at a given location."
+    },
+    {
+      "name": "ToCompactString",
+      "description": ""
+    },
+    {
+      "name": "GetAsBeautifiedString",
+      "description": ""
+    },
+    {
+      "name": "GetAsCompactString",
+      "description": ""
+    }
+  ]
+}

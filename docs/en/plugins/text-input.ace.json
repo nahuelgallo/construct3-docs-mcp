@@ -1,0 +1,60 @@
+{
+  "actions": [
+    {
+      "name": "Append text",
+      "description": "Add some text to the end of the current text. For example, if the text object contains Hello and has World appended, the text object then contains HelloWorld."
+    },
+    {
+      "name": "Scroll to bottom",
+      "description": "Scroll to the bottom of the control. Only has an effect when set to the textarea type, since it is the only multiline mode. This is useful for chat or log style textareas."
+    },
+    {
+      "name": "Set max length",
+      "description": "Set the maximum number of characters allowed to be entered in the field. Set to -1 to disable any limit and allow an unlimited number of characters (which is the default)."
+    },
+    {
+      "name": "Set placeholder",
+      "description": "Set the text that appears faintly when the field is empty. This can be used for hints for what the field is for, e.g. Username."
+    },
+    {
+      "name": "Set read-only",
+      "description": "Set whether the field is read-only, which means the text cannot be modified but can still be selected. This is different to disabling the field, where text cannot be selected."
+    },
+    {
+      "name": "Set text",
+      "description": "Set the text currently entered in to the field."
+    },
+    {
+      "name": "Set tooltip",
+      "description": "Set the text that appears for the field tooltip. Leave blank for no tooltip."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare text",
+      "description": "Compare the text currently entered in to the field. The comparison can either be case sensitive (\"TEXT\" is different to \"text\") or case insensitive (\"TEXT\" is the same as \"text\")."
+    },
+    {
+      "name": "On clicked",
+      "description": "Triggered when the user clicks the field."
+    },
+    {
+      "name": "On double-clicked",
+      "description": "Triggered when the user double-clicks the field."
+    },
+    {
+      "name": "On text changed",
+      "description": "Triggered whenever the text in the field is modified, by typing, backspace/delete, cut/paste etc."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "MaxLength",
+      "description": "Return the maximum number of characters allowed to be entered in to the field, as set by the Set max length action. If there is no maximum length (the default), this returns -1."
+    },
+    {
+      "name": "Text",
+      "description": "Get a string containing the text currently entered in to the field."
+    }
+  ]
+}

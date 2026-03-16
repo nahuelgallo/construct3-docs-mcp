@@ -1,0 +1,76 @@
+{
+  "actions": [
+    {
+      "name": "Add key",
+      "description": "Add a new key to storage, with a given value. If the key already exists, its value is updated."
+    },
+    {
+      "name": "Clear",
+      "description": "Remove all keys from storage, making the object empty."
+    },
+    {
+      "name": "Delete key",
+      "description": "Remove a key and its value from storage. If the key does not exist, this has no effect."
+    },
+    {
+      "name": "Set key",
+      "description": "Update the value for a key which already exists. If the key does not exist, this has no effect. (Unlike Add key, the key will not be created.)"
+    },
+    {
+      "name": "Download",
+      "description": "Invokes a browser download of a file containing the Dictionary's contents in JSON format."
+    },
+    {
+      "name": "Load",
+      "description": "Load all keys and values from JSON data previously retrieved from the Dictionary object using either the Download action, the AsJSON expression, or the AJAX object loading a project file. Note this does not allow loading arbitrary JSON data - the data must be in a special format for Construct. If you want to load data from a project file, create it using the New - Dictionary menu option in the Project Bar."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare value",
+      "description": "Compare the value stored for a key."
+    },
+    {
+      "name": "Has key",
+      "description": "Check if a key exists in storage."
+    },
+    {
+      "name": "Is empty",
+      "description": "True when there are no keys in storage."
+    },
+    {
+      "name": "For each key",
+      "description": "Repeat the event once for each key in storage. The CurrentKey and CurrentValue expressions return the current key and its value respectively."
+    },
+    {
+      "name": "Compare current value",
+      "description": "Only valid in a For each key event. Compare the value of the current key."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Get(key)",
+      "description": "Return the value stored for a key, e.g. Dictionary.Get(\"score\"). If the key does not exist, it returns 0."
+    },
+    {
+      "name": "GetDefault(key, valueIfMissing)",
+      "description": "Return the value stored for a key, but if it is missing, return a different value instead. For example Dictionary.GetDefault(\"name\", \"guest\") will return the value of the key \"name\" if it exists, otherwise it will return the string \"guest\"."
+    },
+    {
+      "name": "KeyCount",
+      "description": "Return the number of keys in storage."
+    },
+    {
+      "name": "CurrentKey",
+      "description": "In a For each key event, these return the key and its value (respectively) for the current key being iterated."
+    },
+    {
+      "name": "CurrentValue",
+      "description": "Return the contents of the Dictionary object in JSON format. This can be later loaded back with the Load action, sent to a server via AJAX, saved to disk, and so on."
+    },
+    {
+      "name": "AsJSON",
+      "description": ""
+    }
+  ]
+}

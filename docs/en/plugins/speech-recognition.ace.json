@@ -1,0 +1,72 @@
+{
+  "actions": [
+    {
+      "name": "Request speech recognition",
+      "description": "If Supports speech recognition is true, initiates speech recognition. Usually a permission prompt will appear asking the user if they want to allow the page to use their microphone input. The user must approve the permission prompt before On start triggers. If there is a problem or permission is denied, On error is triggered.\n\n\nLanguage specifies the spoken language to recognize, as an IETF language tag. Use a tag like en for English, en-US for US English, en-GB for British English, and so on.\n\n\nCheck Process locally to perform on-device speech recognition. Support for the specified language may need to be installed first - see the section On-device speech recognition above for more details. When unchecked, a cloud service may be used for speech recognition.\n\n\nMode can be continuous, which keeps recognising speech until the page is closed or the Stop speech recognition is used; or single phrase, which recognises speech until the user stops talking, then automatically stops speech recognition and triggers On end.\n\n\nResults can be Interim to allow interim (unconfirmed) results which can change, accessed by the InterimTranscript expression; or Final to only allow confirmed final results of speech recognition to be returned which will not change, accessed by the FinalTranscript expression."
+    },
+    {
+      "name": "Stop speech recognition",
+      "description": "If speech recognition is currently active, ends the speech recognition. On end will trigger."
+    },
+    {
+      "name": "Check language available",
+      "description": "Check whether a given language is available for speech recognition. Enable Process locally to check whether the language is available for on-device speech recognition. After using this action, On check language available result will trigger according to the availability."
+    },
+    {
+      "name": "Install on-device recognition",
+      "description": "When Supports on-device recognition is true, installs on-device speech recognition for a specific language. This may require a substantial download which will happen in the background. On install on-device recognition result will trigger after a while with the result of the installation - note this may take a while, especially on slow connections."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is recognising speech",
+      "description": "True if a speech recognition request has been approved, and speech input through a microphone is actively being recognised."
+    },
+    {
+      "name": "On end",
+      "description": "Triggered after the Stop speech recognition action, or after the user stops speaking in Single phrase mode speech recognition."
+    },
+    {
+      "name": "On error",
+      "description": "Triggered if there is an error approving speech recognition, or during speech recognition. The SpeechError expression is set to a string which describes the type of problem, e.g. \"not-allowed\" if permission was declined."
+    },
+    {
+      "name": "On result",
+      "description": "Triggered during active speech recognition when the interim or final transcript has changed. Use either the FinalTranscript and/or the InterimTranscript expressions to get the updated result."
+    },
+    {
+      "name": "On start",
+      "description": "Triggered after Request speech recognition when the user has also approved any prompt for permission."
+    },
+    {
+      "name": "Supports speech recognition",
+      "description": "True if the current browser or platform supports speech recognition. If false, none of the speech recognition features of the object will work."
+    },
+    {
+      "name": "On install on-device recognition result",
+      "description": "Triggered after the Install on-device recognition action completes, depending of the result of the installation."
+    },
+    {
+      "name": "Supports on-device recognition",
+      "description": "Test if the current browser/platform supports on-device speech recognition. See On-device speech recognition above for more details."
+    },
+    {
+      "name": "On check language available result",
+      "description": "Triggered after the Check language available action depending on the result of the check. Note this takes in to account the Process locally option of the action. The results can be one of the following:\n\nAvailable: the language is available for speech recognition.\n\nDownloading: support for on-device speech recognition for this language is currently downloading.\n\nDownloadable: support for on-device speech recognition for this language may be downloaded.\n\nUnavailable: the language is not available for speech recognition.\n\nUnknown: the availability of this language for speech recognition is not known.\n\nError: an error occurred checking for the language availability."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "FinalTranscript",
+      "description": "If speech recognition is active, returns the final transcript of confirmed results. This does not change, other than to add newly spoken words which have also been confirmed."
+    },
+    {
+      "name": "InterimTranscript",
+      "description": "If speech recognition is active, returns the interim transcript of results. The Request speech recognition action must have specified Interim for the Results parameter. The text of this expression can change, as the speech recognition engine uses the sound input in real-time to refine the results and correct any misinterpreted words. Once the user has spoken far enough for the speech recognition engine to be confident of a final result, the word will disappear from InterimTranscript and be appended to FinalTranscript."
+    },
+    {
+      "name": "SpeechError",
+      "description": "In On speech recognition error, contains a string which identifies the type of error. Possible values are: \"no-speech\", \"aborted\", \"audio-capture\", \"network\", \"not-allowed\", \"service-not-allowed\", \"bad-grammar\", or \"language-not-supported\". The most common errors are \"not-allowed\" if the user declined the permission prompt; \"audio-capture\" if no microphone is present; or \"network\" if the speech recognition is implemented by a remote server over the Internet which is currently unavailable."
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "lang": "en",
+  "lastUpdated": "2026-03-16T05:51:47.459Z",
+  "totalTopics": 96,
+  "categories": {
+    "plugins": 37,
+    "behaviors": 24,
+    "project": 21,
+    "scripting": 6,
+    "interface": 8,
+    "effects": 0,
+    "publishing": 0
+  },
+  "entries": [
+    {
+      "slug": "9-patch",
+      "title": "9-patch",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch",
+      "lastScraped": "2026-03-16T05:25:36.037Z",
+      "filePath": "en/plugins/9-patch.md"
+    },
+    {
+      "slug": "advanced-random",
+      "title": "Advanced random",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/advanced-random",
+      "lastScraped": "2026-03-16T05:26:40.973Z",
+      "filePath": "en/plugins/advanced-random.md"
+    },
+    {
+      "slug": "ajax",
+      "title": "AJAX",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/ajax",
+      "lastScraped": "2026-03-16T05:26:01.904Z",
+      "filePath": "en/plugins/ajax.md"
+    },
+    {
+      "slug": "array",
+      "title": "Array",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/array",
+      "lastScraped": "2026-03-16T05:25:55.956Z",
+      "filePath": "en/plugins/array.md"
+    },
+    {
+      "slug": "audio",
+      "title": "Audio",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/audio",
+      "lastScraped": "2026-03-16T05:25:44.185Z",
+      "filePath": "en/plugins/audio.md"
+    },
+    {
+      "slug": "browser",
+      "title": "Browser",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/browser",
+      "lastScraped": "2026-03-16T05:26:03.970Z",
+      "filePath": "en/plugins/browser.md"
+    },
+    {
+      "slug": "button",
+      "title": "Button",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/button",
+      "lastScraped": "2026-03-16T05:26:15.675Z",
+      "filePath": "en/plugins/button.md"
+    },
+    {
+      "slug": "camera-3d",
+      "title": "3D Camera",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-camera",
+      "lastScraped": "2026-03-16T05:26:37.020Z",
+      "filePath": "en/plugins/camera-3d.md"
+    },
+    {
+      "slug": "date",
+      "title": "Date",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/date",
+      "lastScraped": "2026-03-16T05:26:42.958Z",
+      "filePath": "en/plugins/date.md"
+    },
+    {
+      "slug": "dictionary",
+      "title": "Dictionary",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/dictionary",
+      "lastScraped": "2026-03-16T05:25:57.915Z",
+      "filePath": "en/plugins/dictionary.md"
+    },
+    {
+      "slug": "drawing-canvas",
+      "title": "Drawing canvas",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/drawing-canvas",
+      "lastScraped": "2026-03-16T05:26:11.819Z",
+      "filePath": "en/plugins/drawing-canvas.md"
+    },
+    {
+      "slug": "function",
+      "title": "Function",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/function",
+      "lastScraped": "2026-03-16T05:25:54.068Z",
+      "filePath": "en/plugins/function.md"
+    },
+    {
+      "slug": "gamepad",
+      "title": "Gamepad",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/gamepad",
+      "lastScraped": "2026-03-16T05:25:52.195Z",
+      "filePath": "en/plugins/gamepad.md"
+    },
+    {
+      "slug": "geolocation",
+      "title": "Geolocation",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/geolocation",
+      "lastScraped": "2026-03-16T05:26:27.106Z",
+      "filePath": "en/plugins/geolocation.md"
+    },
+    {
+      "slug": "html-element",
+      "title": "HTML Element",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/html-element",
+      "lastScraped": "2026-03-16T05:26:13.787Z",
+      "filePath": "en/plugins/html-element.md"
+    },
+    {
+      "slug": "json",
+      "title": "JSON",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/json",
+      "lastScraped": "2026-03-16T05:25:59.932Z",
+      "filePath": "en/plugins/json.md"
+    },
+    {
+      "slug": "keyboard",
+      "title": "Keyboard",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/keyboard",
+      "lastScraped": "2026-03-16T05:25:46.128Z",
+      "filePath": "en/plugins/keyboard.md"
+    },
+    {
+      "slug": "list",
+      "title": "List",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/list",
+      "lastScraped": "2026-03-16T05:26:19.515Z",
+      "filePath": "en/plugins/list.md"
+    },
+    {
+      "slug": "local-storage",
+      "title": "Local Storage",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/local-storage",
+      "lastScraped": "2026-03-16T05:26:06.017Z",
+      "filePath": "en/plugins/local-storage.md"
+    },
+    {
+      "slug": "mouse",
+      "title": "Mouse",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/mouse",
+      "lastScraped": "2026-03-16T05:25:48.115Z",
+      "filePath": "en/plugins/mouse.md"
+    },
+    {
+      "slug": "multiplayer",
+      "title": "Multiplayer",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/multiplayer",
+      "lastScraped": "2026-03-16T05:26:33.106Z",
+      "filePath": "en/plugins/multiplayer.md"
+    },
+    {
+      "slug": "particles",
+      "title": "Particles",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/particles",
+      "lastScraped": "2026-03-16T05:26:07.914Z",
+      "filePath": "en/plugins/particles.md"
+    },
+    {
+      "slug": "progress-bar",
+      "title": "Progress bar",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/progress-bar",
+      "lastScraped": "2026-03-16T05:26:23.294Z",
+      "filePath": "en/plugins/progress-bar.md"
+    },
+    {
+      "slug": "shadow-light",
+      "title": "Shadow light",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/shadow-light",
+      "lastScraped": "2026-03-16T05:26:25.193Z",
+      "filePath": "en/plugins/shadow-light.md"
+    },
+    {
+      "slug": "shape-3d",
+      "title": "3D shape",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape",
+      "lastScraped": "2026-03-16T05:26:39.070Z",
+      "filePath": "en/plugins/shape-3d.md"
+    },
+    {
+      "slug": "slider-bar",
+      "title": "Slider bar",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/slider-bar",
+      "lastScraped": "2026-03-16T05:26:21.336Z",
+      "filePath": "en/plugins/slider-bar.md"
+    },
+    {
+      "slug": "speech-recognition",
+      "title": "Speech recognition",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/speech-recognition",
+      "lastScraped": "2026-03-16T05:26:29.117Z",
+      "filePath": "en/plugins/speech-recognition.md"
+    },
+    {
+      "slug": "speech-synthesis",
+      "title": "Speech synthesis",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/speech-synthesis",
+      "lastScraped": "2026-03-16T05:26:31.073Z",
+      "filePath": "en/plugins/speech-synthesis.md"
+    },
+    {
+      "slug": "sprite",
+      "title": "Sprite",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite",
+      "lastScraped": "2026-03-16T05:51:47.443Z",
+      "filePath": "en/plugins/sprite.md"
+    },
+    {
+      "slug": "spritefont",
+      "title": "Sprite Font",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite-font",
+      "lastScraped": "2026-03-16T05:25:40.175Z",
+      "filePath": "en/plugins/spritefont.md"
+    },
+    {
+      "slug": "text-input",
+      "title": "Text input",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/text-input",
+      "lastScraped": "2026-03-16T05:26:17.602Z",
+      "filePath": "en/plugins/text-input.md"
+    },
+    {
+      "slug": "text",
+      "title": "Text",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/text",
+      "lastScraped": "2026-03-16T05:25:37.996Z",
+      "filePath": "en/plugins/text.md"
+    },
+    {
+      "slug": "tiled-background",
+      "title": "Tiled Background",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/tiled-background",
+      "lastScraped": "2026-03-16T05:25:34.061Z",
+      "filePath": "en/plugins/tiled-background.md"
+    },
+    {
+      "slug": "tilemap",
+      "title": "Tilemap",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/tilemap",
+      "lastScraped": "2026-03-16T05:25:42.166Z",
+      "filePath": "en/plugins/tilemap.md"
+    },
+    {
+      "slug": "timeline-controller",
+      "title": "Timeline controller",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/timeline-controller",
+      "lastScraped": "2026-03-16T05:26:35.161Z",
+      "filePath": "en/plugins/timeline-controller.md"
+    },
+    {
+      "slug": "touch",
+      "title": "Touch",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/touch",
+      "lastScraped": "2026-03-16T05:25:50.082Z",
+      "filePath": "en/plugins/touch.md"
+    },
+    {
+      "slug": "video",
+      "title": "Video",
+      "category": "plugins",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/video",
+      "lastScraped": "2026-03-16T05:26:09.838Z",
+      "filePath": "en/plugins/video.md"
+    },
+    {
+      "slug": "8-direction",
+      "title": "8 Direction behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/8-direction",
+      "lastScraped": "2026-03-16T05:26:52.844Z",
+      "filePath": "en/behaviors/8-direction.md"
+    },
+    {
+      "slug": "anchor",
+      "title": "Anchor behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/anchor",
+      "lastScraped": "2026-03-16T05:27:15.081Z",
+      "filePath": "en/behaviors/anchor.md"
+    },
+    {
+      "slug": "bullet",
+      "title": "Bullet behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/bullet",
+      "lastScraped": "2026-03-16T05:26:50.865Z",
+      "filePath": "en/behaviors/bullet.md"
+    },
+    {
+      "slug": "car",
+      "title": "Car behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/car",
+      "lastScraped": "2026-03-16T05:26:54.891Z",
+      "filePath": "en/behaviors/car.md"
+    },
+    {
+      "slug": "drag-and-drop",
+      "title": "Drag & Drop behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/drag-drop",
+      "lastScraped": "2026-03-16T05:27:10.884Z",
+      "filePath": "en/behaviors/drag-and-drop.md"
+    },
+    {
+      "slug": "fade",
+      "title": "Fade behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/fade",
+      "lastScraped": "2026-03-16T05:26:58.719Z",
+      "filePath": "en/behaviors/fade.md"
+    },
+    {
+      "slug": "flash",
+      "title": "Flash behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/flash",
+      "lastScraped": "2026-03-16T05:27:00.622Z",
+      "filePath": "en/behaviors/flash.md"
+    },
+    {
+      "slug": "jumpthru",
+      "title": "Jump-thru behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/jump-thru",
+      "lastScraped": "2026-03-16T05:26:48.843Z",
+      "filePath": "en/behaviors/jumpthru.md"
+    },
+    {
+      "slug": "line-of-sight-behavior",
+      "title": "Line-of-sight behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/line-of-sight",
+      "lastScraped": "2026-03-16T05:27:07.024Z",
+      "filePath": "en/behaviors/line-of-sight-behavior.md"
+    },
+    {
+      "slug": "no-save",
+      "title": "No Save behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/no-save",
+      "lastScraped": "2026-03-16T05:27:28.963Z",
+      "filePath": "en/behaviors/no-save.md"
+    },
+    {
+      "slug": "orbit",
+      "title": "Orbit behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/orbit",
+      "lastScraped": "2026-03-16T05:27:22.872Z",
+      "filePath": "en/behaviors/orbit.md"
+    },
+    {
+      "slug": "pathfinding",
+      "title": "Pathfinding behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pathfinding",
+      "lastScraped": "2026-03-16T05:27:09.008Z",
+      "filePath": "en/behaviors/pathfinding.md"
+    },
+    {
+      "slug": "persist",
+      "title": "Persist behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/persist",
+      "lastScraped": "2026-03-16T05:27:30.938Z",
+      "filePath": "en/behaviors/persist.md"
+    },
+    {
+      "slug": "physics",
+      "title": "Physics",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/physics",
+      "lastScraped": "2026-03-16T05:27:24.740Z",
+      "filePath": "en/behaviors/physics.md"
+    },
+    {
+      "slug": "pin",
+      "title": "Pin behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pin",
+      "lastScraped": "2026-03-16T05:27:12.980Z",
+      "filePath": "en/behaviors/pin.md"
+    },
+    {
+      "slug": "platform",
+      "title": "Platform behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/platform",
+      "lastScraped": "2026-03-16T05:26:44.919Z",
+      "filePath": "en/behaviors/platform.md"
+    },
+    {
+      "slug": "scroll-to",
+      "title": "Scroll To behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/scroll-to",
+      "lastScraped": "2026-03-16T05:26:56.803Z",
+      "filePath": "en/behaviors/scroll-to.md"
+    },
+    {
+      "slug": "shadow-caster",
+      "title": "Shadow caster behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/shadow-caster",
+      "lastScraped": "2026-03-16T05:27:26.832Z",
+      "filePath": "en/behaviors/shadow-caster.md"
+    },
+    {
+      "slug": "sine",
+      "title": "Sine behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/sine",
+      "lastScraped": "2026-03-16T05:27:17.105Z",
+      "filePath": "en/behaviors/sine.md"
+    },
+    {
+      "slug": "solid",
+      "title": "Solid behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/solid",
+      "lastScraped": "2026-03-16T05:26:46.884Z",
+      "filePath": "en/behaviors/solid.md"
+    },
+    {
+      "slug": "timer",
+      "title": "Timer behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/timer",
+      "lastScraped": "2026-03-16T05:27:05.111Z",
+      "filePath": "en/behaviors/timer.md"
+    },
+    {
+      "slug": "turret",
+      "title": "Turret behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/turret",
+      "lastScraped": "2026-03-16T05:27:20.944Z",
+      "filePath": "en/behaviors/turret.md"
+    },
+    {
+      "slug": "tween",
+      "title": "Tween",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/tween",
+      "lastScraped": "2026-03-16T05:27:03.141Z",
+      "filePath": "en/behaviors/tween.md"
+    },
+    {
+      "slug": "wrap",
+      "title": "Wrap behavior",
+      "category": "behaviors",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/wrap",
+      "lastScraped": "2026-03-16T05:27:19.057Z",
+      "filePath": "en/behaviors/wrap.md"
+    },
+    {
+      "slug": "actions",
+      "title": "Actions",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/actions",
+      "lastScraped": "2026-03-16T05:27:54.449Z",
+      "filePath": "en/project/actions.md"
+    },
+    {
+      "slug": "behaviors-overview",
+      "title": "Behaviors",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/behaviors",
+      "lastScraped": "2026-03-16T05:27:48.589Z",
+      "filePath": "en/project/behaviors-overview.md"
+    },
+    {
+      "slug": "comments",
+      "title": "Comments",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/comments",
+      "lastScraped": "2026-03-16T05:28:04.312Z",
+      "filePath": "en/project/comments.md"
+    },
+    {
+      "slug": "conditions",
+      "title": "Conditions",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/conditions",
+      "lastScraped": "2026-03-16T05:27:56.447Z",
+      "filePath": "en/project/conditions.md"
+    },
+    {
+      "slug": "effects-overview",
+      "title": "Effects",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/effects",
+      "lastScraped": "2026-03-16T05:27:50.522Z",
+      "filePath": "en/project/effects-overview.md"
+    },
+    {
+      "slug": "event-sheets",
+      "title": "Event sheets",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/event-sheets",
+      "lastScraped": "2026-03-16T05:27:52.531Z",
+      "filePath": "en/project/event-sheets.md"
+    },
+    {
+      "slug": "expressions",
+      "title": "Expressions",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/expressions",
+      "lastScraped": "2026-03-16T05:27:58.346Z",
+      "filePath": "en/project/expressions.md"
+    },
+    {
+      "slug": "families",
+      "title": "Families",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/families",
+      "lastScraped": "2026-03-16T05:27:46.578Z",
+      "filePath": "en/project/families.md"
+    },
+    {
+      "slug": "files",
+      "title": "Project files",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/files",
+      "lastScraped": "2026-03-16T05:28:14.370Z",
+      "filePath": "en/project/files.md"
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/functions",
+      "lastScraped": "2026-03-16T05:28:08.644Z",
+      "filePath": "en/project/functions.md"
+    },
+    {
+      "slug": "groups",
+      "title": "Event groups",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/groups",
+      "lastScraped": "2026-03-16T05:28:02.390Z",
+      "filePath": "en/project/groups.md"
+    },
+    {
+      "slug": "instance-variables",
+      "title": "Instance Variables",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instance-variables",
+      "lastScraped": "2026-03-16T05:27:44.240Z",
+      "filePath": "en/project/instance-variables.md"
+    },
+    {
+      "slug": "instances",
+      "title": "Object instances",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instances",
+      "lastScraped": "2026-03-16T05:27:42.331Z",
+      "filePath": "en/project/instances.md"
+    },
+    {
+      "slug": "layers",
+      "title": "Layers",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/layers",
+      "lastScraped": "2026-03-16T05:27:37.887Z",
+      "filePath": "en/project/layers.md"
+    },
+    {
+      "slug": "layouts",
+      "title": "Layouts",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/layouts",
+      "lastScraped": "2026-03-16T05:27:35.168Z",
+      "filePath": "en/project/layouts.md"
+    },
+    {
+      "slug": "object-types",
+      "title": "Object types",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/object-types",
+      "lastScraped": "2026-03-16T05:27:40.148Z",
+      "filePath": "en/project/object-types.md"
+    },
+    {
+      "slug": "project-structure",
+      "title": "Projects",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/projects",
+      "lastScraped": "2026-03-16T05:27:33.075Z",
+      "filePath": "en/project/project-structure.md"
+    },
+    {
+      "slug": "sounds-music",
+      "title": "Sounds and music",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/sounds-and-music",
+      "lastScraped": "2026-03-16T05:28:12.519Z",
+      "filePath": "en/project/sounds-music.md"
+    },
+    {
+      "slug": "sub-events",
+      "title": "Sub-events",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/sub-events",
+      "lastScraped": "2026-03-16T05:28:00.423Z",
+      "filePath": "en/project/sub-events.md"
+    },
+    {
+      "slug": "timelines",
+      "title": "Timelines",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines",
+      "lastScraped": "2026-03-16T05:28:10.525Z",
+      "filePath": "en/project/timelines.md"
+    },
+    {
+      "slug": "variables",
+      "title": "Event variables",
+      "category": "project",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/variables",
+      "lastScraped": "2026-03-16T05:28:06.331Z",
+      "filePath": "en/project/variables.md"
+    },
+    {
+      "slug": "script-instance",
+      "title": "Instance script interface",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance",
+      "lastScraped": "2026-03-16T05:28:25.709Z",
+      "filePath": "en/scripting/script-instance.md"
+    },
+    {
+      "slug": "script-objectclass",
+      "title": "Object class script interface",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass",
+      "lastScraped": "2026-03-16T05:28:23.726Z",
+      "filePath": "en/scripting/script-objectclass.md"
+    },
+    {
+      "slug": "script-runtime",
+      "title": "Runtime script interface",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/iruntime",
+      "lastScraped": "2026-03-16T05:28:21.680Z",
+      "filePath": "en/scripting/script-runtime.md"
+    },
+    {
+      "slug": "script-worldinstance",
+      "title": "WorldInstance script interface",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance",
+      "lastScraped": "2026-03-16T05:28:27.802Z",
+      "filePath": "en/scripting/script-worldinstance.md"
+    },
+    {
+      "slug": "scripting-reference",
+      "title": "Scripting reference",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference",
+      "lastScraped": "2026-03-16T05:28:19.473Z",
+      "filePath": "en/scripting/scripting-reference.md"
+    },
+    {
+      "slug": "using-scripting",
+      "title": "Welcome to the Construct 3 manual",
+      "category": "scripting",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting",
+      "lastScraped": "2026-03-16T05:28:16.848Z",
+      "filePath": "en/scripting/using-scripting.md"
+    },
+    {
+      "slug": "animations-editor",
+      "title": "The Animations Editor",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/animations-editor",
+      "lastScraped": "2026-03-16T05:28:38.132Z",
+      "filePath": "en/interface/animations-editor.md"
+    },
+    {
+      "slug": "debugger",
+      "title": "The Debugger",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger",
+      "lastScraped": "2026-03-16T05:28:44.242Z",
+      "filePath": "en/interface/debugger.md"
+    },
+    {
+      "slug": "event-sheet-view",
+      "title": "The Event Sheet View",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/event-sheet-view",
+      "lastScraped": "2026-03-16T05:28:31.802Z",
+      "filePath": "en/interface/event-sheet-view.md"
+    },
+    {
+      "slug": "layout-view",
+      "title": "The Layout View",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/layout-view",
+      "lastScraped": "2026-03-16T05:28:29.834Z",
+      "filePath": "en/interface/layout-view.md"
+    },
+    {
+      "slug": "project-bar",
+      "title": "The Project Bar",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/project-bar",
+      "lastScraped": "2026-03-16T05:28:33.888Z",
+      "filePath": "en/interface/project-bar.md"
+    },
+    {
+      "slug": "properties-bar",
+      "title": "The Properties Bar",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/properties-bar",
+      "lastScraped": "2026-03-16T05:28:35.967Z",
+      "filePath": "en/interface/properties-bar.md"
+    },
+    {
+      "slug": "tilemap-bar",
+      "title": "The Tilemap bar",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/tilemap-bar",
+      "lastScraped": "2026-03-16T05:28:40.192Z",
+      "filePath": "en/interface/tilemap-bar.md"
+    },
+    {
+      "slug": "z-order-bar",
+      "title": "The Z Order Bar",
+      "category": "interface",
+      "lang": "en",
+      "sourceUrl": "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/z-order-bar",
+      "lastScraped": "2026-03-16T05:28:42.196Z",
+      "filePath": "en/interface/z-order-bar.md"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "actions": [
+    {
+      "name": "Add obstacle",
+      "description": "If the Obstacles property is Custom, adds an object type to count as an obstruction to line-of-sight."
+    },
+    {
+      "name": "Clear obstacles",
+      "description": "If the Obstacles property is Custom, clears any object types added as obstacles with the Add obstacle action."
+    },
+    {
+      "name": "Set cone of view",
+      "description": "Sets the corresponding behavior properties. For more information, see Line-of-sight properties."
+    },
+    {
+      "name": "Set range",
+      "description": "Check for obstacle intersection between any two positions in the layout. This sets the Ray intersected condition true or false depending on if the ray intersected an obstacle; typically this can be checked in a sub-event after the action. If the ray did intersect an obstacle, the hit, normal and reflection expressions are set according to the obstacle that was hit.\n\nThis action ignores the range and cone of view properties, to allow raycasting anywhere in the layout."
+    },
+    {
+      "name": "Cast ray",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Has LOS to object",
+      "description": "Check if the object currently has line-of-sight to another object. For the condition to be true, the object must be within range, within the cone of view, and with no obstacles in the way of a straight line between the two objects. This condition also picks the instances of the chosen object that are in the line of sight. By default this checks if there is line-of-sight to the object origin, but you can optionally specify an image point instead."
+    },
+    {
+      "name": "Has LOS to position",
+      "description": "Check if the object currently has line-of-sight to a position in the layout. For the condition to be true, the object must be within range, within the cone of view, and with no obstacles in the way of a straight line between the two objects."
+    },
+    {
+      "name": "Has LOS between positions",
+      "description": "Check if there is line-of-sight between any two positions in the layout, instead of using the object's own position."
+    },
+    {
+      "name": "Ray intersected",
+      "description": "Use after a Cast ray action to determine if the ray intersected with any obstacle."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ConeOfView",
+      "description": "Retrieve the corresponding behavior properties. For more information, see Line-of-sight properties."
+    },
+    {
+      "name": "Range",
+      "description": "If Ray intersected is true, the position of the first obstacle the ray intersected, in layout co-ordinates."
+    },
+    {
+      "name": "HitX",
+      "description": "If Ray intersected is true, the distance between the ray start point and the hit position."
+    },
+    {
+      "name": "HitY",
+      "description": "If Ray intersected is true, the UID of the instance that was the first obstacle the ray intersected."
+    },
+    {
+      "name": "HitDistance",
+      "description": "If Ray intersected is true, the angle of the surface normal at the point of intersection, in degrees."
+    },
+    {
+      "name": "HitUID",
+      "description": "If Ray intersected is true, return a position at a given distance along the surface normal vector."
+    },
+    {
+      "name": "NormalAngle",
+      "description": "If Ray intersected is true, the angle of the reflection at the point of intersection, in degrees."
+    },
+    {
+      "name": "NormalX(length)",
+      "description": "If Ray intersected is true, return a position at a given distance along the reflection vector."
+    },
+    {
+      "name": "NormalY(length)",
+      "description": ""
+    },
+    {
+      "name": "ReflectionAngle",
+      "description": ""
+    },
+    {
+      "name": "ReflectionX(length)",
+      "description": ""
+    },
+    {
+      "name": "ReflectionY(length)",
+      "description": ""
+    }
+  ]
+}

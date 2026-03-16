@@ -1,0 +1,131 @@
+{
+  "actions": [
+    {
+      "name": "Set octaves",
+      "description": "Set the number of octaves used for coherent noise generation, from 1-16. The default is 1. This affects the Billow, Classic and Ridged expressions only. Using additional octaves adds layers of increasing detail to the noise functions, but is also slower to process."
+    },
+    {
+      "name": "Update seed",
+      "description": "Set a new seed for random number generation, using a string. Note if you pass an empty string, it still uses the empty string as the seed. If you want to go back to using a random seed, pass the RandomSeed expression as the seed to set."
+    },
+    {
+      "name": "Add gradient stop",
+      "description": "Adds a stop to the current gradient. Use after Create gradient to specify the gradient. The stop position can be any number, but is generally kept within the 0-1 range so it can be used with the random expressions. The stop value should be an expression of the form rgbEx(r, g, b) or rgba(r, g, b, a) when the gradient uses color mode; otherwise it can be a simple number. The default gradient is a simple black to white gradient, using rgbEx(0, 0, 0) at position 0 and rgbEx(100, 100, 100) at position 1."
+    },
+    {
+      "name": "Create gradient",
+      "description": "Create a new gradient. Multiple gradients can be managed by giving them different names. Creating a gradient also sets it as the current gradient, so this action can be immediately followed by Add gradient stop to specify the gradient. By default gradients work in color mode, which uses values based on the rgbEx or rgba expressions; however they can also be set to number mode which uses simple numbers."
+    },
+    {
+      "name": "Set gradient",
+      "description": "Set the current gradient by its name. This allows switching between multiple gradients."
+    },
+    {
+      "name": "Create permutation table",
+      "description": "Generate a randomly ordered sequence of numbers. Length is how many numbers to generate, and Offset is the first number in the sequence. For example a length of 3 with an offset of 1 will generate the numbers 1, 2 and 3, and then randomly shuffle them."
+    },
+    {
+      "name": "Shuffle permutation table",
+      "description": "Re-shuffle an existing permutation table."
+    },
+    {
+      "name": "Add probability entry",
+      "description": "Add an entry to the current probability table. The value can be a string or a number. The weight affects how likely the item is to be picked, relative to other item's weights."
+    },
+    {
+      "name": "Create probability table",
+      "description": "Create a new probability table, using a string to identify it."
+    },
+    {
+      "name": "Remove probability entry",
+      "description": "Remove an existing entry from the current probability table. If a weight of 0 is specified, the first entry with the given value is removed regardless of its weight. Otherwise an entry is only removed if it matches both the value and the weight."
+    },
+    {
+      "name": "Set probability table",
+      "description": "Set the current probability table from which weighted random values are taken."
+    },
+    {
+      "name": "Create probability table from JSON",
+      "description": "Create a new probability table from a JSON string. The input should be an array of [weight: number, value: number|string] tuples, e.g. [[1, \"Apple\"], [2, \"Banana\"], [3, \"Carrot\"]]."
+    }
+  ],
+  "conditions": [],
+  "expressions": [
+    {
+      "name": "Billow2d(x, y)",
+      "description": "Generate a random number using billow noise in the range 0-1, using either 2D or 3D co-ordinates."
+    },
+    {
+      "name": "Billow3d(x, y, z)",
+      "description": "Generate a random number using cellular noise in the range 0-1, using either 2D or 3D co-ordinates."
+    },
+    {
+      "name": "Cellular2d(x, y)",
+      "description": "Generate a random number using classic (perlin) noise in the range 0-1, using either 2D or 3D co-ordinates."
+    },
+    {
+      "name": "Cellular3d(x, y, z)",
+      "description": "Generate a random number in the range [0, 1) using the current seed. This allows generating random numbers with a predictable sequence even when Replace system random is not used."
+    },
+    {
+      "name": "Classic2d(x, y)",
+      "description": "Generate a random seed string that can be used to set the seed, restoring an unpredictable number sequence."
+    },
+    {
+      "name": "Classic3d(x, y, z)",
+      "description": "Generate a random number using ridged noise in the range 0-1, using either 2D or 3D co-ordinates."
+    },
+    {
+      "name": "Random",
+      "description": "The currently set seed, as a string."
+    },
+    {
+      "name": "RandomSeed",
+      "description": "Generate a random number using Voronoi noise in the range 0-1, using either 2D or 3D co-ordinates."
+    },
+    {
+      "name": "Ridged2d(x, y)",
+      "description": "Sample a gradient at the given position. This returns a color value for color mode gradients, otherwise a simple number. The Gradient variant refers to the current gradient, whereas the GradientByName variant refers to any gradient using a case-insensitive string of its name."
+    },
+    {
+      "name": "Ridged3d(x, y, z)",
+      "description": "Get a value at a zero-based index in the permutation table, from 0 (for the first item) up to but not including the length of the table."
+    },
+    {
+      "name": "Seed",
+      "description": "Get a random value from a probability table. The relative likelihood of values is affected by their weight. The Weighted variant refers to the current probability table, whereas the WeightedByName variant refers to any probability table using a case-insensitive string of its name."
+    },
+    {
+      "name": "Voronoi2d(x, y)",
+      "description": "Get the current probability table as a JSON string. This can be read back using the Create probability table from JSON action."
+    },
+    {
+      "name": "Voronoi3d(x, y, z)",
+      "description": ""
+    },
+    {
+      "name": "Gradient(Position)",
+      "description": ""
+    },
+    {
+      "name": "GradientByName(Name, Position)",
+      "description": ""
+    },
+    {
+      "name": "Permutation",
+      "description": ""
+    },
+    {
+      "name": "Weighted",
+      "description": ""
+    },
+    {
+      "name": "WeightedByName(Name)",
+      "description": ""
+    },
+    {
+      "name": "ProbabilityTableAsJSON",
+      "description": ""
+    }
+  ]
+}

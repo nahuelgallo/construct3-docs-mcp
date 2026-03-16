@@ -1,0 +1,84 @@
+{
+  "actions": [
+    {
+      "name": "Lock keyboard",
+      "description": "Request to lock the keyboard so key presses are always received by the project, rather than the browser/application (such as to activating browser keyboard shortcuts). For example if WASD controls are used to move an object, and the Control key is also used for another purpose, it is easy to accidentally press Ctrl+W, which is a keyboard shortcut to close the current browser tab. If the WASD keys are locked, then Ctrl+W will act as a normal keyboard input to the project and not activate the browser shortcut. The keys to lock are specified by a string of key names separated by commas, e.g. \"KeyW,KeyA,KeyS,KeyD\" for the WASD keys - a full list of key names can be found on this MDN page. Pass an empty string to request to lock all keys. Requesting to lock the keyboard may show a permission prompt to the user, as it is a security-sensitive feature. Further, it only works in fullscreen mode, i.e. after using Request fullscreen in the Browser plugin. If keyboard lock is successfully enabled, On keyboard locked triggers; otherwise On keyboard lock error triggers. The condition Is keyboard lock supported checks if this action is supported by the current browser/platform."
+    },
+    {
+      "name": "Unlock keyboard",
+      "description": "If the keyboard was previously locked, this action unlocks it again, restoring the normal handling of key presses (where the browser/application may handle some key presses)."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Key code is down",
+      "description": "True if a given key by its key code is currently being held down."
+    },
+    {
+      "name": "On key code pressed",
+      "description": "Triggered when a specific key code is pressed."
+    },
+    {
+      "name": "On key code released",
+      "description": "Triggered when a specific key code is released."
+    },
+    {
+      "name": "Key is down",
+      "description": "True if a given keyboard key is currently being held down."
+    },
+    {
+      "name": "On any key pressed",
+      "description": "Triggered when any keyboard key is pressed. Useful for title screens or cutscenes. The corresponding key code is set in the LastKeyCode expression."
+    },
+    {
+      "name": "On any key released",
+      "description": "Triggered when any keyboard key is released. The corresponding key code is set in the LastKeyCode expression."
+    },
+    {
+      "name": "On key pressed",
+      "description": "Triggered when a specific keyboard key is pressed."
+    },
+    {
+      "name": "On key released",
+      "description": "Triggered when a specific keyboard key is released."
+    },
+    {
+      "name": "Is keyboard lock supported",
+      "description": "True if the current browser/platform supports using keyboard lock with the Lock keyboard action."
+    },
+    {
+      "name": "On keyboard locked",
+      "description": "Triggered after the Lock keyboard action depending on whether the attempt to lock the keyboard completed successfully. If the keyboard is now locked, On keyboard locked is triggered; if locking the keyboard failed (including the user declining a permission prompt), On keyboard lock error is triggered."
+    },
+    {
+      "name": "On keyboard lock error",
+      "description": "As per Is key down, On key pressed and On key released, but is able to identify the left or right Shift, Control, Alt or Meta keys separately."
+    },
+    {
+      "name": "Left/right key is down",
+      "description": ""
+    },
+    {
+      "name": "On left/right key pressed",
+      "description": ""
+    },
+    {
+      "name": "On left/right key released",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "LastKeyCode",
+      "description": "Retrieve the key code of the last key press. This is useful in On any key pressed or On any key released to determine the key code of the key the user pressed, which is useful when setting up custom controls."
+    },
+    {
+      "name": "StringFromKeyCode",
+      "description": "Convert a numerical key code back in to a string representation. For example this turns the key code 65 in to the string \"A\"."
+    },
+    {
+      "name": "TypedKey",
+      "description": "Return the last key press as the character that would have been entered in to a text field. For example when pressing A, this could be \"a\", \"A\", \"á\" or something else, depending on which other keys are held down. If the last key press is not a typed character, like Shift, then the expression is set to the name of the key."
+    }
+  ]
+}

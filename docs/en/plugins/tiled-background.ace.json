@@ -1,0 +1,108 @@
+{
+  "actions": [
+    {
+      "name": "Set image angle",
+      "description": "Change the Image angle property, rotating the displayed Tiled Background image by a number of degrees."
+    },
+    {
+      "name": "Set image X offset",
+      "description": "Change the Image offset X and Image offset Y properties, offsetting the displayed tiled background image.\n\nAvoid indefinitely increasing the image offset, such as by always adding to it. In some cases a very large image offset can start to exhibit rendering glitches due to precision issues on the GPU. You can avoid this by wrapping the image offset back to 0 after it exceeds the image size."
+    },
+    {
+      "name": "Set image Y offset",
+      "description": "Change the Image scale X and Image scale Y properties, stretching the displayed tiled background image by a percentage on each axis."
+    },
+    {
+      "name": "Set image X scale",
+      "description": "Set whether tile randomization is currently enabled. See the Enable tile randomization property for more details."
+    },
+    {
+      "name": "Set image Y scale",
+      "description": "When tile randomization is enabled, set the relevant tile randomization properties. See the corresponding properties above for more details."
+    },
+    {
+      "name": "Set tile randomization enabled",
+      "description": "Load an image from a given URL. It is not shown until the image has finished downloading, and On image URL loaded triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the AJAX object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image."
+    },
+    {
+      "name": "Set angle random",
+      "description": ""
+    },
+    {
+      "name": "Set position random",
+      "description": ""
+    },
+    {
+      "name": "Set tile blend margin",
+      "description": ""
+    },
+    {
+      "name": "Load image from URL",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is tile randomization enabled",
+      "description": "True if tile randomization is currently enabled. See the Enable tile randomization property for more details."
+    },
+    {
+      "name": "On image URL loaded",
+      "description": "Triggered when Load image from URL finishes downloading the image and is ready to display it, or if the load fails."
+    },
+    {
+      "name": "On image URL failed to load",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ImageWidth",
+      "description": "The original dimensions of the tiled background's current image in pixels. Since tiled backgrounds can be extended over large areas causing the normal Width and Height expressions to return different values, these can be used to get the original size of the source image regardless of the object size."
+    },
+    {
+      "name": "ImageHeight",
+      "description": "Return the Image angle property, in degrees."
+    },
+    {
+      "name": "ImageAngle",
+      "description": "Return the Image offset X and Image offset Y properties, in pixels."
+    },
+    {
+      "name": "ImageOffsetX",
+      "description": "Return the Image scale X and Image scale Y properties, as a percentage."
+    },
+    {
+      "name": "ImageOffsetY",
+      "description": "These expressions return the current tile randomization settings. See the corresponding properties above for more details."
+    },
+    {
+      "name": "ImageScaleX",
+      "description": ""
+    },
+    {
+      "name": "ImageScaleY",
+      "description": ""
+    },
+    {
+      "name": "TileAngleRandom",
+      "description": ""
+    },
+    {
+      "name": "TileBlendMarginX",
+      "description": ""
+    },
+    {
+      "name": "TileBlendMarginY",
+      "description": ""
+    },
+    {
+      "name": "TileXRandom",
+      "description": ""
+    },
+    {
+      "name": "TileYRandom",
+      "description": ""
+    }
+  ]
+}

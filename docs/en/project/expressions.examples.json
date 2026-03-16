@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Code example",
+    "code": "random(360)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "(Player1.X + Player2.X) / 2",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite.8Direction.Speed",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite.X + cos(Sprite.Angle) * Sprite.Speed * dt",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"He said \"\"hi\"\" to me\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"Your score is: \" & score",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"Hello\" & newline & \"world\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "StringSub(\"Hi {0}, your score is {1}!\", \"Sam\", 100)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"Your score is: \" & score",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "score < 10",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "condition ? result_if_true : result_if_false",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "score < 0 ? \"Game over!\" : \"Keep going!\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "score < 0 | health < 0",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "value = 1 | 2",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "(value = 1) | 2",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "value = (1 | 2)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "value = 1 | value = 2",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite(0).X",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite(1).X",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite(-1).X",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Object.Behavior.Expression",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Sprite.8Direction.Speed",
+    "language": "javascript"
+  }
+]

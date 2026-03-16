@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Code example",
+    "code": "[b]Hello[/b]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[font=Arial]Hello[/font]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[b]bold text[/b]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[i]italic text[/i]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[u]underline text[/u]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[s]strikethrough text[/s]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[size=20]change font size (in pt)[/size]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[font=Arial]change font face[/font]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[color=#ff0000]change text color[/color]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[opacity=50]change text opacity[/opacity]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[hide]invisible text[/hide]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[background=#ff0000]change background color[/background]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[offsetx=10]offset X[/offsetx]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[offsety=10]offset Y[/offsety]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[offsety=50%]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[stroke]stroke text[/stroke]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[outline=#ff0000]outlined text (on top)[/outline]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[outlineback=#ff0000]outlined text (underneath)[/outline]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[lineThickness=2]change line thickness[/lineThickness]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[icon=tag]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[iconoffsety=50%]icon offset Y[/iconoffsety]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[tag=mytag]tag a range of text[/tag]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[insert]inserted text[/insert]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "The [tag=mytag]quick brown fox[/tag] jumps over the lazy dog",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-{0} line-numbers match-braces\">The quick brown\nfox jumps over\nthe lazy dog</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "The [tag=mytag]quick [b]brown[/b] fox[/tag] jumps over the lazy dog",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Hello [tag=mytag]world[/tag]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "rgb(red, green, blue)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "len(Self.PlainText) / 10",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[b]Hello[/b]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Hello [tag=mytag]world[/tag]",
+    "language": "javascript"
+  }
+]

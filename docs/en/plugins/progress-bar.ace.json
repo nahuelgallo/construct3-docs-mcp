@@ -1,0 +1,40 @@
+{
+  "actions": [
+    {
+      "name": "Make indeterminate",
+      "description": "Set the progress bar in to an indeterminate mode, intended to indicate that it is working, but the progress is unknown. The display of this mode depends on the browser and platform. Not all browsers may support an indeterminate mode for progress bars."
+    },
+    {
+      "name": "Set maximum",
+      "description": "Set the maximum progress value for the progress bar."
+    },
+    {
+      "name": "Set progress",
+      "description": "Set the current progress value displayed by the progress bar, from 0 to the maximum."
+    },
+    {
+      "name": "Set tooltip",
+      "description": "Set the tooltip that appears when the mouse hovers over the control."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare progress",
+      "description": "Compare the currently set progress amount."
+    },
+    {
+      "name": "On clicked",
+      "description": "Triggered when the progress bar control is clicked."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Maximum",
+      "description": "The currently set maximum progress value."
+    },
+    {
+      "name": "Progress",
+      "description": "The currently set progress amount, if the bar is not in indeterminate mode."
+    }
+  ]
+}

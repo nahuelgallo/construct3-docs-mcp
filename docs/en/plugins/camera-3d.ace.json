@@ -1,0 +1,187 @@
+{
+  "actions": [
+    {
+      "name": "Look at position",
+      "description": "Set the position and orientation of the 3D Camera using a camera position, a position for the camera to look towards, and an up vector. The camera and look-at positions are given as 3D co-ordinates. The up vector is a 3D vector specifying which way is up, as this is also necessary to determine how to orient the camera towards the look-at position. The default up vector is (0, 1, 0), i.e. up is the positive direction on the Y axis, suitable for a top-down view."
+    },
+    {
+      "name": "Look parallel to layout",
+      "description": "Set the position and orientation of the 3D Camera using a camera position and a camera angle in degrees. Whereas the default view is top-down, this sets a camera position looking along the layout, such that the layout appears as the floor at the bottom of the screen. This is a shortcut for using the Look at position action looking towards a 2D angle with an up vector of (0, 0, 1)."
+    },
+    {
+      "name": "Move along camera axis",
+      "description": "Move the camera position, the look position, or both, a distance along an axis relative to the current camera orientation. The distance can be negative, for example to move left when the specified axis is Right.\n\nNote the scale on the Z axis can be different to the X and Y axes."
+    },
+    {
+      "name": "Move along layout axis",
+      "description": "Move the camera position, the look position, or both, a distance along an axis relative to the layout. The distance can be negative, for example to move left when the specified axis is X.\n\nNote the scale on the Z axis can be different to the X and Y axes."
+    },
+    {
+      "name": "Restore 2D camera",
+      "description": "Restore the camera to its default 2D behavior, using the standard scrolling features to move the view."
+    },
+    {
+      "name": "Rotate camera",
+      "description": "Moves the camera look-at position according to X and Y rotations in degrees. Note that a 3D Camera must first have been enabled using the Look at position, Look parallel to layout or Set position actions, since these also define the starting orientation that this action rotates around. Typically the rotation values will be provided by the Mouse object's MovementX and MovementY expressions in an On movement trigger to achieve \"mouse look\" - see First-person platformer for an example of this."
+    },
+    {
+      "name": "Set field of view",
+      "description": "Set the angle of the field of view in degrees. Note this only has an effect when Z Axis scale is set to Regular in Project Properties. The default field of view is also set in Project Properties."
+    },
+    {
+      "name": "Set position",
+      "description": "Set the camera position or the look position to a 3D co-ordinate. This can be used to control the camera or look positions independently without having to always specify both, such as to move the camera while using mouse look to control the look direction."
+    }
+  ],
+  "conditions": [],
+  "expressions": [
+    {
+      "name": "CameraX",
+      "description": "Get the current 3D position of the camera."
+    },
+    {
+      "name": "CameraY",
+      "description": "Get the current 3D position of the position the camera is pointing at."
+    },
+    {
+      "name": "CameraZ",
+      "description": "Get the current vector of the direction the camera is pointing in, including camera rotation (i.e. changes applied with the Rotate camera action for purposes like mouse look)."
+    },
+    {
+      "name": "LookX",
+      "description": "The number of pixels per unit on the Z axis. See Z scale under 3D Camera properties for more details."
+    },
+    {
+      "name": "LookY",
+      "description": "The default position of the camera on the Z axis, producing 2D rendering at 100% scale on the layout. See Z scale under 3D Camera properties for more details."
+    },
+    {
+      "name": "LookZ",
+      "description": "The current field of view in degrees. This is only applicable when Z axis scale is set to Regular."
+    },
+    {
+      "name": "LookVectorX",
+      "description": "Transform a position in canvas co-ordinates to layer co-ordinates on a Z plane given by layerZ. This is similar to the system expressions of the same name, but working in 3D."
+    },
+    {
+      "name": "LookVectorY",
+      "description": "Transform a position in 3D layer co-ordinates to 2D canvas co-ordinates. This is similar to the system expressions of the same name, but working in 3D."
+    },
+    {
+      "name": "LookVectorZ",
+      "description": "Calculate the 2D position on a second layer (toLayer) that corresponds to a 3D position given on a first layer (fromLayer). This is similar to the system expressions of the same name, but working in 3D."
+    },
+    {
+      "name": "ZScale",
+      "description": "Return the X and Y position in layer co-ordinates of the four corners of the visible viewport, taking in to account the layer's Z elevation. These expressions are similar to the viewport system expressions, but when using a 3D camera the viewport area can be an irregular quadrilateral instead of a simple 2D rectangle, so these expressions provide four separate positions.\n\nThese expressions can return NaN (Not A Number) if a corner of the viewport does not intersect the layer plane."
+    },
+    {
+      "name": "DefaultCameraZ",
+      "description": "Return the X and Y rotation of the camera in degrees, as set by the Rotate camera action."
+    },
+    {
+      "name": "FieldOfView",
+      "description": "Returns a 3D unit vector pointing in the direction of the camera. Note this does not include camera rotation. Use the LookVectorX/Y/Z expressions to get the vector of the direction the camera is pointing in including camera rotation."
+    },
+    {
+      "name": "CanvasToLayerX(layer, x, y, layerZ)",
+      "description": "Returns a 3D unit vector pointing to the right of the camera, perpendicular to the forward vector."
+    },
+    {
+      "name": "CanvasToLayerY(layer, x, y, layerZ)",
+      "description": "Returns a 3D unit vector for the camera up vector, which helps determine the camera orientation. Note this is recomputed from the given camera and look positions, so may not be exactly the same as the up vector given in the Look at position action."
+    },
+    {
+      "name": "LayerToCanvasX(layer, x, y, z)",
+      "description": ""
+    },
+    {
+      "name": "LayerToCanvasY(layer, x, y, z)",
+      "description": ""
+    },
+    {
+      "name": "LayerToLayerX(fromLayer, toLayer, x, y, z)",
+      "description": ""
+    },
+    {
+      "name": "LayerToLayerY(fromLayer, toLayer, x, y, z)",
+      "description": ""
+    },
+    {
+      "name": "ViewportBottomLeftX(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportBottomLeftY(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportBottomRightX(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportBottomRightY(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportTopLeftX(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportTopLeftY(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportTopRightX(layer)",
+      "description": ""
+    },
+    {
+      "name": "ViewportTopRightY(layer)",
+      "description": ""
+    },
+    {
+      "name": "CameraXRotation",
+      "description": ""
+    },
+    {
+      "name": "CameraYRotation",
+      "description": ""
+    },
+    {
+      "name": "ForwardX",
+      "description": ""
+    },
+    {
+      "name": "ForwardY",
+      "description": ""
+    },
+    {
+      "name": "ForwardZ",
+      "description": ""
+    },
+    {
+      "name": "RightX",
+      "description": ""
+    },
+    {
+      "name": "RightY",
+      "description": ""
+    },
+    {
+      "name": "RightZ",
+      "description": ""
+    },
+    {
+      "name": "UpX",
+      "description": ""
+    },
+    {
+      "name": "UpY",
+      "description": ""
+    },
+    {
+      "name": "UpZ",
+      "description": ""
+    }
+  ]
+}

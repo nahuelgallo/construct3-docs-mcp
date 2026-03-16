@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "getFirstInstance()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.objects.Sprite.getFirstInstance()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "addEventListener",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "isEndingLayout",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "new C3.Event(eventName, isCancellable)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "new C3.Event(\"click\", true)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">const e = new C3.Event(\"click\", true);\nthis.GetScriptInterface().dispatchEvent(e);\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "this.runtime",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "instance.instVars.health",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "instance.instVars[\"health\"]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "instance.behaviors.Bullet",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "instance.behaviors[\"8Direction\"]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "getInstanceByUid()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "destroyMultiple()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "restoreTimeScale()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "waitForSignal()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "inst.callCustomAction(name, ...params)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "inst.objectType.callCustomAction(name, [inst], ...params)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "callCustomAction()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "callCustomAction()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "callCustomAction()",
+    "language": "javascript"
+  }
+]

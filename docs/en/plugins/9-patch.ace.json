@@ -1,0 +1,68 @@
+{
+  "actions": [
+    {
+      "name": "Set edges",
+      "description": "Set the corresponding properties - see the section above for more details. Each of these settings can be changed on a per-instance basis."
+    },
+    {
+      "name": "Set fill",
+      "description": "Set the corresponding margin properties - see the section above for more details. By default all 9-patch instances share the same set of patch images, and so changing the margins will affect all instances, regardless of which instances were affected by the event's conditions. However the exception to this is after using the Load image from URL action, in which case the instance is using its own unique patch images, and the margins can then be changed for that instance only. Be sure to wait for Load image from URL to finish using the Wait for previous actions to complete system action before setting margins. If you try to set margins without waiting for the image load to complete, then it will still be using the shared patch images, and setting the margins will still affect all instances."
+    },
+    {
+      "name": "Set image X scale",
+      "description": "Load an image from a given URL. It is not shown until the image has finished downloading. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the AJAX object. Data or blob URIs can also be passed as an image, e.g. from a canvas snapshot or camera image. Once this action has finished, the Set margins action can be used to set new margins for the loaded image, but note that to avoid affecting other instances, the image load must have first completed successfully (either triggering On image URL loaded or after using Wait for previous actions to complete)."
+    },
+    {
+      "name": "Set image Y scale",
+      "description": ""
+    },
+    {
+      "name": "Set seams",
+      "description": ""
+    },
+    {
+      "name": "Set margins",
+      "description": ""
+    },
+    {
+      "name": "Load image from URL",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "On image URL loaded",
+      "description": "Triggered when Load image from URL finishes downloading the image and is ready to display it, or if the load fails."
+    },
+    {
+      "name": "On image URL failed to load",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "LeftMargin",
+      "description": "Return the corresponding margin properties used by the instance. See the notes about per-instance margins in the Set margins action."
+    },
+    {
+      "name": "RightMargin",
+      "description": "Return the current image scale properties as a percentage, with 100 representing 100% (normal) scale."
+    },
+    {
+      "name": "TopMargin",
+      "description": ""
+    },
+    {
+      "name": "BottomMargin",
+      "description": ""
+    },
+    {
+      "name": "ImageScaleX",
+      "description": ""
+    },
+    {
+      "name": "ImageScaleY",
+      "description": ""
+    }
+  ]
+}

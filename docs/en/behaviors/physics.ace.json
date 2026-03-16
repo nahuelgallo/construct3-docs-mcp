@@ -1,0 +1,87 @@
+{
+  "actions": [],
+  "conditions": [
+    {
+      "name": "Compare angular velocity",
+      "description": "Compare the current angular velocity of the physics body, in degrees per second. A positive value indicates clockwise rotation and a negative value indicates anticlockwise rotation."
+    },
+    {
+      "name": "Compare mass",
+      "description": "Compare the mass of the physics body. This is determined by multiplying the Density by the area of the object's collision polygon."
+    },
+    {
+      "name": "Compare velocity",
+      "description": "Compare the current velocity (speed) of the physics body, in pixels per second. The velocity can be compared on an individual axis, such as just the X axis to compare the horizontal motion, or the overall velocity can be used."
+    },
+    {
+      "name": "Is enabled",
+      "description": "True if the physics behavior is currently enabled. When disabled the physics body is completely removed from the physics simulation, so other physics objects will pass through the object."
+    },
+    {
+      "name": "Is immovable",
+      "description": "True if the physics behavior is currently set to immovable (having an infinite mass and so never moving)."
+    },
+    {
+      "name": "Is sleeping",
+      "description": "True if the object has been at rest and not moved or been disturbed for a while, so that the physics engine can stop processing it. Note objects can still be moving imperceptibly which can prevent them from being asleep even when they appear to be stopped."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "AngularVelocity",
+      "description": "The current angular velocity (rate of rotation) of the physics object, in degrees per second."
+    },
+    {
+      "name": "CenterOfMassX",
+      "description": "The position of the center of mass of the physics object, as calculated by the physics engine. This depends on the collision mask property, and is not necessarily in the middle of the object."
+    },
+    {
+      "name": "CenterOfMassY",
+      "description": "Return the number of locations the physics engine has identified this object as touching other physics objects."
+    },
+    {
+      "name": "ContactCount",
+      "description": "Return the position of a contact with another physics object, in layout co-ordinates, given by the zero-based index of the contact."
+    },
+    {
+      "name": "ContactXAt(index)",
+      "description": "The mass of the physics object, as calculated by the physics engine. This is the area of the object's collision mask multiplied by its density."
+    },
+    {
+      "name": "ContactYAt(index)",
+      "description": "The current speed of the physics object, in pixels per second."
+    },
+    {
+      "name": "Mass",
+      "description": "These return the corresponding properties. For more information, see Physics properties."
+    },
+    {
+      "name": "VelocityX",
+      "description": ""
+    },
+    {
+      "name": "VelocityY",
+      "description": ""
+    },
+    {
+      "name": "AngularDamping",
+      "description": ""
+    },
+    {
+      "name": "Density",
+      "description": ""
+    },
+    {
+      "name": "Elasticity",
+      "description": ""
+    },
+    {
+      "name": "Friction",
+      "description": ""
+    },
+    {
+      "name": "LinearDamping",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Code example",
+    "code": "--construct-scale",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "height: calc(var(--construct-scale) * 2em);",
+    "language": "javascript"
+  }
+]

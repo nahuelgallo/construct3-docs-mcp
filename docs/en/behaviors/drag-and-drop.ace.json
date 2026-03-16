@@ -1,0 +1,35 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the Drag & Drop behavior. If disabled, clicking or touching the object has no effect and the object cannot be dragged. It also becomes 'transparent' to clicks and touches, meaning other objects underneath it can still be dragged and dropped. If the object is being dragged when it is disabled, the drag is cancelled, but On drop will not trigger."
+    },
+    {
+      "name": "Set axes",
+      "description": "Set the Axes property, allowing changing which axes movement is limited to."
+    },
+    {
+      "name": "Drop",
+      "description": "Stop dragging the object if it is currently being dragged. This also triggers On drop."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is dragging",
+      "description": "True if the object is currently being dragged by mouse or touch."
+    },
+    {
+      "name": "Is enabled",
+      "description": "True if the behavior is currently enabled; false if disabled by the Set enabled action."
+    },
+    {
+      "name": "On drag start",
+      "description": "Triggered when the object is clicked or touched inside its collision polygon."
+    },
+    {
+      "name": "On drop",
+      "description": "Triggered when the object is being dragged, and the mouse button is released or the touch ends."
+    }
+  ],
+  "expressions": []
+}

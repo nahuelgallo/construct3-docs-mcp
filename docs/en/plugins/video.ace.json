@@ -1,0 +1,84 @@
+{
+  "actions": [
+    {
+      "name": "Pause",
+      "description": "Pause the video playback if it is currently playing."
+    },
+    {
+      "name": "Play",
+      "description": "Start playing the video. On some platforms this can only happen in a user input event. For more information, see the section on Compatibility."
+    },
+    {
+      "name": "Set looping",
+      "description": "Set whether the video is looping, so that it restarts from the beginning when it reaches the end."
+    },
+    {
+      "name": "Set muted",
+      "description": "Set whether the audio playback from the video is muted (inaudible) or unmuted."
+    },
+    {
+      "name": "Set playback rate",
+      "description": "Set how fast the video playback proceeds, as a multiplier of its original speed. That means 1 is the original speed, 2 is twice as fast, 0.5 is half as fast, etc."
+    },
+    {
+      "name": "Set playback time",
+      "description": "Set the video playback time to a specific time in seconds (i.e. seek to the given time). Due to the way video encoding technologies work, the video may only be able to seek close to but not exactly on the specified time."
+    },
+    {
+      "name": "Set source",
+      "description": "Set a different video file to play. As with the object properties, different primary and secondary formats can be specified. Setting the source does not automatically start playing the video; use the Play action to start it after changing the source."
+    },
+    {
+      "name": "Set volume",
+      "description": "Set the volume of the audio playback from the video, in decibels attenuation. 0 is full volume, -10 dB is approximately half as loud, etc. The audio cannot be amplified: positive volume values will be treated as 0."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Has ended",
+      "description": "True if the video playback has reached the end of the video and stopped."
+    },
+    {
+      "name": "Is muted",
+      "description": "True if the audio playback from the video has been muted."
+    },
+    {
+      "name": "Is paused",
+      "description": "True if the video playback has been paused."
+    },
+    {
+      "name": "Is playing",
+      "description": "True if the video playback is actively playing."
+    },
+    {
+      "name": "On playback event",
+      "description": "Triggers when a playback event occurs. This can be one of:\n\n\n\n\tCan play: triggered when enough data is available to play at least a couple of frames, but there may not be enough data to play through to the end.\n\n\tCan play through: triggered when the browser determines that the load progress and transfer rate are sufficient for playback through to the end without stalling for buffering. However this is not a guarantee, since the transfer rate could drop or be cut off completely.\n\n\tEnded: triggered when playback reaches the end of the video.\n\n\tError: triggered if an error occurs during video loading, decoding or playback.\n\n\tStarted loading: triggered when the browser begins loading video data.\n\n\tPlayed: triggered when playback begins.\n\n\tPaused: triggered upon pausing the video playback.\n\n\tStalled: triggered if the video download rate is too slow to keep up the current playback rate. This will cause the video to pause while it finishes loading the rest of the video, also known as buffering."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Duration",
+      "description": "The video duration in seconds, if the video has loaded enough for this to be determined."
+    },
+    {
+      "name": "PlaybackRate",
+      "description": "The current playback rate as set by the Set playback rate action, as a multiplier of the original rate (e.g. 1 is original speed, 2 is twice as fast, etc)."
+    },
+    {
+      "name": "PlaybackTime",
+      "description": "The current playback time in seconds."
+    },
+    {
+      "name": "VideoWidth",
+      "description": "The dimensions of the source video, in pixels."
+    },
+    {
+      "name": "VideoHeight",
+      "description": "The current audio playback volume in dB attenuation."
+    },
+    {
+      "name": "Volume",
+      "description": ""
+    }
+  ]
+}

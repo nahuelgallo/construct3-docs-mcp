@@ -1,0 +1,52 @@
+{
+  "actions": [
+    {
+      "name": "Restart fade",
+      "description": "Run the entire fade from the beginning again."
+    },
+    {
+      "name": "Set fade-in time",
+      "description": "Set the corresponding properties described under Fade properties."
+    },
+    {
+      "name": "Set fade-out time",
+      "description": "If the Enabled property is disabled, this will begin the fade."
+    },
+    {
+      "name": "Set wait time",
+      "description": ""
+    },
+    {
+      "name": "Start fade",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "On fade-in finished",
+      "description": "Triggered when each stage of the fade finishes."
+    },
+    {
+      "name": "On wait finished",
+      "description": ""
+    },
+    {
+      "name": "On fade-out finished",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "FadeInTime",
+      "description": "Return the corresponding properties described under Fade properties."
+    },
+    {
+      "name": "FadeOutTime",
+      "description": ""
+    },
+    {
+      "name": "WaitTime",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "actions": [],
+  "conditions": [
+    {
+      "name": "On wrap",
+      "description": "Triggered when the object position is changed by wrapping. For example if the object goes past the right edge of the wrap area and so is repositioned to the left of the wrap area, then On wrap will trigger."
+    }
+  ],
+  "expressions": []
+}

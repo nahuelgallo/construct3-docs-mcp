@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Code example",
+    "code": "\"out-sine\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-sine\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-elastic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-elastic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-elastic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-back\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-back\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-bounce\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-bounce\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-bounce\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-cubic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-cubic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-cubic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-quadratic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-quadratic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-quadratic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-quartic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-quartic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-quartic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-quintic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-quintic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-quintic\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-circular\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-circular\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-circular\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-exponential\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"out-exponential\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"in-out-exponential\"",
+    "language": "javascript"
+  }
+]

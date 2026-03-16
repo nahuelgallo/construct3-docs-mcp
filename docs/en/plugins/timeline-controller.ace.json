@@ -1,0 +1,136 @@
+{
+  "actions": [
+    {
+      "name": "Play",
+      "description": "Start playing a timeline, with tags to identify this playback."
+    },
+    {
+      "name": "Play all",
+      "description": "Play all the timelines in the layout."
+    },
+    {
+      "name": "Pause",
+      "description": "Pause a timeline by its tag. Paused timelines can subsequently be resumed."
+    },
+    {
+      "name": "Pause all",
+      "description": "Pause all currently playing timelines."
+    },
+    {
+      "name": "Resume",
+      "description": "Resume a paused timeline by its tag."
+    },
+    {
+      "name": "Resume all",
+      "description": "Resume all paused timelines."
+    },
+    {
+      "name": "Stop",
+      "description": "Stop a timeline and reset it to its initial state."
+    },
+    {
+      "name": "Stop all",
+      "description": "Stop all timelines, resetting them all to their initial state."
+    },
+    {
+      "name": "Set time",
+      "description": "Set the current playback time of a timeline in seconds. Note: you can also use a string with a keyframe tag for the Time parameter, in which case the time is set to the position of that keyframe. If the timeline is playing when its time is set, playback is stopped."
+    },
+    {
+      "name": "Set playback rate",
+      "description": "Set the playback rate of a timeline. 1 is normal speed, 0.5 is half speed, etc. Negative numbers will play in reverse."
+    },
+    {
+      "name": "Set instance",
+      "description": "Set an instance to be used for the next timeline playback. The instance can be of a different type to the one used in the editor. The instance will be set to the track with the corresponding track ID. The track ID can also be left empty in which case it uses the first track in the timeline. It can also be used repeatedly with an empty ID to keep setting the tracks in the timeline in sequence. When the timeline is played it will then affect this instance instead of the one used in the editor. Playback can be controlled by using unique tags when playing the timeline."
+    },
+    {
+      "name": "Unset instances",
+      "description": "Clears all state associated with calls to Set instance."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is any playing",
+      "description": "True if any timeline is playing."
+    },
+    {
+      "name": "Is playing",
+      "description": "True if a specified timeline is playing, given by its tag."
+    },
+    {
+      "name": "Is any paused",
+      "description": "True if any timeline is paused."
+    },
+    {
+      "name": "Is paused",
+      "description": "True if a specified timeline is paused, given by its tag."
+    },
+    {
+      "name": "On started",
+      "description": "Triggered when a timeline starts playing, given by its tag. Use the \"Type\" parameter to specify when the trigger should take place. \"Any\" will execute the trigger any time a timeline is started, \"Starting\" will execute the trigger only  on the initial playback of the timeline and \"Resuming\" will execute the trigger only when the timeline is resumed after being paused."
+    },
+    {
+      "name": "On any started",
+      "description": "Triggered when any timeline starts playing. Use the \"Type\" parameter to specify when the trigger should take place. \"Any\" will execute the trigger any time a timeline is started, \"Starting\" will execute the trigger only  on the initial playback of the timeline and \"Resuming\" will execute the trigger only when the timeline is resumed after being paused."
+    },
+    {
+      "name": "On finished",
+      "description": "Triggered when a timeline finishes playback, given by its tag."
+    },
+    {
+      "name": "On any finished",
+      "description": "Triggered when any timeline finishes playback."
+    },
+    {
+      "name": "On keyframe reached",
+      "description": "Triggered when a master keyframe with certain tags is reached during playback. The keyframe can be identified by whether it matches any of the given tags, or if it has all of the given tags. Separate tags with spaces."
+    },
+    {
+      "name": "On any keyframe reached",
+      "description": "Triggered when any master keyframe is reached during playback. The KeyframeTags expression has a string of the keyframe's Tags property."
+    },
+    {
+      "name": "On time set",
+      "description": "Triggered when the time of a timeline is set with the Set Time action."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Time(nameOrTags)",
+      "description": "Retrieve the current time of the first matching timeline by either name or tags."
+    },
+    {
+      "name": "Progress(nameOrTags)",
+      "description": "Retrieve the progress of the first matching timeline by either name or tags, returning a value in the range [0, 1]."
+    },
+    {
+      "name": "TotalTime(nameOrTags)",
+      "description": "The total time of the first matching timeline by either name or tags."
+    },
+    {
+      "name": "KeyframeTags",
+      "description": "In a On keyframe reached or On any keyframe reached trigger, a string with the Tags property of the keyframe that was reached."
+    },
+    {
+      "name": "KeyframeTime",
+      "description": "Get the time of a keyframe providing a timeline name (or tags) and keyframe tags."
+    },
+    {
+      "name": "TimelineName",
+      "description": "In a trigger, a string with the name of the relevant timeline."
+    },
+    {
+      "name": "TimelineTags",
+      "description": "In a trigger, a string with the tags of the relevant timeline."
+    },
+    {
+      "name": "Value(timelineNameOrTags, valueTrackNameOrId)",
+      "description": "Retrieve the value of a value track by specifying a timeline name or tags and a value track name or track id. If no matching value track is found, the expression returns 0."
+    },
+    {
+      "name": "Ease(easeName, value)",
+      "description": "Return the result of an ease function at a given value in the range 0-1. The ease name can be either a built-in ease, or the name of a custom ease in the project. A list of the names of built-in eases is included below."
+    }
+  ]
+}

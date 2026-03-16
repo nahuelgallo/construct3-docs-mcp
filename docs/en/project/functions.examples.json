@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Code example",
+    "code": "Functions.MyFunction",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Functions.MyFunction(1, 2, 3)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">c3_callFunction(\"name\", [\"param1\", \"param2\"]);\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.callFunction()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "await c3_callFunction(...)",
+    "language": "javascript"
+  }
+]

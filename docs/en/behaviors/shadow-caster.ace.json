@@ -1,0 +1,36 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the behavior. If disabled, the object will not cast a shadow."
+    },
+    {
+      "name": "Set height",
+      "description": "Set the height property of the behavior. For more information see Shadow caster properties."
+    },
+    {
+      "name": "Set tag",
+      "description": "Change the tag of the behavior. For more information see Shadow caster properties."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare height",
+      "description": "Compare the current height property of the behavior to a value."
+    },
+    {
+      "name": "Is enabled",
+      "description": "True if the behavior is currently enabled so it can cast shadows."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Height",
+      "description": "Return the current height property."
+    },
+    {
+      "name": "Tag",
+      "description": "Return the currently set tag for the behavior."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "name": "Bounce off object",
+      "description": "Make the bullet bounce off an object it has just touched. Since this requires the bullet have only just touched the object, it is generally only useful in an On collision event. It will also calculate the angle of reflection to bounce off realistically depending on the object's shape and angle. If the bullet is not currently overlapping the given object, or is stuck deep inside it, this action will have no effect."
+    },
+    {
+      "name": "Set acceleration",
+      "description": "Set the bullet acceleration in pixels per second per second."
+    },
+    {
+      "name": "Set bounce off solids",
+      "description": "Enable or disable the Bounce off solids property."
+    },
+    {
+      "name": "Set angle of motion",
+      "description": "Set the angle the bullet is currently moving at, in degrees. Note: when the speed is 0, the angle of motion is always 0 and cannot be changed, since there is no motion. Therefore setting the angle of motion then the speed does not work if the object is stopped. Instead, set the speed first and then the angle of motion."
+    },
+    {
+      "name": "Set distance travelled",
+      "description": "Simply changes the counter returned by the DistanceTravelled expression. The counter still increments according to the movement of the object."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the movement. If disabled, the behavior will stop moving the bullet, but will remember the current speed, acceleration etc. if enabled again."
+    },
+    {
+      "name": "Set gravity",
+      "description": "Set the acceleration caused by gravity, in pixels per second per second."
+    },
+    {
+      "name": "Set speed",
+      "description": "Set the bullet's current movement speed, in pixels per second."
+    },
+    {
+      "name": "Stop stepping",
+      "description": "When Step is enabled, prevent the object advancing any further. This is usually done when a collision is detected with Is overlapping. Note that destroying the object also automatically stops stepping. For more information, see Stepping bullets above."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare speed",
+      "description": "Compare the current speed of the bullet, in pixels per second."
+    },
+    {
+      "name": "Compare distance travelled",
+      "description": "Compare the total distance the bullet has moved since creation, in pixels. This does not take in to account altering the object position with other actions like Set position."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    },
+    {
+      "name": "On step",
+      "description": "When Step is enabled, this triggers as the object moves in small increments. Add an Is overlapping condition to test for collisions with improved accuracy. See Stepping mode above for more information."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Acceleration",
+      "description": "Get the bullet's current acceleration in pixels per second per second."
+    },
+    {
+      "name": "AngleOfMotion",
+      "description": "Get the angle the bullet is currently moving at (which can be different to the object's angle), in degrees. Note when the object is stopped (with a speed of 0), the angle of motion is always 0."
+    },
+    {
+      "name": "DistanceTravelled",
+      "description": "Return the total distance the bullet has moved since creation, in pixels. This does not take in to account altering the object position with other actions like Set position."
+    },
+    {
+      "name": "Gravity",
+      "description": "Return the currently set gravity property, in pixels per second per second."
+    },
+    {
+      "name": "Speed",
+      "description": "Get the bullet's current movement speed in pixels per second."
+    }
+  ]
+}

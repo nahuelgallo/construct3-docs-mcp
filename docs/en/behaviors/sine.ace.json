@@ -1,0 +1,72 @@
+{
+  "actions": [
+    {
+      "name": "Set cycle position",
+      "description": "Set the progress through one cycle of the chosen wave, from 0 (the beginning of the cycle) to 1 (the end of the cycle). For example setting the cycle position to 0.5 will put it half way through the repeating motion."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the behavior. When disabled, the behavior does not affect the object at all."
+    },
+    {
+      "name": "Set magnitude",
+      "description": "Set the current magnitude of the cycle. This is in pixels when modifying the size or position, and degrees when modifying the angle."
+    },
+    {
+      "name": "Set movement",
+      "description": "Change the movement type of the behavior, e.g. from Horizontal to Size."
+    },
+    {
+      "name": "Set period",
+      "description": "Set the duration of a single complete back-and-forth cycle, in seconds."
+    },
+    {
+      "name": "Set wave",
+      "description": "Change the wave property of the behavior, choosing a different wave function to be used to calculate the movement."
+    },
+    {
+      "name": "Update initial state",
+      "description": "The Sine behavior records the object's initial state upon its creation, and always oscillates relative to that, even if it is deactivated and later activated after the object has been modified. If the object changes and you wish for the Sine behavior to oscillate relative to the new state instead of its state upon creation, use this action to reset the initial state to the object's current state."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare magnitude",
+      "description": "Compare the current magnitude of the movement."
+    },
+    {
+      "name": "Compare movement",
+      "description": "Compare the current movement property of the behavior."
+    },
+    {
+      "name": "Compare period",
+      "description": "Compare the current period of the movement, in seconds."
+    },
+    {
+      "name": "Compare wave",
+      "description": "Compare the current wave property of the behavior."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "CyclePosition",
+      "description": "Return a value from 0 to 1 representing the progress through the current cycle. For example, exactly half way through a cycle this returns 0.5."
+    },
+    {
+      "name": "Magnitude",
+      "description": "Return the current magnitude of the cycle. This is in pixels when modifying the size or position, and degrees when modifying the angle."
+    },
+    {
+      "name": "Period",
+      "description": "Return the current period of a single complete back-and-forth cycle in seconds."
+    },
+    {
+      "name": "Value",
+      "description": "Return the current oscillating value. This will alternate as a positive and negative value centered on zero. This is useful to create custom effects when in Value only mode."
+    }
+  ]
+}

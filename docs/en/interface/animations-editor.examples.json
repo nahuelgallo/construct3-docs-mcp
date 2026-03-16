@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Code example",
+    "code": "r, g, b, a",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "rgb(r, g, b)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "rgba(r, g, b, a)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "hsl(h, s, l)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "hsla(h, s, l, a)",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">{\n\t\"import-mode\": \"spritesheet\",\n\n\t\"sort\": \"alphabetical\",\n\n\t\"order\": \"ascending\",\n\n\t\"replace-existing-animation\": false,\n\n\t\"replace-existing-folder\": false,\n\n\t\"use-raw-folder-names\": false,\n\n\t\"spritesheet\": {\n\t\t\"horizontal-cells\": 4,\n\t\t\"vertical-cells\": 4,\n\t\t\"direction\": \"horizontal\"\n\t},\n\n\t\"svg\": {\n\t\t\"width\": 100,\n\t\t\"height\": 100\n\t},\n\n\t\"animation\": {\n\t\t\"name\": \"optional-animation-name\",\n\t\t\"speed\": 5,\n\t\t\"loop\": false,\n\t\t\"repeat-count\": 1,\n\t\t\"repeat-to\": 0,\n\t\t\"ping-pong\": false,\n\t\t\"frame-durations\": [1, 2, 3, 4],\n\t\t\"frame-collision-polys\": [\n\t\t\t{\"points\":[0,0,1,0,1,1,0,1]},\n\t\t\t{\"points\":[0,0,1,0,1,1,0,1]},\n\t\t\t{\"points\":[0,0,1,0,1,1,0,1]},\n\t\t\t{\"points\":[0,0,1,0,1,1,0,1]}\n\t\t],\n\t\t\"frame-image-points\":[\n\t\t\t[{\"originX\":0.5,\"originY\":0.5}, {\"name\":\"Image Point 1\",\"x\":0.5,\"y\":0.5}],\n\t\t\t[{\"originX\":0.5,\"originY\":0.5}],\n\t\t\t[{\"originX\":0.5,\"originY\":0.5}],\n\t\t\t[{\"originX\":0.5,\"originY\":0.5}]\n\t\t],\n\t\t\"frame-tags\":[\"tag-1\", \"tag-2\", \"tag-3\", \"tag-4\"]\n\t}\n}\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\"> \"pig.png\", \"octocus.png\", \"rock.png\", \"robot.png\", \"toaster.png\", \"monster.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"monster.png\", \"octocus.png\", \"pig.png\", \"robot.png\", \"rock.png\", \"toaster.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"1.png\", \"2.png\", \"3.png\", \"4.png\", \"5.png\", \"6.png\", \"7.png\", \"8.png\", \"9.png\", \"10.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"1.png\", \"10.png\", \"2.png\", \"3.png\", \"4.png\", \"5.png\", \"6.png\", \"7.png\", \"8.png\", \"9.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"10.png\", \"9.png\", \"8.png\", \"7.png\", \"6.png\", \"5.png\", \"4.png\", \"3.png\", \"2.png\", \"1.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"1.png\", \"2.png\", \"3.png\", \"4.png\", \"5.png\", \"6.png\", \"7.png\", \"8.png\", \"9.png\", \"10.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"a-10.png\", \"a-9.png\", \"a-8.png\", \"a-7.png\", \"a-6.png\", \"a-5.png\", \"a-4.png\", \"a-3.png\", \"a-2.png\", \"a-1.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"a-10.png\", \"a-9.png\", \"a-8.png\", \"a-7.png\", \"a-6.png\", \"a-5.png\", \"a-4.png\", \"a-3.png\", \"a-2.png\", \"a-1.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"anim-010.png\", \"anim-009.png\", \"anim-008.png\", \"anim-007.png\", \"anim-006.png\", \"anim-005.png\", \"anim-004.png\", \"anim-003.png\", \"anim-002.png\", \"anim-001.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">\"anim-001.png\", \"anim-002.png\", \"anim-003.png\", \"anim-004.png\", \"anim-005.png\", \"anim-006.png\", \"anim-007.png\", \"anim-008.png\", \"anim-009.png\", \"anim-010.png\"</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">{\n\t\"name\": \"MyPalette\",\n\t\"slots\": \"3\",\n\t\"palette\": [\n\t\t\"rgba(255, 0, 0, 1)\",\n\t\t\"rgba(0, 255, 0, 1)\",\n\t\t\"rgba(0, 0, 255, 1)\"\n\t],\n}\n</code>",
+    "language": "javascript"
+  }
+]

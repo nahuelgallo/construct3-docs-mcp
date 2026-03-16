@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Code example",
+    "code": "[hide]Hello[/hide]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[scale=2]Hello[/scale]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[scalex=2]stretch wider[/scalex]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[scaley=2]stretch taller[/scaley]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[scale=2]stretch both axes[/scale]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[color=#ff0000]change text color[/color]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[opacity=50]change text opacity[/opacity]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[hide]invisible text[/hide]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[background=#ff0000]change background color[/background]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[offsetx=10]offset X[/offsetx]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[offsety=10]offset Y[/offsety]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[tag=mytag]tag a range of text[/tag]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[10, \"aeou\"]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[[10, \"aeou\"], [12, \"mvw\"]]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Hello [tag=mytag]world[/tag]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "len(Self.PlainText) / 10",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[b]Hello[/b]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "Hello [tag=mytag]world[/tag]",
+    "language": "javascript"
+  }
+]

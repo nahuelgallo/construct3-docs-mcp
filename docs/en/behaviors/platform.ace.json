@@ -1,0 +1,180 @@
+{
+  "actions": [
+    {
+      "name": "Fall through",
+      "description": "If the player is currently standing on a jump-thru platform, this action will make them fall through it. This is useful for adding an additional control, e.g. down arrow, to jump down from jump-thru platforms."
+    },
+    {
+      "name": "Reset double jump",
+      "description": "Change whether a double-jump is allowed during the current jump. If disabled a double-jump will no longer be allowed in the current jump, even if it is the first jump; if enabled a double-jump will be allowed again, even if a double-jump was already made in the current jump."
+    },
+    {
+      "name": "Set acceleration",
+      "description": "Set the corresponding properties. For more information, see Platform properties."
+    },
+    {
+      "name": "Set deceleration",
+      "description": "Change the angle of gravity, in degrees. By default it is 90 (downwards on the screen). This can interact interestingly with layer rotation."
+    },
+    {
+      "name": "Set default controls",
+      "description": "Change how the behavior handles collisions with the ceiling, when the movement is jumping up and hits a solid. The default mode is Stop which means the vertical momentum is immediately set to zero so the movement immediately falls down again. Changing the mode to Preserve momentum will not change the vertical momentum when hitting a solid while jumping. This means the player can stick to the ceiling until gravity overcomes their upwards momentum; it can also allow the player to jump up past a corner of a solid even if they hit the solid vertically first."
+    },
+    {
+      "name": "Set double-jump",
+      "description": "Enable or disable the Platform movement. When disabled, the behavior has no effect on the object at all."
+    },
+    {
+      "name": "Set gravity",
+      "description": "Set whether input is being ignored. If input is ignored, pressing any of the control keys has no effect. However, unlike disabling the behavior, the object can continue to move, e.g. if in free-fall."
+    },
+    {
+      "name": "Set jump strength",
+      "description": "Manually set the horizontal and vertical components of motion, in pixels per second. For example, setting the vector Y to -1000 would cause a jump with strength 1000, which could be useful for implementing springs."
+    },
+    {
+      "name": "Set jump sustain",
+      "description": "Simulate one of the movement controls being held down. Useful when Default controls is disabled. See the behavior reference summary for more information."
+    },
+    {
+      "name": "Set max fall speed",
+      "description": ""
+    },
+    {
+      "name": "Set max speed",
+      "description": ""
+    },
+    {
+      "name": "Set angle of gravity",
+      "description": ""
+    },
+    {
+      "name": "Set ceiling collision",
+      "description": ""
+    },
+    {
+      "name": "Set enabled",
+      "description": ""
+    },
+    {
+      "name": "Set ignoring input",
+      "description": ""
+    },
+    {
+      "name": "Set vector X",
+      "description": ""
+    },
+    {
+      "name": "Set vector Y",
+      "description": ""
+    },
+    {
+      "name": "Simulate control",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare speed",
+      "description": "Compare the current speed of the object in pixels per second."
+    },
+    {
+      "name": "Is by wall",
+      "description": "Test if a solid blocking horizontal movement is immediately to the object's left or right. Jump-thrus do not count as walls."
+    },
+    {
+      "name": "Is double-jump enabled",
+      "description": "True if double jumps are currently enabled. This is set by the Double jump property or Set double-jump action."
+    },
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    },
+    {
+      "name": "Is falling",
+      "description": "True if the object is in free-fall."
+    },
+    {
+      "name": "Is jumping",
+      "description": "True if the object is moving upwards."
+    },
+    {
+      "name": "Is moving",
+      "description": "True if the object's speed is non-zero."
+    },
+    {
+      "name": "Is on floor",
+      "description": "True if the object is currently standing on a solid or jump-thru."
+    },
+    {
+      "name": "On fall",
+      "description": "These are animation triggers, which trigger when the platform movement is moving in to each state. If your object has animations for any of these states, you should set the appropriate animation in each trigger. This helps save you implementing the logic to detect state transitions yourself."
+    },
+    {
+      "name": "On jump",
+      "description": ""
+    },
+    {
+      "name": "On landed",
+      "description": ""
+    },
+    {
+      "name": "On moved",
+      "description": ""
+    },
+    {
+      "name": "On stopped",
+      "description": ""
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Acceleration",
+      "description": "Return the corresponding properties. For more information, see Platform properties."
+    },
+    {
+      "name": "Deceleration",
+      "description": "Get the current angle of gravity, in degrees."
+    },
+    {
+      "name": "Gravity",
+      "description": "Return the current angle of motion in degrees, which can be different to the object's angle."
+    },
+    {
+      "name": "JumpStrength",
+      "description": "Return the current overall speed in pixels per second."
+    },
+    {
+      "name": "JumpSustain",
+      "description": "Return the current X and Y components of motion, in pixels per second."
+    },
+    {
+      "name": "MaxFallSpeed",
+      "description": ""
+    },
+    {
+      "name": "MaxSpeed",
+      "description": ""
+    },
+    {
+      "name": "GravityAngle",
+      "description": ""
+    },
+    {
+      "name": "MovingAngle",
+      "description": ""
+    },
+    {
+      "name": "Speed",
+      "description": ""
+    },
+    {
+      "name": "VectorX",
+      "description": ""
+    },
+    {
+      "name": "VectorY",
+      "description": ""
+    }
+  ]
+}

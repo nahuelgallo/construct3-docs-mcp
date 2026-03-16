@@ -1,0 +1,15 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the Jump-thru behavior for this object."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is enabled",
+      "description": "True if the behavior is currently enabled. This can be changed by the Enabled property or the Set enabled action."
+    }
+  ],
+  "expressions": []
+}

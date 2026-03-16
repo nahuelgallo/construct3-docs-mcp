@@ -1,0 +1,167 @@
+[
+  {
+    "title": "Code example",
+    "code": ".myelement { ... }",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "box-sizing",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "background-color",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "user-select",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-html line-numbers match-braces\"><div class=\"wrapper\">\n\t<!-- Content goes here -->\n</div>\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-css line-numbers match-braces\">.wrapper {\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\tright: 0;\n\tbottom: 0;\n}\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "--construct-scale",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-css line-numbers match-braces\">.mybutton {\n\theight: calc(var(--construct-scale) * 2em);\n}\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "font-size: 1em",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "font-size: 2em",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "border-radius: 20px",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "border-radius: 2em",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[b]bold text[/b]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"<p>Your name is \" & PlayerName & \"!</p>\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<script>runDangerousCode()</script>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<p>Your name is <script>runDangerousCode()</script>!</p>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"<p>Your name is \" & HTMLElement.EscapeHTML(PlayerName) & \"!</p>\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "display: none",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "preventDefault()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"contextmenu\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "background-color",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "user-select: none",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"animationend\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "@keyframes",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\".myclass\"",
+    "language": "javascript"
+  }
+]

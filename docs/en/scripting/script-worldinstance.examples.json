@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "getFirstInstance()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.objects.Sprite.getFirstInstance()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.objects.Sprite.x",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.objects.Sprite",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "runtime.objects.Sprite.getFirstInstance().x",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "addEventListener",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "allInstances()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "angleDegrees",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "ignoreMesh",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "ignoreMesh",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "setBlendMode()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"bilinear\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"trilinear\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"absolute\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"relative\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "setMeshPoint()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "[hsize, vsize]",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "createMesh()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformX",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformY",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformZ",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformWidth",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformHeight",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformAngle",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformOpacity",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformVisibility",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "destroyWithParent",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "addChild()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "transformX",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "addChild()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "IWorldInstance",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "addChild()",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "wi.getParent().removeChild(wi)",
+    "language": "javascript"
+  }
+]

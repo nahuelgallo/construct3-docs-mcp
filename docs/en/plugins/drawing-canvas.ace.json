@@ -1,0 +1,148 @@
+{
+  "actions": [
+    {
+      "name": "Set resolution mode",
+      "description": "Change between automatic or fixed resolution modes for the drawing surface, or change the size of a fixed resolution canvas. Note that if the canvas resolution changes, including by changing the size of a fixed resolution canvas, the surface will be destroyed and recreated, causing the previously drawn content to disappear."
+    },
+    {
+      "name": "Clear snapshot",
+      "description": "Release a snapshot saved with the Save snapshot action, saving the memory used to store it. This returns the state to as if no snapshot was taken at all. Any expressions attempting to retrieve snapshot pixels after this action will return 0."
+    },
+    {
+      "name": "Load snapshot",
+      "description": "Copy the snapshot in memory back to the canvas, so any changes to its pixel data become visible in the object. The snapshot must match the resolution of the canvas - if the resolution has changed, the snapshot cannot be loaded. Note this still leaves the snapshot in memory - use the Clear snapshot action to remove it and save memory if the snapshot is no longer needed."
+    },
+    {
+      "name": "Save image",
+      "description": "Save the current canvas image in a compressed format (PNG or JPEG) suitable for the user to download. A subset of the canvas area can be saved (e.g. for saving a cropped image) by specifying the X, Y, Width and Height parameters, all given in device pixels. The expressions SurfaceDeviceWidth and SurfaceDeviceHeight give the size of the canvas in device pixels. The default (leaving all values as zero) will save the entire canvas area. This action triggers On saved image when ready, and sets the SavedImageURL expression to a URL that can be downloaded."
+    },
+    {
+      "name": "Save snapshot",
+      "description": "Copy the current canvas image to make its pixel data available. Triggers On snapshot when ready. For more information see the section Pixel manipulation with snapshots above."
+    },
+    {
+      "name": "Set snapshot pixel",
+      "description": "Set the color of a pixel in the saved snapshot. A snapshot must have previously been taken and On snapshot triggered. Unlike the other drawing commands, this takes a position in pixel co-ordinates. Use the rgba expression to set the pixel color to the given red, green, blue and alpha components. Note changes will not be visible until the Load snapshot action is used."
+    },
+    {
+      "name": "Clear canvas",
+      "description": "Clear the entire canvas to a color. This overwrites all existing image content. For example clearing to transparent will make the entire canvas transparent, unlike drawing a transparent rectangle which will not make any visible difference."
+    },
+    {
+      "name": "Clear rectangle",
+      "description": "As with Clear canvas, but only clears a rectangular area on the canvas."
+    },
+    {
+      "name": "Line",
+      "description": "Draw a line between two points on the canvas, specifying the color and thickness of the line. The line cap specifies whether the end of the line ends exactly at the start and end points (Butt) or is squared off, extending slightly beyond the start and end points (Square). The Dashed line variant also allows specifying a Dash length, which alternates between the line color and transparency for a dash effect."
+    },
+    {
+      "name": "Dashed line",
+      "description": "Draw either a filled or outlined ellipse shape on the canvas. The shape is specified using the center point and the radius on the X and Y axes. If the radius on both axes is the same, the shape will be a circle. The outline variant also specifies the thickness of the outline. The edge can also be set to Hard for an aliased edge (suitable for pixellated games), or Smooth for a better quality soft-edged appearance."
+    },
+    {
+      "name": "Fill ellipse",
+      "description": "Fill a rectangular area on the canvas with a linear gradient from one color to another. The gradient direction can be either horizontal or vertical.\n\nThe gradient uses gamma-correct calculations, which may appear differently to other tools that use gamma-incorrect calculations (by linearly interpolating in sRGB space)."
+    },
+    {
+      "name": "Outline ellipse",
+      "description": "Draw either a filled or outlined rectangle shape on the canvas. The outline variant also specifies the thickness of the outline."
+    },
+    {
+      "name": "Fill linear gradient",
+      "description": "Draw all instances of the given object that are overlapping the canvas onto the canvas at their current positions. By default objects are drawn exactly as they appear, taking in to account any effects added to them; drawing without effects will draw as if all the object's effects were disabled.\n\nThe drawing actually happens at the end of the tick. The action is asynchronous, so it can be used with the System Wait for previous actions to complete action, which can be used to ensure the paste has completed. Note if an object is destroyed immediately after pasting without waiting for completion, it will not be drawn, as it will be destroyed before it gets to be drawn."
+    },
+    {
+      "name": "Fill rectangle",
+      "description": "Set the background blending mode used for all drawing operations except Paste object (which takes the blend mode from the object being pasted). The options match the same blend modes as can be used by objects, but applies to the drawing to the canvas, rather than the display of the Drawing Canvas object itself. Two useful options are setting the \"copy\" blend mode and drawing with transparency to clear an area, or using \"destination out\" to erase content."
+    },
+    {
+      "name": "Outline rectangle",
+      "description": ""
+    },
+    {
+      "name": "Paste object",
+      "description": ""
+    },
+    {
+      "name": "Set drawing blend",
+      "description": ""
+    },
+    {
+      "name": "Add poly point",
+      "description": "Add a new point to the current polygon. At least three points must be added before a polygon can be drawn."
+    },
+    {
+      "name": "Outline poly",
+      "description": "Draw dashed lines between the points of the current polygon, joining back to the start point. The parameters are similar to the Line and Dashed line actions."
+    },
+    {
+      "name": "Dashed outline poly",
+      "description": "Fill the current polygon area with a color. This supports both convex and concave polygons. However concave polygons are internally converted in to multiple convex polygons. This process can sometimes fail due to floating point precision issues in the geometric calculations, and result in a glitchy rendering. If you know the shape you are rendering is convex, check the Convex parameter, which will bypass the internal conversion; however this will not render correctly if the polygon is in fact concave.\n\nNote that self-intersecting polygons are not supported and will not draw correctly."
+    },
+    {
+      "name": "Fill poly",
+      "description": "Clear all polygon points that were added, so the next Add poly point action starts a new polygon."
+    },
+    {
+      "name": "Reset poly",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "On resolution changed",
+      "description": "Triggered when the display resolution of the canvas changes, e.g. due to resizing the window in Letterbox scale mode. See the section on Handling resizing and resolution above. If you draw to the canvas in this trigger, it will mean the canvas image always automatically scales to the display resolution. If you do not draw to the canvas in this trigger, it will simply display the old image stretched to the new size."
+    },
+    {
+      "name": "On saved image",
+      "description": "Triggered after the Save image action when the saved image is ready. The image can be accessed using the SavedImageURL expression, e.g. to download it using the Browser object's Invoke download action."
+    },
+    {
+      "name": "On snapshot",
+      "description": "Triggered after the Save snapshot action when the snapshot is ready. This allows reading and writing individual pixels in the snapshot image, e.g. using the SnapshotRedAt expression. See the section Pixel manipulation with snapshots above for more information."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "PixelScale",
+      "description": "The size of a single canvas pixel in object co-ordinates. See the section Co-ordinate systems above for more information."
+    },
+    {
+      "name": "SavedImageURL",
+      "description": "In On saved image, the URL of the saved image. This can be downloaded using the Browser object's Invoke download action."
+    },
+    {
+      "name": "SnapshotRedAt(x, y)",
+      "description": "Return the red, green, blue and alpha components of a pixel in a saved snapshot. The position is given in pixel co-ordinates, and the returned value is returned in the 0-100 range. For more information see the section Pixel manipulation with snapshots above."
+    },
+    {
+      "name": "SnapshotGreenAt(x, y)",
+      "description": "Return the size of a saved snapshot in pixels. For more information see the section Pixel manipulation with snapshots above."
+    },
+    {
+      "name": "SnapshotBlueAt(x, y)",
+      "description": "Returns the current size of the canvas surface in device pixels. These are useful to use when defining a subset area to use in the Save image action."
+    },
+    {
+      "name": "SnapshotAlphaAt(x, y)",
+      "description": ""
+    },
+    {
+      "name": "SnapshotWidth",
+      "description": ""
+    },
+    {
+      "name": "SnapshotHeight",
+      "description": ""
+    },
+    {
+      "name": "SurfaceDeviceWidth",
+      "description": ""
+    },
+    {
+      "name": "SurfaceDeviceHeight",
+      "description": ""
+    }
+  ]
+}

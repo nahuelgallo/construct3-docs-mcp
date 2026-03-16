@@ -1,0 +1,144 @@
+{
+  "actions": [
+    {
+      "name": "Set font color",
+      "description": "Set the color of the text. Use an expression in the form rgb(red, green, blue)."
+    },
+    {
+      "name": "Set font face",
+      "description": "Change the font used to display the text. This must be the name of a web font imported to the project, or a local font that is pre-installed on the user's device."
+    },
+    {
+      "name": "Set font size",
+      "description": "Set the size of the text in points (pt)."
+    },
+    {
+      "name": "Set horizontal alignment",
+      "description": "Change the corresponding properties. See Text properties above for more information."
+    },
+    {
+      "name": "Set vertical alignment",
+      "description": "By default Text objects use Automatic resolution mode, which means the resolution of the text adjusts according to the 2D display scale. This produces the best quality display, but only works with 2D display, and can also cause the text to constantly re-render when being smoothly scaled, which can sometimes have a significant performance overhead. Fixed resolution mode causes the text to render at a fixed resolution according to a provided scale factor, and ignore the display scale. This usually results in a reduced display quality but better performance."
+    },
+    {
+      "name": "Set line height",
+      "description": "Add some text to the end of the current text. For example, if the text object contains Hello and has World appended, the text object then contains HelloWorld."
+    },
+    {
+      "name": "Set read aloud",
+      "description": "Set the text the object is currently displaying. Use the & operator to combine text and numbers. For more information, see expressions."
+    },
+    {
+      "name": "Set text direction",
+      "description": "Changes the Icon set property, replacing the Sprite used for BBcode icons. This can be used to change the set of icons displayed by the Text object. Note if the new Sprite object does not have the same number of animation frames, or the same animation frame tags, then some icons may disappear."
+    },
+    {
+      "name": "Set wrapping",
+      "description": "Set the text over time by starting with an empty string and gradually adding characters until the full text is written out, over a duration specified in seconds. Once the full text is written out, On typewriter text finished triggers. Note using Set text or Append text while text is being written out will cancel the effect.\n\nYou can use a speed in characters per second instead of an overall time by using an expression like len(Self.PlainText) / 10 for the time. In this case it will write out 10 characters per second regardless of the length of the string."
+    },
+    {
+      "name": "Set resolution mode",
+      "description": "If text is being written out with the Typewriter text action, force it to finish immediately."
+    },
+    {
+      "name": "Append text",
+      "description": "This action converts the contents of the Text object, including any icons, in to a string of HTML. This can then be displayed in the HTML Element object. This action is asynchronous: it takes a moment complete, so you need to use it with the Wait for previous actions to complete system action before you can use the result in the AsHTML expression. See the Text icons to HTML example for a demonstration."
+    },
+    {
+      "name": "Set text",
+      "description": ""
+    },
+    {
+      "name": "Change icon set",
+      "description": ""
+    },
+    {
+      "name": "Typewriter text",
+      "description": ""
+    },
+    {
+      "name": "Finish typewriter",
+      "description": ""
+    },
+    {
+      "name": "Update HTML",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare text",
+      "description": "Test whether the text object is currently displaying a certain string of text. The comparison can be either case sensitive (\"TEXT\" is different to \"text\") or case insensitive (\"TEXT\" is considered the same as \"text\"). To test if the text object is not showing some text, invert the condition."
+    },
+    {
+      "name": "Has tag at position",
+      "description": "Test if there is text with a specific tag at the given position (case insensitive). For example if the text has the BBcode Hello [tag=mytag]world[/tag], then testing if the tag \"mytag\" is at a given position will check if that position is over just the part of the text that says \"world\"."
+    },
+    {
+      "name": "Is running typewriter text",
+      "description": "True while text is being written out using the Typewriter text action."
+    },
+    {
+      "name": "On typewriter text finished",
+      "description": "Triggered when text being written out using the Typewriter text action finishes writing out all the text."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "FaceName",
+      "description": "Return the corresponding object's properties. See Text properties above for more details."
+    },
+    {
+      "name": "FaceSize",
+      "description": "Return a string containing the object's current text."
+    },
+    {
+      "name": "LineHeight",
+      "description": "Return a string containing the object's current text, with any BBCode tags stripped out. For example if the text is [b]Hello[/b], the Text expression will return that (with BBCode tags included), but the PlainText expression will return just Hello."
+    },
+    {
+      "name": "Text",
+      "description": "Returns a string of HTML code that represents the content of the Text object, including formatting and icons. This is only available after, and only updated by, the Update HTML action completing."
+    },
+    {
+      "name": "PlainText",
+      "description": "Look up the tag for a part of the text at a given position and return the tag if any, else return an empty string if no tag is specified. For example if the text has the BBcode Hello [tag=mytag]world[/tag], then the tag at a position over the word \"world\" is \"mytag\", and the tag at a position over the word \"Hello\" is \"\" (an empty string)."
+    },
+    {
+      "name": "AsHTML",
+      "description": "Identify the size and position of all ranges of the text with a given tag. Note the count and the index actually refers to fragments, as a single tagged range may be broken up in to multiple pieces - see the section Tagged range fragmentation above for more details."
+    },
+    {
+      "name": "TagAtPosition(x, y)",
+      "description": "Return the size of the actual text content within the text object's rectangle."
+    },
+    {
+      "name": "TagCount(tag)",
+      "description": ""
+    },
+    {
+      "name": "TagX(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagY(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagWidth(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TagHeight(tag, index)",
+      "description": ""
+    },
+    {
+      "name": "TextWidth",
+      "description": ""
+    },
+    {
+      "name": "TextHeight",
+      "description": ""
+    }
+  ]
+}

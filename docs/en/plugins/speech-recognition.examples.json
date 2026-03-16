@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Code example",
+    "code": "\"no-speech\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"audio-capture\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"not-allowed\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"service-not-allowed\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"bad-grammar\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"language-not-supported\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"not-allowed\"",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "\"audio-capture\"",
+    "language": "javascript"
+  }
+]

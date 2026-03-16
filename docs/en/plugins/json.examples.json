@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Code example",
+    "code": "AJAX.LastData",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">{\n\t\"foo\": {\n\t\t\"bar\": 42\n\t}\n}\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "<code class=\"language-javascript line-numbers match-braces\">{\n\t\"array\": [123, 456]\n}\n</code>",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "foo.bar.baz.first",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "foo.bar.baz.second",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "foo.bar.baz",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "foo.bar.baz.first",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "foo.bar.baz.second",
+    "language": "javascript"
+  },
+  {
+    "title": "Code example",
+    "code": "{ \"foo\": { \"bar\": 5 } }",
+    "language": "javascript"
+  }
+]

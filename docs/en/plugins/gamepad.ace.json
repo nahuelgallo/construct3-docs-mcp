@@ -1,0 +1,112 @@
+{
+  "actions": [
+    {
+      "name": "Vibrate (dual rumble)",
+      "description": "Initiate vibration (also known as \"rumble\") of a specific gamepad for a period of time given in milliseconds. Each kind of vibration uses different rumble motors in the gamepad hardware. The types of vibration that are supported can be checked with the Gamepad supports vibration type condition. Each kind of vibration has different parameters for the hardware motors, allowing for different types of rumble effects to be produced. If a vibration is already active when this action is used, it will be replaced by this action."
+    },
+    {
+      "name": "Vibrate (trigger rumble)",
+      "description": "Stop any active vibration started by the Vibrate action for a specific gamepad. The vibration will be immediately cancelled, so it will not fulfil the duration it was started for. If no vibration is active, this has no effect."
+    },
+    {
+      "name": "Reset vibration",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Gamepad supports vibration type",
+      "description": "Check if a currently connected gamepad supports a particular kind of vibration effect, such as dual rumble or trigger rumble. Note both the browser and the hardware must support the vibration type - for example it is possible a gamepad has hardware support for trigger rumble, but one browser supports it where another browser does not."
+    },
+    {
+      "name": "Has gamepads",
+      "description": "True if any gamepad is connected and activated. To prevent websites tracking you based on the available gamepads, most browsers supporting Gamepad input will report that no controllers are connected until a button is pressed on one of the devices."
+    },
+    {
+      "name": "On gamepad connected",
+      "description": "Triggered when a gamepad device is connected to the computer. To prevent websites tracking you based on the available gamepads, most browsers supporting Gamepad input will report that no controllers are connected until a button is pressed on one of the devices, when On gamepad connected will also run.\n\nIn this trigger, the GamepadIndex expression gives the index of the gamepad that was connected."
+    },
+    {
+      "name": "On gamepad disconnected",
+      "description": "Triggered when a gamepad device is disconnected from the computer, such as by pulling out its cable.In this trigger, the GamepadIndex expression gives the index of the gamepad that was disconnected."
+    },
+    {
+      "name": "Compare axis",
+      "description": "Compare the position of an analog joystick on a specific gamepad. Values within the Analog deadzone are returned as 0. Axes values range from -100 to 100."
+    },
+    {
+      "name": "Is button down",
+      "description": "True if a given button is currently down on a specific gamepad. The buttons are always referred to according to the XBox controller layout."
+    },
+    {
+      "name": "Is button index down",
+      "description": "True if a given button by its numerical index is currently down on a specific gamepad."
+    },
+    {
+      "name": "On any button pressed",
+      "description": "Triggered when any button is pressed on a specific gamepad. The ButtonIndex expression is set with the index of the button. The special value -1 can also be used for the gamepad, in which case the trigger will fire when any button on any gamepad is pressed, and the GamepadIndex expression will also be set to the index of the gamepad where the button was pressed."
+    },
+    {
+      "name": "On any button released",
+      "description": "Triggered when any button is released on a specific gamepad. The ButtonIndex expression is set with the index of the button. The special value -1 can also be used for the gamepad, in which case the trigger will fire when any button on any gamepad is released, and the GamepadIndex expression will also be set to the index of the gamepad where the button was released."
+    },
+    {
+      "name": "On button index pressed",
+      "description": "Triggered when a given button by its numerical index is pressed on a specific gamepad."
+    },
+    {
+      "name": "On button index released",
+      "description": "Triggered when a given button by its numerical index is released on a specific gamepad."
+    },
+    {
+      "name": "On button pressed",
+      "description": "Triggered when a given button is pressed on a specific gamepad. The buttons are always referred to according to the XBox controller layout."
+    },
+    {
+      "name": "On button released",
+      "description": "Triggered when a given button is released on a specific gamepad. The buttons are always referred to according to the XBox controller layout."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Axis(Gamepad, Index)",
+      "description": "Retrieve the current position of an analog joystick on a specific gamepad. Index specifies left analog X and Y or right analog X and Y axes. Axes range from -100 to 100. Axis values within the Analog deadzone are returned as 0."
+    },
+    {
+      "name": "Button(Gamepad, Index)",
+      "description": "Retrieve the current button press value of a button on a specific gamepad. Index specifies the zero-based index of a button from the dropdown list in the Is button down condition (e.g. 0 returns the value for the A button). The returned value depends on the features of the button: if the button is pressure sensitive, it can return any value from 0 to 100 depending on the pressure; otherwise it returns 0 for not pressed and 100 for pressed. Buttons which are not pressure sensitive are easier to detect using the Is button down condition."
+    },
+    {
+      "name": "GamepadCount",
+      "description": "Return the number of currently connected and active gamepad devices. To prevent websites tracking you based on the available gamepads, most browsers supporting Gamepad input will report that no controllers are connected until a button is pressed on one of the devices."
+    },
+    {
+      "name": "GamepadID(Gamepad)",
+      "description": "A string intended to represent the device manufacturer and model for a specific gamepad, e.g. \"XBox 360 controller\". However in practice this varies depending on the system and browser in use."
+    },
+    {
+      "name": "GamepadIndex",
+      "description": "In an On gamepad connected/disconnected trigger, or when using On any button pressed/released with a gamepad of -1, this expression indicates the index of the corresponding gamepad."
+    },
+    {
+      "name": "ButtonIndex",
+      "description": "Return the numerical index of the last button pressed on a specific gamepad. This is useful with the On any button pressed and On any button released triggers to set up custom controls."
+    },
+    {
+      "name": "RawAxis(Gamepad, Index)",
+      "description": "Retrieve raw axis input for a specific gamepad and axis index. This returns the value without keymapping, applying the analog deadzone, or multiplying the returned value by 100. Axis values range from -1 to 1."
+    },
+    {
+      "name": "RawAxisCount(Gamepad)",
+      "description": "Return the number of axes available in the raw input for a specific gamepad. This returns the value without keymapping."
+    },
+    {
+      "name": "RawButton(Gamepad, Index)",
+      "description": "Retrieve raw button input for a specific gamepad and button index. This returns the value without keymapping. Button values range from 0 to 1 (pressure sensitive buttons can return values in between)."
+    },
+    {
+      "name": "RawButtonCount(Gamepad)",
+      "description": "Return the number of buttons available in the raw input for a specific gamepad. This returns the value without keymapping."
+    }
+  ]
+}

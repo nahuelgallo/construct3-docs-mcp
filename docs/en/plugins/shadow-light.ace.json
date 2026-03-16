@@ -1,0 +1,39 @@
+{
+  "actions": [
+    {
+      "name": "Set cast from",
+      "description": "Set the corresponding object properties. For more information see Shadow light properties."
+    },
+    {
+      "name": "Set light height",
+      "description": "Sets the position in the layout from which shadows are cast from. Note that using the normal Set position action will also update the light position. However the Shadow Light object automatically positions itself in the middle of the viewport in order to draw over the whole screen. Using Set position to set the light position in the middle of the viewport may conflict with its automatic positioning, so this action can be used as a more reliable way to guarantee the light position is placed at the given location."
+    },
+    {
+      "name": "Set tag",
+      "description": "Set the color of the shadows that are rendered by the light. The default is black. Use an expression of the form rgb(red, green, blue). To set the opacity of the shadows, change the opacity of the Shadow light object."
+    },
+    {
+      "name": "Set light position",
+      "description": ""
+    },
+    {
+      "name": "Set shadow color",
+      "description": ""
+    }
+  ],
+  "conditions": [],
+  "expressions": [
+    {
+      "name": "LightX",
+      "description": "The X and Y co-ordinates of the light source in the layout. Note a quirk: the light source is moved using the ordinary Set position actions, but due to the way the object rendering works the ordinary X and Y expressions always return a position relative to the viewport instead. The LightX and LightY expressions return the actual position of the light source."
+    },
+    {
+      "name": "LightY",
+      "description": "Return the current tag of the object."
+    },
+    {
+      "name": "Tag",
+      "description": ""
+    }
+  ]
+}

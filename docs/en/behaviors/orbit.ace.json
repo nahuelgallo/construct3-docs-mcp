@@ -1,0 +1,100 @@
+{
+  "actions": [
+    {
+      "name": "Pin",
+      "description": "Set another object as the location to orbit around, following the object if it moves. The Unpin action will stop following the object."
+    },
+    {
+      "name": "Unpin",
+      "description": "Set the corresponding behavior properties. See Orbit properties above."
+    },
+    {
+      "name": "Set acceleration",
+      "description": "Set the current orbit position by its angle from the center point in degrees."
+    },
+    {
+      "name": "Set enabled",
+      "description": "Set the center point of the orbit in layout co-ordinates."
+    },
+    {
+      "name": "Set match rotation",
+      "description": "Sets the counters for the TotalRotation and AbsoluteTotalRotation to 0"
+    },
+    {
+      "name": "Set offset angle",
+      "description": ""
+    },
+    {
+      "name": "Set radius",
+      "description": ""
+    },
+    {
+      "name": "Set speed",
+      "description": ""
+    },
+    {
+      "name": "Set rotation",
+      "description": ""
+    },
+    {
+      "name": "Set target",
+      "description": ""
+    },
+    {
+      "name": "Reset total rotation",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Acceleration",
+      "description": "Return the corresponding behavior properties. See Orbit properties above."
+    },
+    {
+      "name": "OffsetAngle",
+      "description": "Return the distance from the object to the center point of the orbit, in pixels."
+    },
+    {
+      "name": "PrimaryRadius",
+      "description": "Return the current position of the orbit as its rotation relative to the center point in degrees."
+    },
+    {
+      "name": "SecondaryRadius",
+      "description": "Return the current center point of the orbit in layout co-ordinates."
+    },
+    {
+      "name": "Speed",
+      "description": "Return the total rotation of the instance in degrees. This value does not wrap at 360 degrees. If the instance is rotating counter-clockwise then the value will decrease over time. This counter can be cleared using the Reset total rotation action."
+    },
+    {
+      "name": "DistanceToTarget",
+      "description": "Return the total rotation of the instance in degrees, ignoring rotation direction. This expression is very similar to the TotalRotation expression, but rotation deltas are converted to absolute values. This means the counter will always increase even if the instance is rotating counter-clockwise. This counter can be cleared using the Reset total rotation action."
+    },
+    {
+      "name": "Rotation",
+      "description": ""
+    },
+    {
+      "name": "TargetX",
+      "description": ""
+    },
+    {
+      "name": "TargetY",
+      "description": ""
+    },
+    {
+      "name": "TotalRotation",
+      "description": ""
+    },
+    {
+      "name": "TotalAbsoluteRotation",
+      "description": ""
+    }
+  ]
+}

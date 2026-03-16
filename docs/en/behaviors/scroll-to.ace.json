@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "name": "Set enabled",
+      "description": "Enable or disable the behavior. When disabled, the scrolling will not be affected."
+    },
+    {
+      "name": "Shake",
+      "description": "Shake the screen for a duration of time, by randomly offsetting the scroll position every tick. The Magnitude is the maximum distance in pixels from the scrolled position the view will be offset. The Duration is how long the shake will last in seconds. In Reducing magnitude mode, the Magnitude will gradually reduce to zero by the end of the shake duration. In Constant magnitude mode, the Magnitude will stay the same throughout the full duration of the shake, ending abruptly."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is enabled",
+      "description": "Test if the behavior is currently enabled. When disabled it will have no effect on the object."
+    }
+  ],
+  "expressions": []
+}

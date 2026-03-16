@@ -1,0 +1,60 @@
+{
+  "actions": [
+    {
+      "name": "Set maximum",
+      "description": "Set the maximum value that can be chosen from the slider bar."
+    },
+    {
+      "name": "Set minimum",
+      "description": "Set the minimum value that can be chosen from the slider bar."
+    },
+    {
+      "name": "Set step",
+      "description": "Set the increment step of the slider bar."
+    },
+    {
+      "name": "Set tooltip",
+      "description": "Set the tooltip that appears when the mouse hovers over the slider bar."
+    },
+    {
+      "name": "Set value",
+      "description": "Set the currently selected value of the slider bar. This must be between the currently set minimum and maximum values."
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Compare value",
+      "description": "Compare the currently chosen value from the slider bar."
+    },
+    {
+      "name": "On changed",
+      "description": "Triggered when the user finishes changing the chosen value on the slider bar. Typically this only triggers when the user releases a mouse button or touch after moving the slider."
+    },
+    {
+      "name": "On changing",
+      "description": "Triggered repeatedly as the user changes the chosen value on the slider bar. Unlike On changed this will reflect the current value of the slider as the user is still dragging it."
+    },
+    {
+      "name": "On clicked",
+      "description": "Triggered when the user clicks the slider bar."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Maximum",
+      "description": "Return the currently set maximum slider value."
+    },
+    {
+      "name": "Minimum",
+      "description": "Return the currently set minimum slider value."
+    },
+    {
+      "name": "Step",
+      "description": "Return the currently set slider step value (increment)."
+    },
+    {
+      "name": "Value",
+      "description": "Return the current value chosen by the user, between the minimum and maximum values."
+    }
+  ]
+}

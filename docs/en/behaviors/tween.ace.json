@@ -1,0 +1,180 @@
+{
+  "actions": [
+    {
+      "name": "Set end value",
+      "description": "Change the end value for an existing one-property tween matching all the given tags."
+    },
+    {
+      "name": "Tween (one property)",
+      "description": "Start a tween for a single property. Tags are optional space-separated tags to identify the tween, and can be left blank if not used. Property chooses which property of the object to modify. The start value of the tween uses the current value of the property. End value specifies the value to tween to. Time is the duration of the tween in seconds. Ease specifies an ease function affecting the rate of change over time. Destroy on complete can be set to Yes to automatically destroy the instance when the tween finishes, useful for fade-out effects. Like timelines, a one property tween can be set to Loop and/or Ping Pong and given a Repeat count."
+    },
+    {
+      "name": "Set end values",
+      "description": "Change the end value for an existing two-property tween matching all the given tags."
+    },
+    {
+      "name": "Tween (two properties)",
+      "description": "Start a tween for two properties. Tags are optional space-separated tags to identify the tween, and can be left blank if not used. Property chooses which property pair of the object to modify. The start value of the tween uses the current value of the properties. End X and End Y specify the end value for each of the two properties. Time is the duration of the tween in seconds. Ease specifies an ease function affecting the rate of change over time. Destroy on complete can be set to Yes to automatically destroy the instance when the tween finishes, useful for fade-out effects. Like timelines, a two property tween can be set to Loop and/or Ping Pong and given a Repeat count."
+    },
+    {
+      "name": "Set end values",
+      "description": "Change the end value for an existing three-property tween matching all the given tags."
+    },
+    {
+      "name": "Tween (three properties)",
+      "description": "Start a tween for three properties. Tags are optional space-separated tags to identify the tween, and can be left blank if not used. Property chooses which property triad of the object to modify. The start value of the tween uses the current value of the properties. End X, End Y and End Z specify the end value for each of the three properties. Time is the duration of the tween in seconds. Ease specifies an ease function affecting the rate of change over time. Destroy on complete can be set to Yes to automatically destroy the instance when the tween finishes, useful for fade-out effects. Like timelines, a three property tween can be set to Loop and/or Ping Pong and given a Repeat count."
+    },
+    {
+      "name": "Set end value",
+      "description": "Change the end value for an existing value tween matching all the given tags."
+    },
+    {
+      "name": "Set start value",
+      "description": "Change the start value for an existing value tween matching all the given tags."
+    },
+    {
+      "name": "Tween (value)",
+      "description": "Start a tween for a number, independent of any properties. Tags are optional space-separated tags to identify the tween, and can be left blank if not used. Start value and End value specify the start and end value to tween through. Time is the duration of the tween in seconds. Ease specifies an ease function affecting the rate of change over time. Destroy on complete can be set to Yes to automatically destroy the instance when the tween finishes, useful for fade-out effects. Use the Value expression to retrieve the current value of the tween over time, such as to apply it to a different object, behavior or effect. Like timelines, a value tween can be set to Loop and/or Ping Pong and given a Repeat count."
+    },
+    {
+      "name": "Pause",
+      "description": "Pause and resume an existing tween matching all the given tags. Pausing a tween will stop it at its current progress, and resuming will continue from where it was paused."
+    },
+    {
+      "name": "Resume",
+      "description": "Pause and resume all current tweens."
+    },
+    {
+      "name": "Pause all",
+      "description": "Stop a tween matching all the given tags. Stopping a tween permanently ends a tween - it cannot be resumed afterwards."
+    },
+    {
+      "name": "Resume all",
+      "description": "Stop all tweens. This permanently ends all tweens so no more tweens can be referenced until a new tween is started."
+    },
+    {
+      "name": "Stop",
+      "description": ""
+    },
+    {
+      "name": "Stop all",
+      "description": ""
+    },
+    {
+      "name": "Set destroy on complete",
+      "description": "Set the Destroy on complete and Ease parameters specified in the Tween action for existing tweens matching all the given tags. The all variants modify all tweens regardless of tags."
+    },
+    {
+      "name": "Set all destroy on complete",
+      "description": "Set the playback rate of existing tweens matching all the given tags, or all tweens regardless of tags. A playback rate of 1 is normal speed, 0.5 half as fast, 2 twice as fast, and so on."
+    },
+    {
+      "name": "Set ease",
+      "description": "Set the playback time in seconds of existing tweens matching all the given tags, or all tweens regardless of tags. For example setting a time of 1 will skip the tween to playing as if it was 1 second after the tween was started."
+    },
+    {
+      "name": "Set all eases",
+      "description": "Enable or disable the entire behavior. If disabled, the behavior will not affect any properties or advance any tweens."
+    },
+    {
+      "name": "Set playback rate",
+      "description": ""
+    },
+    {
+      "name": "Set all playback rates",
+      "description": ""
+    },
+    {
+      "name": "Set time",
+      "description": ""
+    },
+    {
+      "name": "Set all times",
+      "description": ""
+    },
+    {
+      "name": "Set enabled",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Is any playing",
+      "description": "True if any tween is currently playing."
+    },
+    {
+      "name": "Is playing",
+      "description": "Test if a tween matching all the given tags is currently playing."
+    },
+    {
+      "name": "Is any paused",
+      "description": "True if any tween is currently paused."
+    },
+    {
+      "name": "Is paused",
+      "description": "Test if a tween matching all the given tags is currently paused."
+    },
+    {
+      "name": "Is any ping-pong",
+      "description": "True if any tween is in the provided ping-pong State"
+    },
+    {
+      "name": "Is ping-pong",
+      "description": "True if a tween matching all the given tags is in the provided ping-pong State"
+    },
+    {
+      "name": "On any finished",
+      "description": "Triggered when any tween finishes. Use the Tags expression to get the tag string for the tween that finished."
+    },
+    {
+      "name": "On finished",
+      "description": "Triggered when a tween matching all the given tags finishes."
+    },
+    {
+      "name": "On any released",
+      "description": "Triggered when any tween is released. Use the Tags expression to get the tag string for the tween that was released."
+    },
+    {
+      "name": "On released",
+      "description": "Triggered when a tween matching all the given tags is released."
+    },
+    {
+      "name": "On any looped",
+      "description": "Triggered when any tween loops. Use the Tags expression to get the tag string for the tween that looped."
+    },
+    {
+      "name": "On looped",
+      "description": "Triggered when a tween matching all the given tags loops."
+    },
+    {
+      "name": "On any ping-pong",
+      "description": "Triggered when any tween ping-pongs. Use the State parameter to specify at which point of the ping-pong the trigger should take place. Use the Tags expression to get the tag string for the tween that ping-ponged."
+    },
+    {
+      "name": "On ping-pong",
+      "description": "Triggered when a tween matching all the given tags ping-pongs. Use the State parameter to specify at which point of the ping-pong the trigger should take place. Use the Tags expression to get the tag string for the tween that ping-ponged."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "Progress(tag)",
+      "description": "Return the progress of a tween by its tags in the range 0-1."
+    },
+    {
+      "name": "Tags",
+      "description": "This expression can be used in the various triggers to get the tag string of the associated tween."
+    },
+    {
+      "name": "Time(tag)",
+      "description": "Return the playback time of a tween by its tags, in seconds since the tween was started."
+    },
+    {
+      "name": "PlaybackRate(tag)",
+      "description": "Return the playback rate of a tween by its tags."
+    },
+    {
+      "name": "Value(tag)",
+      "description": "Return the current value of a value tween by its tags."
+    }
+  ]
+}

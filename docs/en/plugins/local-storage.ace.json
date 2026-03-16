@@ -1,0 +1,144 @@
+{
+  "actions": [
+    {
+      "name": "Check item exists",
+      "description": "Check if a key exists in storage. This triggers either On item exists if the key exists, or On item missing if the key does not exist. If the item exists, the ItemValue expression is set to the key value in the On item exists trigger, so there is no need to use a subsequent Get item action to read the value.\n\nNote ItemValue is not set if binary data was stored."
+    },
+    {
+      "name": "Get item",
+      "description": "Read the value of a key in storage. This triggers On item get when the value has been read. When reading binary data, the data will be written to the chosen Binary Data object; otherwise the ItemValue expression is set to the value of the key."
+    },
+    {
+      "name": "Get binary item",
+      "description": "Remove (delete) a key from storage. This triggers On item removed when the key has been removed."
+    },
+    {
+      "name": "Remove item",
+      "description": "Set the value of a key in storage. This triggers On item set when the value has been written. When setting binary data, the contents of a Binary Data object are written; otherwise the text or number provided is used."
+    },
+    {
+      "name": "Set item",
+      "description": "Remove (delete) all items from storage, reverting it back to the empty state. This triggers On storage cleared when completed."
+    },
+    {
+      "name": "Set binary item",
+      "description": "Retrieve a list of all the key names that currently exist in storage. This triggers On all key names loaded when the list has been loaded, where the KeyCount and KeyAt expressions can be used to access the list."
+    },
+    {
+      "name": "Clear storage",
+      "description": "Request that storage be made persistent for the current domain. This typically only applies to web browsers, as all other export options already use persistent storage. In the context of a web browser, all storage is preserved on a \"best effort\" basis, but may be erased in various situations such as if too much storage space is being used, if the site has not been visited for too long, and so on. If persistent storage permission is granted, then the browser will avoid automatically deleting the storage wherever possible; it may also avoid deleting the storage even if the user chooses to clear storage in browser settings, unless they specifically acknowledge they want to delete the site's data. Requesting persistent storage may show a visible prompt to the user asking them to accept permission, and this action may only be allowed to be used in a user input trigger (such as mouse click or touch). The action is asynchronous, meaning it can be used with Wait for previous actions to complete, after which the permission will have been granted or refused. The Is persistent condition reflects the current persistent permission state."
+    },
+    {
+      "name": "Get all key names",
+      "description": "Only applicable when the property In-memory only is enabled. Load the entire state of the storage - including all keys and values - from a string of JSON data previously returned by the MemoryStorageAsJSON expression. For more details on usage, see Redirecting storage above."
+    },
+    {
+      "name": "Request persistent storage",
+      "description": ""
+    },
+    {
+      "name": "Load memory from JSON",
+      "description": ""
+    }
+  ],
+  "conditions": [
+    {
+      "name": "On any item get",
+      "description": "Triggered after any Get item action completes."
+    },
+    {
+      "name": "On any item removed",
+      "description": "Triggered after any Remove item action completes."
+    },
+    {
+      "name": "On any item set",
+      "description": "Triggered after any Set item action completes."
+    },
+    {
+      "name": "On item exists",
+      "description": "Triggered after the Check item exists action completes if the key checked does indeed exist. In this trigger the ItemValue expression is also set to the value of this key, so there is no need to use another Get item action to read it.\n\nNote ItemValue is not set if binary data was stored."
+    },
+    {
+      "name": "On item get",
+      "description": "Triggered after a Get item action completes for a given key. The ItemValue expression is set to the value of the key, except for when reading binary data."
+    },
+    {
+      "name": "On item missing",
+      "description": "Triggered after the Check item exists action completes if the key checked does not exist."
+    },
+    {
+      "name": "On item removed",
+      "description": "Triggered after the Remove item action completes for a given key."
+    },
+    {
+      "name": "On item set",
+      "description": "Triggered after the Set item action completes for a given key. This indicates the data is now in storage."
+    },
+    {
+      "name": "Compare key",
+      "description": "Compare the current value of the Key expression, which is the name of the current key in a trigger. This can be useful in the On any item... triggers."
+    },
+    {
+      "name": "Compare value",
+      "description": "Compare the current value of the ItemValue expression, which is set to the item value when getting an item or in On item exists."
+    },
+    {
+      "name": "Is persistent",
+      "description": "True if the browser has granted the current domain persistent storage permission. See the Request persistent storage action for more details."
+    },
+    {
+      "name": "On all key names loaded",
+      "description": "Triggered after the Get all key names action completes. In this trigger the KeyCount and KeyAt expressions give the list of all the key names."
+    },
+    {
+      "name": "On error",
+      "description": "Triggered at any time while using Local Storage if an error occurs, such as if a write failed, or the maximum storage quota was exceeded. The ErrorMessage expression is set to the error message if available."
+    },
+    {
+      "name": "On storage cleared",
+      "description": "Triggered after the Clear storage action completes and storage is now empty."
+    },
+    {
+      "name": "Is processing gets",
+      "description": "True if any Get item actions are still processing, i.e. any On item get trigger is yet to fire for a Get item action."
+    },
+    {
+      "name": "Is processing sets",
+      "description": "True if any Set item actions are still processing, i.e. any On item set trigger is yet to fire for a Set item action."
+    },
+    {
+      "name": "On all gets complete",
+      "description": "Triggered when all outstanding Get item actions are completed, i.e. when Is processing gets first becomes false. In other words if 10 Get item actions are all used at the same time, On all gets complete triggers when all 10 items have been read and fired their On item get triggers."
+    },
+    {
+      "name": "On all sets complete",
+      "description": "Triggered when all outstanding Set item actions are completed, i.e. when Is processing sets first becomes false. In other words if 10 Set item actions are all used at the same time, On all sets complete triggers when all 10 items have been written and fired their On item set triggers."
+    }
+  ],
+  "expressions": [
+    {
+      "name": "ItemValue",
+      "description": "The value for a key that has been read or written in a Local Storage trigger, such as On item get or On item exists. This can be either a string or a number. This returns 0 if used outside of a Local Storage trigger, or if binary data was stored instead of text or a number."
+    },
+    {
+      "name": "Key",
+      "description": "The name of the key that was modified in any Local Storage trigger, such as On item get, On item set or On any item set. This returns an empty string if used outside of a Local Storage trigger."
+    },
+    {
+      "name": "ErrorMessage",
+      "description": "In On error, the text of the error message if any is available."
+    },
+    {
+      "name": "KeyAt(index)",
+      "description": "In On all key names loaded, the name of the key at the given zero-based index in the list."
+    },
+    {
+      "name": "KeyCount",
+      "description": "In On all key names loaded, the number of key names in the list."
+    },
+    {
+      "name": "MemoryStorageAsJSON",
+      "description": "Only applicable when the property In-memory only is enabled. Returns the entire state of the storage - including all keys and values - as a string of JSON data. This can then be loaded again later with the Load memory from JSON action. For more details on usage, see Redirecting storage above."
+    }
+  ]
+}
