@@ -3,7 +3,7 @@ title: "The Animations Editor"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/animations-editor"
 lang: en
-lastScraped: "2026-03-16T05:28:38.132Z"
+lastScraped: "2026-03-16T06:10:19.697Z"
 ---
 # The Animations Editor
 

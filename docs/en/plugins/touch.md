@@ -3,7 +3,7 @@ title: "Touch"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/touch"
 lang: en
-lastScraped: "2026-03-16T05:25:50.082Z"
+lastScraped: "2026-03-16T06:07:26.623Z"
 ---
 # Touch
 

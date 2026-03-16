@@ -3,7 +3,7 @@ title: "Button"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/button"
 lang: en
-lastScraped: "2026-03-16T05:26:15.675Z"
+lastScraped: "2026-03-16T06:07:54.864Z"
 ---
 # Button
 

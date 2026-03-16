@@ -3,7 +3,7 @@ title: "9-patch"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch"
 lang: en
-lastScraped: "2026-03-16T05:25:36.037Z"
+lastScraped: "2026-03-16T06:07:12.096Z"
 ---
 # 9-patch
 

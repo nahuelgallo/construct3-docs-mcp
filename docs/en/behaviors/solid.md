@@ -3,7 +3,7 @@ title: "Solid behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/solid"
 lang: en
-lastScraped: "2026-03-16T05:26:46.884Z"
+lastScraped: "2026-03-16T06:08:27.740Z"
 ---
 # Solid behavior
 

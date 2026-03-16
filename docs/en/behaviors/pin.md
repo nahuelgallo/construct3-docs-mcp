@@ -3,7 +3,7 @@ title: "Pin behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pin"
 lang: en
-lastScraped: "2026-03-16T05:27:12.980Z"
+lastScraped: "2026-03-16T06:08:54.041Z"
 ---
 # Pin behavior
 

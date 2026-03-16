@@ -3,7 +3,7 @@ title: "Event sheets"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/event-sheets"
 lang: en
-lastScraped: "2026-03-16T05:27:52.531Z"
+lastScraped: "2026-03-16T06:09:32.960Z"
 ---
 # Event sheets
 

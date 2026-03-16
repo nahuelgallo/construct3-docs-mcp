@@ -3,7 +3,7 @@ title: "Welcome to the Construct 3 manual"
 category: scripting
 url: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting"
 lang: en
-lastScraped: "2026-03-16T05:28:16.848Z"
+lastScraped: "2026-03-16T06:09:58.599Z"
 ---
 # Welcome to the Construct 3 manual
 

@@ -3,7 +3,7 @@ title: "Slider bar"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/slider-bar"
 lang: en
-lastScraped: "2026-03-16T05:26:21.336Z"
+lastScraped: "2026-03-16T06:08:00.907Z"
 ---
 # Slider bar
 

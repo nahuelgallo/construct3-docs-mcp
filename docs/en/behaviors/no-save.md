@@ -3,7 +3,7 @@ title: "No Save behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/no-save"
 lang: en
-lastScraped: "2026-03-16T05:27:28.963Z"
+lastScraped: "2026-03-16T06:09:10.257Z"
 ---
 # No Save behavior
 

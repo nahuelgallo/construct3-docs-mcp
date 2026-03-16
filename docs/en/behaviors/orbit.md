@@ -3,7 +3,7 @@ title: "Orbit behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/orbit"
 lang: en
-lastScraped: "2026-03-16T05:27:22.872Z"
+lastScraped: "2026-03-16T06:09:04.150Z"
 ---
 # Orbit behavior
 

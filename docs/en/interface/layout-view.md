@@ -3,7 +3,7 @@ title: "The Layout View"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/layout-view"
 lang: en
-lastScraped: "2026-03-16T05:28:29.834Z"
+lastScraped: "2026-03-16T06:10:11.550Z"
 ---
 # The Layout View
 

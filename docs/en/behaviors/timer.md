@@ -3,7 +3,7 @@ title: "Timer behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/timer"
 lang: en
-lastScraped: "2026-03-16T05:27:05.111Z"
+lastScraped: "2026-03-16T06:08:45.705Z"
 ---
 # Timer behavior
 

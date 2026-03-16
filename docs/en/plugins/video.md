@@ -3,7 +3,7 @@ title: "Video"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/video"
 lang: en
-lastScraped: "2026-03-16T05:26:09.838Z"
+lastScraped: "2026-03-16T06:07:48.494Z"
 ---
 # Video
 

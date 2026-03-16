@@ -3,7 +3,7 @@ title: "Object instances"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instances"
 lang: en
-lastScraped: "2026-03-16T05:27:42.331Z"
+lastScraped: "2026-03-16T06:09:23.123Z"
 ---
 # Object instances
 

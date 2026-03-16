@@ -3,7 +3,7 @@ title: "AJAX"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/ajax"
 lang: en
-lastScraped: "2026-03-16T05:26:01.904Z"
+lastScraped: "2026-03-16T06:07:40.460Z"
 ---
 # AJAX
 

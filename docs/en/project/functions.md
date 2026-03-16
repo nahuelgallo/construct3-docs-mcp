@@ -3,7 +3,7 @@ title: "Functions"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/functions"
 lang: en
-lastScraped: "2026-03-16T05:28:08.644Z"
+lastScraped: "2026-03-16T06:09:49.355Z"
 ---
 # Functions
 

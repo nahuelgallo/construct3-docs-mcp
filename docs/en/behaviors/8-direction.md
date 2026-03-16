@@ -3,7 +3,7 @@ title: "8 Direction behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/8-direction"
 lang: en
-lastScraped: "2026-03-16T05:26:52.844Z"
+lastScraped: "2026-03-16T06:08:33.761Z"
 ---
 # 8 Direction behavior
 

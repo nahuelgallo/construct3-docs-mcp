@@ -3,7 +3,7 @@ title: "Families"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/families"
 lang: en
-lastScraped: "2026-03-16T05:27:46.578Z"
+lastScraped: "2026-03-16T06:09:26.987Z"
 ---
 # Families
 

@@ -3,7 +3,7 @@ title: "Platform behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/platform"
 lang: en
-lastScraped: "2026-03-16T05:26:44.919Z"
+lastScraped: "2026-03-16T06:08:25.756Z"
 ---
 # Platform behavior
 

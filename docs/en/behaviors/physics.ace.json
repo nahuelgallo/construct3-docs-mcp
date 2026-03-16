@@ -1,5 +1,94 @@
 {
-  "actions": [],
+  "actions": [
+    {
+      "name": "Apply force",
+      "description": "Apply a force on the object, either at an angle, towards a position, or with custom X and Y axis forces. Applying a force causes the object to accelerate in the direction of the force.\n\n\nForces can be applied at an image point, which normally also causes the object to rotate. Using 0 for the image point uses the object's center of mass, which does not cause rotation. Use -1 to use the object's origin, which may be different to the center of mass and cause rotation."
+    },
+    {
+      "name": "Apply force at angle",
+      "description": "Apply an impulse on the object, either at an angle, towards a position, or with custom X and Y axis impulses. Applying an impulse simulates the object being struck, e.g. hit by a bat.\n\n\nImpulses can be applied at an image point, which normally also causes the object to rotate. Using 0 for the image point uses the object's center of mass, which does not cause rotation. Use -1 to use the object's origin, which may be different to the center of mass and cause rotation."
+    },
+    {
+      "name": "Apply force towards position",
+      "description": "Set the object's current velocity directly, providing a speed in pixels per second for the X and Y axes."
+    },
+    {
+      "name": "Apply impulse",
+      "description": "Set the object position preserving the Physics velocity. Normally changing the position of the object will reposition it, but alter the velocity to try to ensure the physics simulation remains realistic even though some external change was made to the object position. Using the Teleport action will reposition the object but not alter its Physics velocity in any way, which is sometimes desirable for purposes such as if a Physics object goes through a portal and is meant to appear somewhere else but with the same velocity."
+    },
+    {
+      "name": "Apply impulse at angle",
+      "description": ""
+    },
+    {
+      "name": "Apply impulse towards position",
+      "description": ""
+    },
+    {
+      "name": "Set velocity",
+      "description": ""
+    },
+    {
+      "name": "Teleport",
+      "description": ""
+    },
+    {
+      "name": "Enable/disable collisions",
+      "description": "By default, all Physics objects collide with each other. You can disable collisions between the object and another Physics object so they pass through each other. This affects all instances of both object types. Note: enabling collisions again when objects are overlapping can cause instability in the simulation."
+    },
+    {
+      "name": "Set stepping iterations",
+      "description": "Set the number of velocity iterations and position iterations used in the physics engine. The default is 8 and 3 respectively. Lower values run faster but are less accurate, and higher values can reduce performance but provide a more realistic simulation."
+    },
+    {
+      "name": "Set stepping mode",
+      "description": "Choose whether the Physics time step uses dt (delta time, for Framerate independent) or a fixed value. By default it uses delta time to ensure physics progresses at a regular speed on displays with different refresh rates. However in some circumstances this can produce non-deterministic results, and note the Physics behavior clamps the maximum time step to 1/30 (about 33ms, equivalent to 30 FPS) to prevent the instability that can result from large time steps. Set to Fixed to always use a time step of 1/60 (about 16ms) regardless of the framerate, which makes the simulation deterministic, but will cause it to run at different speeds on displays with different refresh rates."
+    },
+    {
+      "name": "Set world gravity",
+      "description": "Set the force of gravity affecting all Physics objects. By default this is a force of 10 downwards."
+    },
+    {
+      "name": "Create distance joint",
+      "description": "Fix two physics objects at a given distance apart, as if connected by a pole. An image point can be specified to connect to a specific part of the object. Note that an image point of 0 specifies the center of gravity of the object - if you intend to connect to the object origin, use -1."
+    },
+    {
+      "name": "Create revolute joint",
+      "description": "Hinge two physics objects together, so they can rotate freely as if connected by a pin. Limited revolute joints only allow rotation through a certain range of angles, like the clapper of a bell. An image point can also be specified to connect to a specific part of the object. Note that an image point of 0 specifies the center of gravity of the object - if you intend to connect to the object origin, use -1."
+    },
+    {
+      "name": "Create limited revolute joint",
+      "description": "Restrict the movement of two physics objects along a specific axis, given by its angle. Enable limit specifies whether there is a lower and upper movement limit; if enabled these are given by the lower and upper translation, otherwise unlimited movement is allowed along the axis. A motor can also be enabled to provide a continuous force along the axis."
+    },
+    {
+      "name": "Create prismatic joint",
+      "description": "Remove all joints from the object. Any objects this object was attached to via joints is also affected. Note some joints automatically disable collisions between the objects, so you may want to manually disable collisions again after removing joints otherwise overlapping objects will \"teleport\" apart (as the physics engine will try to prevent them overlapping)."
+    },
+    {
+      "name": "Remove all joints",
+      "description": ""
+    },
+    {
+      "name": "Set awake",
+      "description": "Physics simulations are relatively CPU intensive, requiring a lot of calculations. To save processor time, the Physics engine will make objects that have come to a complete stop go in to \"sleep\" mode so they no longer require processing. However sometimes changes like repositioning an adjacent object will leave the object in \"sleep\" mode so it will not respond properly. In this situation the Set awake action can be used to force a sleeping object to resume simulation. (It can also be used to force an object to go in to \"sleep\" mode, but note this is normally done automatically when possible.)"
+    },
+    {
+      "name": "Apply torque",
+      "description": "Apply a torque (rotational acceleration) to the object, either directly, or towards an angle or position."
+    },
+    {
+      "name": "Apply torque towards angle",
+      "description": "Set the angular velocity (rate of rotation) directly, in degrees per second."
+    },
+    {
+      "name": "Apply torque towards position",
+      "description": ""
+    },
+    {
+      "name": "Set angular velocity",
+      "description": ""
+    }
+  ],
   "conditions": [
     {
       "name": "Compare angular velocity",

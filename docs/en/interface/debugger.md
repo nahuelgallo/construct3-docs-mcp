@@ -3,7 +3,7 @@ title: "The Debugger"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger"
 lang: en
-lastScraped: "2026-03-16T05:28:44.242Z"
+lastScraped: "2026-03-16T06:10:26.077Z"
 ---
 # The Debugger
 

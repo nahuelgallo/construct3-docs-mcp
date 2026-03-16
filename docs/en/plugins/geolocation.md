@@ -3,7 +3,7 @@ title: "Geolocation"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/geolocation"
 lang: en
-lastScraped: "2026-03-16T05:26:27.106Z"
+lastScraped: "2026-03-16T06:08:07.222Z"
 ---
 # Geolocation
 

@@ -3,7 +3,7 @@ title: "Local Storage"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/local-storage"
 lang: en
-lastScraped: "2026-03-16T05:26:06.017Z"
+lastScraped: "2026-03-16T06:07:44.531Z"
 ---
 # Local Storage
 

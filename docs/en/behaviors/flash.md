@@ -3,7 +3,7 @@ title: "Flash behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/flash"
 lang: en
-lastScraped: "2026-03-16T05:27:00.622Z"
+lastScraped: "2026-03-16T06:08:41.684Z"
 ---
 # Flash behavior
 

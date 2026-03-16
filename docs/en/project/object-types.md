@@ -3,7 +3,7 @@ title: "Object types"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/object-types"
 lang: en
-lastScraped: "2026-03-16T05:27:40.148Z"
+lastScraped: "2026-03-16T06:09:21.073Z"
 ---
 # Object types
 

@@ -3,7 +3,7 @@ title: "Physics"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/physics"
 lang: en
-lastScraped: "2026-03-16T05:27:24.740Z"
+lastScraped: "2026-03-16T06:09:06.126Z"
 ---
 # Physics
 

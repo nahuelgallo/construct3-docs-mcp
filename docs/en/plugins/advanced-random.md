@@ -3,7 +3,7 @@ title: "Advanced random"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/advanced-random"
 lang: en
-lastScraped: "2026-03-16T05:26:40.973Z"
+lastScraped: "2026-03-16T06:08:21.231Z"
 ---
 # Advanced random
 

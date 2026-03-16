@@ -3,7 +3,7 @@ title: "Drag & Drop behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/drag-drop"
 lang: en
-lastScraped: "2026-03-16T05:27:10.884Z"
+lastScraped: "2026-03-16T06:08:51.806Z"
 ---
 # Drag & Drop behavior
 

@@ -3,7 +3,7 @@ title: "3D shape"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape"
 lang: en
-lastScraped: "2026-03-16T05:26:39.070Z"
+lastScraped: "2026-03-16T06:08:19.374Z"
 ---
 # 3D shape
 

@@ -3,7 +3,7 @@ title: "Particles"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/particles"
 lang: en
-lastScraped: "2026-03-16T05:26:07.914Z"
+lastScraped: "2026-03-16T06:07:46.562Z"
 ---
 # Particles
 

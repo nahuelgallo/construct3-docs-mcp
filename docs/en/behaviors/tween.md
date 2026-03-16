@@ -3,7 +3,7 @@ title: "Tween"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/tween"
 lang: en
-lastScraped: "2026-03-16T05:27:03.141Z"
+lastScraped: "2026-03-16T06:08:43.543Z"
 ---
 # Tween
 

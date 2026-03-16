@@ -3,7 +3,7 @@ title: "Actions"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/actions"
 lang: en
-lastScraped: "2026-03-16T05:27:54.449Z"
+lastScraped: "2026-03-16T06:09:34.922Z"
 ---
 # Actions
 

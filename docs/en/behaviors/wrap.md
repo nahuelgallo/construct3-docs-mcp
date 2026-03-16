@@ -3,7 +3,7 @@ title: "Wrap behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/wrap"
 lang: en
-lastScraped: "2026-03-16T05:27:19.057Z"
+lastScraped: "2026-03-16T06:09:00.074Z"
 ---
 # Wrap behavior
 

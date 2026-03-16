@@ -3,7 +3,7 @@ title: "Pathfinding behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pathfinding"
 lang: en
-lastScraped: "2026-03-16T05:27:09.008Z"
+lastScraped: "2026-03-16T06:08:49.728Z"
 ---
 # Pathfinding behavior
 

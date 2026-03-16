@@ -3,7 +3,7 @@ title: "Shadow light"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/shadow-light"
 lang: en
-lastScraped: "2026-03-16T05:26:25.193Z"
+lastScraped: "2026-03-16T06:08:05.107Z"
 ---
 # Shadow light
 

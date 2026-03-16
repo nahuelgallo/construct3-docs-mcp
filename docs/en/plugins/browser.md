@@ -3,7 +3,7 @@ title: "Browser"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/browser"
 lang: en
-lastScraped: "2026-03-16T05:26:03.970Z"
+lastScraped: "2026-03-16T06:07:42.570Z"
 ---
 # Browser
 

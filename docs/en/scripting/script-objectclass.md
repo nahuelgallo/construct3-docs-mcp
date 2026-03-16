@@ -3,7 +3,7 @@ title: "Object class script interface"
 category: scripting
 url: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass"
 lang: en
-lastScraped: "2026-03-16T05:28:23.726Z"
+lastScraped: "2026-03-16T06:10:05.054Z"
 ---
 # Object class script interface
 

@@ -3,7 +3,7 @@ title: "The Event Sheet View"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/event-sheet-view"
 lang: en
-lastScraped: "2026-03-16T05:28:31.802Z"
+lastScraped: "2026-03-16T06:10:13.650Z"
 ---
 # The Event Sheet View
 

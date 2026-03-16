@@ -3,7 +3,7 @@ title: "Gamepad"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/gamepad"
 lang: en
-lastScraped: "2026-03-16T05:25:52.195Z"
+lastScraped: "2026-03-16T06:07:28.664Z"
 ---
 # Gamepad
 

@@ -3,7 +3,7 @@ title: "The Properties Bar"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/properties-bar"
 lang: en
-lastScraped: "2026-03-16T05:28:35.967Z"
+lastScraped: "2026-03-16T06:10:17.634Z"
 ---
 # The Properties Bar
 

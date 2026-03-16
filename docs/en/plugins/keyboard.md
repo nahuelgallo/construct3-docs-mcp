@@ -3,7 +3,7 @@ title: "Keyboard"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/keyboard"
 lang: en
-lastScraped: "2026-03-16T05:25:46.128Z"
+lastScraped: "2026-03-16T06:07:22.429Z"
 ---
 # Keyboard
 

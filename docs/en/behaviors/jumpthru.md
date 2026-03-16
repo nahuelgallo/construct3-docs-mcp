@@ -3,7 +3,7 @@ title: "Jump-thru behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/jump-thru"
 lang: en
-lastScraped: "2026-03-16T05:26:48.843Z"
+lastScraped: "2026-03-16T06:08:29.703Z"
 ---
 # Jump-thru behavior
 

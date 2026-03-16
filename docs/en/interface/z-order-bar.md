@@ -3,7 +3,7 @@ title: "The Z Order Bar"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/z-order-bar"
 lang: en
-lastScraped: "2026-03-16T05:28:42.196Z"
+lastScraped: "2026-03-16T06:10:23.882Z"
 ---
 # The Z Order Bar
 

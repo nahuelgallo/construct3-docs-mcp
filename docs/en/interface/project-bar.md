@@ -3,7 +3,7 @@ title: "The Project Bar"
 category: interface
 url: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/project-bar"
 lang: en
-lastScraped: "2026-03-16T05:28:33.888Z"
+lastScraped: "2026-03-16T06:10:15.664Z"
 ---
 # The Project Bar
 

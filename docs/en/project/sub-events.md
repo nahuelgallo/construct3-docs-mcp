@@ -3,7 +3,7 @@ title: "Sub-events"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/sub-events"
 lang: en
-lastScraped: "2026-03-16T05:28:00.423Z"
+lastScraped: "2026-03-16T06:09:41.126Z"
 ---
 # Sub-events
 

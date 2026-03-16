@@ -3,7 +3,7 @@ title: "Sprite Font"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite-font"
 lang: en
-lastScraped: "2026-03-16T05:25:40.175Z"
+lastScraped: "2026-03-16T06:07:16.307Z"
 ---
 # Sprite Font
 

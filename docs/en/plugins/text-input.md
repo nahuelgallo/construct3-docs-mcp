@@ -3,7 +3,7 @@ title: "Text input"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/text-input"
 lang: en
-lastScraped: "2026-03-16T05:26:17.602Z"
+lastScraped: "2026-03-16T06:07:56.861Z"
 ---
 # Text input
 

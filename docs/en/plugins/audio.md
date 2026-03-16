@@ -3,7 +3,7 @@ title: "Audio"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/audio"
 lang: en
-lastScraped: "2026-03-16T05:25:44.185Z"
+lastScraped: "2026-03-16T06:07:20.260Z"
 ---
 # Audio
 

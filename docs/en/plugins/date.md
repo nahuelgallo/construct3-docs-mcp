@@ -3,7 +3,7 @@ title: "Date"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/date"
 lang: en
-lastScraped: "2026-03-16T05:26:42.958Z"
+lastScraped: "2026-03-16T06:08:23.649Z"
 ---
 # Date
 

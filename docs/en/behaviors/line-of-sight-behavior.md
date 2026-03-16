@@ -3,7 +3,7 @@ title: "Line-of-sight behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/line-of-sight"
 lang: en
-lastScraped: "2026-03-16T05:27:07.024Z"
+lastScraped: "2026-03-16T06:08:47.751Z"
 ---
 # Line-of-sight behavior
 

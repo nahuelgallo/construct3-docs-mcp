@@ -3,7 +3,7 @@ title: "Array"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/array"
 lang: en
-lastScraped: "2026-03-16T05:25:55.956Z"
+lastScraped: "2026-03-16T06:07:33.273Z"
 ---
 # Array
 

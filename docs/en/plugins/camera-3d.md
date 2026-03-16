@@ -3,7 +3,7 @@ title: "3D Camera"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-camera"
 lang: en
-lastScraped: "2026-03-16T05:26:37.020Z"
+lastScraped: "2026-03-16T06:08:17.342Z"
 ---
 # 3D Camera
 

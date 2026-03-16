@@ -3,7 +3,7 @@ title: "HTML Element"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/html-element"
 lang: en
-lastScraped: "2026-03-16T05:26:13.787Z"
+lastScraped: "2026-03-16T06:07:52.669Z"
 ---
 # HTML Element
 

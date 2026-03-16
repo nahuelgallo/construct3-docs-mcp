@@ -3,7 +3,7 @@ title: "Persist behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/persist"
 lang: en
-lastScraped: "2026-03-16T05:27:30.938Z"
+lastScraped: "2026-03-16T06:09:12.301Z"
 ---
 # Persist behavior
 

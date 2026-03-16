@@ -3,7 +3,7 @@ title: "Bullet behavior"
 category: behaviors
 url: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/bullet"
 lang: en
-lastScraped: "2026-03-16T05:26:50.865Z"
+lastScraped: "2026-03-16T06:08:31.678Z"
 ---
 # Bullet behavior
 

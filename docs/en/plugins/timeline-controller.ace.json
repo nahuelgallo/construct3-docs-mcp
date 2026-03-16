@@ -131,6 +131,50 @@
     {
       "name": "Ease(easeName, value)",
       "description": "Return the result of an ease function at a given value in the range 0-1. The ease name can be either a built-in ease, or the name of a custom ease in the project. A list of the names of built-in eases is included below."
+    },
+    {
+      "name": "\"linear\"",
+      "description": ""
+    },
+    {
+      "name": "\"in-sine\"",
+      "description": "\"out-sine\""
+    },
+    {
+      "name": "\"in-elastic\"",
+      "description": "\"out-elastic\""
+    },
+    {
+      "name": "\"in-back\"",
+      "description": "\"out-back\""
+    },
+    {
+      "name": "\"in-bounce\"",
+      "description": "\"out-bounce\""
+    },
+    {
+      "name": "\"in-cubic\"",
+      "description": "\"out-cubic\""
+    },
+    {
+      "name": "\"in-quadratic\"",
+      "description": "\"out-quadratic\""
+    },
+    {
+      "name": "\"in-quartic\"",
+      "description": "\"out-quartic\""
+    },
+    {
+      "name": "\"in-quintic\"",
+      "description": "\"out-quintic\""
+    },
+    {
+      "name": "\"in-circular\"",
+      "description": "\"out-circular\""
+    },
+    {
+      "name": "\"in-exponential\"",
+      "description": "\"out-exponential\""
     }
   ]
 }

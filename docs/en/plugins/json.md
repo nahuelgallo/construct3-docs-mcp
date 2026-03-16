@@ -3,7 +3,7 @@ title: "JSON"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/json"
 lang: en
-lastScraped: "2026-03-16T05:25:59.932Z"
+lastScraped: "2026-03-16T06:07:38.511Z"
 ---
 # JSON
 

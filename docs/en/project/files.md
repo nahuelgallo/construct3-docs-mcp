@@ -3,7 +3,7 @@ title: "Project files"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/files"
 lang: en
-lastScraped: "2026-03-16T05:28:14.370Z"
+lastScraped: "2026-03-16T06:09:56.339Z"
 ---
 # Project files
 

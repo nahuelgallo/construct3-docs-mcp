@@ -3,7 +3,7 @@ title: "Speech recognition"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/speech-recognition"
 lang: en
-lastScraped: "2026-03-16T05:26:29.117Z"
+lastScraped: "2026-03-16T06:08:09.303Z"
 ---
 # Speech recognition
 

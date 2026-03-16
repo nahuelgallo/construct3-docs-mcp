@@ -3,7 +3,7 @@ title: "Mouse"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/mouse"
 lang: en
-lastScraped: "2026-03-16T05:25:48.115Z"
+lastScraped: "2026-03-16T06:07:24.481Z"
 ---
 # Mouse
 

@@ -3,7 +3,7 @@ title: "Sprite"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite"
 lang: en
-lastScraped: "2026-03-16T05:51:47.443Z"
+lastScraped: "2026-03-16T06:07:07.842Z"
 ---
 # Sprite
 

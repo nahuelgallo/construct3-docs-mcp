@@ -3,7 +3,7 @@ title: "Effects"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/effects"
 lang: en
-lastScraped: "2026-03-16T05:27:50.522Z"
+lastScraped: "2026-03-16T06:09:31.028Z"
 ---
 # Effects
 

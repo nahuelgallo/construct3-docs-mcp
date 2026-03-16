@@ -3,7 +3,7 @@ title: "Progress bar"
 category: plugins
 url: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/progress-bar"
 lang: en
-lastScraped: "2026-03-16T05:26:23.294Z"
+lastScraped: "2026-03-16T06:08:02.967Z"
 ---
 # Progress bar
 

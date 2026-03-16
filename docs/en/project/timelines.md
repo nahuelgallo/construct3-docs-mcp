@@ -3,7 +3,7 @@ title: "Timelines"
 category: project
 url: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines"
 lang: en
-lastScraped: "2026-03-16T05:28:10.525Z"
+lastScraped: "2026-03-16T06:09:52.049Z"
 ---
 # Timelines
 

@@ -3,7 +3,7 @@ title: "Runtime script interface"
 category: scripting
 url: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/iruntime"
 lang: en
-lastScraped: "2026-03-16T05:28:21.680Z"
+lastScraped: "2026-03-16T06:10:02.740Z"
 ---
 # Runtime script interface
 
